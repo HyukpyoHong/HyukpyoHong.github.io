@@ -3,6 +3,8 @@ layout: home
 title: "Home"
 ---
 
-This theme allows an academic person to showcase their research interests, publications, research group, curriculum vitae, any courses that they may be teaching, or anything else they may want to put out into the world.
+I am Hyukpyo Hong. I am currently a Van Vleck Assistant Professor in the [Department of Mathematics at the University of Wisconsin - Madison](https://math.wisc.edu/). My postdoctoral mentor is [Gheorghe Craciun](https://people.math.wisc.edu/~craciun/). I received my PhD in mathematics from [KAIST](https://mathsci.kaist.ac.kr/home/en/), where I studied under the guidance of [Jae Kyoung Kim](http://mathsci.kaist.ac.kr/~jaekkim/). 
 
-Academics can use this home page to describe their research interests, display their latest publications, or provide an introduction to their research group.
+I am working on mathematical biology. Among numerous interesting topics, my research interests are chemical reaction network theory, stochastic model reduction method (especially quasi-steady-state approximation), Bayesian statistical analysis to infer the mysterious dynamics of biochemical reaction networks.
+
+Beyond the mathematical topics I am working on collaborative works to solve biological problems. One is developing non-invasive biomarker to diagnose congnitive impairment from wearable data.
