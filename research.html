@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research – Hyukpyo Hong</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-name">Hyukpyo Hong</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="papers.html">Papers &amp; Talks</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="assets/HH_CV.pdf" target="_blank" class="cv-link">CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="page-header">
+      <h1>Research</h1>
+    </div>
+
+    <div class="section">
+      <div class="social-links" style="margin-bottom:1.5rem;">
+        <a href="https://scholar.google.com/citations?user=SC1r-GAAAAAJ&hl=ko&oi=ao" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:14px;height:14px;fill:currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h3.6v8.4C4.8 19.5 7.9 21 12 21s7.2-1.5 8.4-3.1V9.5H24L12 0z"/></svg>
+          Google Scholar
+        </a>
+        <a href="https://github.com/HyukpyoHong" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:14px;height:14px;fill:currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+      </div>
+
+      <div class="bio-text" style="margin-bottom:1.5rem;">
+        <p>
+          My research focuses on central problems in stochastic and deterministic models for complex biological systems. I address questions such as:
+        </p>
+        <ul class="question-list">
+          <li>How do we efficiently analyze a nonlinear dynamical model despite the huge number of parameters, variables, and equations?</li>
+          <li>How do biochemical systems show homeostasis despite fluctuating environmental conditions?</li>
+          <li>How do we find a closed form of solutions for dynamical systems?</li>
+          <li>How can we accurately estimate unknown parameters in a model with realistic assumptions using Bayesian approaches?</li>
+        </ul>
+        <p>
+          Recently, after joining UW–Madison as a postdoc, I have been expanding my interest to a more general dynamical system that is not necessarily biological. Specifically, I am working on <strong>Koopman theory</strong>, which offers a (possibly infinite-dimensional) linear representation of a nonlinear dynamical system. The techniques I have developed span the fields of probability, queueing theory, Bayesian inference, and dynamical systems. Beyond the mathematical and statistical topics, I work closely with biologists and medical doctors to address problems related to cognitive impairment and COVID-19.
+        </p>
+      </div>
+    </div>
+
+    <!-- Research Areas -->
+    <div class="section">
+      <div class="section-title">Research Areas</div>
+
+      <div class="research-item">
+        <h3>Koopman Theory</h3>
+        <p>
+          Koopman theory is a mathematical framework for representing nonlinear dynamical systems using an infinite-dimensional linear operator. This operator acts on a space of measurement functions of the system's state, allowing for a globally linear representation of nonlinear dynamics. I am working on efficient algorithms to find finite-dimensional linear representations that approximate an original nonlinear dynamical system. I am also interested in purely algebraic, sufficient or necessary conditions that allow a given nonlinear dynamical system to admit an <em>exact</em> finite-dimensional representation.
+        </p>
+      </div>
+
+      <div class="research-item">
+        <h3>Chemical Reaction Network Theory</h3>
+        <p>
+          A biological/biochemical system consists of species and reactions describing interactions among them. Chemical reaction network theory (CRNT) is a discipline of applied mathematics in which we model a system using a directed graph representation and infer dynamical properties based on the structural properties of the system. In CRNT, a stochastic system is modeled by means of a continuous-time Markov chain (CTMC). I work on analytic derivation of stationary distributions for the CTMC — the steady-state solution of the Kolmogorov forward equation (i.e., chemical master equation) — associated with a stochastic CRN. The analytic formula provides long-term information of the system such as sensitivity, robustness, and a likelihood function for Bayesian inference.
+        </p>
+      </div>
+
+      <div class="research-item">
+        <h3>Bayesian Inference for Non-Markovian Dynamical Systems</h3>
+        <p>
+          Not all reactions in a biochemical system can be experimentally measured simultaneously. To analyze such systems, replacing unobserved reactions with a single random time delay has been widely adopted, as it significantly reduces the number of variables and parameters. However, the resulting process is non-Markovian (i.e., state evolution depends on not only the present but also the past), making it difficult to infer kinetic and delay parameters. Based on knowledge from stochastic processes (e.g., queueing theory), I have developed Bayesian Markov-chain Monte Carlo (MCMC) methods to infer system parameters. These studies provide effective tools to analyze non-Markovian systems.
+        </p>
+      </div>
+
+      <div class="research-item">
+        <h3>Collaborative Works</h3>
+        <p>
+          Beyond mathematical and statistical topics, I work closely with biologists and medical doctors.
+        </p>
+        <p style="margin-top:0.6rem;">
+          <strong>(1) Cognitive Impairment &amp; Wearable Devices.</strong>&nbsp;
+          Which features of activity patterns measured by wearable devices are altered by cognitive impairment? Can we provide a pre-diagnosis for cognitive impairment using activity patterns? We use fractal analysis based on detrended fluctuation analysis to find such features.
+        </p>
+        <p style="margin-top:0.6rem;">
+          <strong>(2) COVID-19 Modeling.</strong>&nbsp;
+          We modeled COVID-19 extinction and endemicity based on two immunities with different longevities: long-lived severity-preventing immunity due to T-cell functioning and short-lived infection-preventing immunity due to antibody functioning. Our analysis demonstrates that high viral transmission unexpectedly reduces the rates of progression to severe COVID-19 during endemic transition, and that high transmission among populations with high vaccination coverage paradoxically accelerates endemic transition with reduced numbers of severe cases.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Last updated Sep. 30, 2025 &nbsp;·&nbsp; Hyukpyo Hong (홍혁표)</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('hamburger');
+    const links = document.getElementById('nav-links');
+    btn.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>
