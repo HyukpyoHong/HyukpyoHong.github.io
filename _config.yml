@@ -2,7 +2,10 @@ title: Hyukpyo Hong
 name: Hyukpyo Hong
 email: hhong78@wisc.edu
 description: Van Vleck Assistant Professor, Department of Mathematics, UW–Madison
-url: "https://hyukpyohong.github.io" # 본인 GitHub Pages 주소로 바꾸세요
+url: "https://hyukpyohong.github.io"
+
+# Disable GitHub default theme — required for custom _layouts to work
+theme: null
 
 # Build
 markdown: kramdown
