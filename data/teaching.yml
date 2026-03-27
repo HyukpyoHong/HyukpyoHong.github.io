@@ -1,0 +1,71 @@
+award: "2025 Postdoctoral Excellence in Teaching Award, Department of Mathematics, UW–Madison"
+
+courses:
+  - term: "Spring 2026 (planned)"
+    role: "Instructor"
+    course: "Introductory Probability (MATH 331)"
+    institution: "UW–Madison"
+
+  - term: "Fall 2025"
+    role: "Instructor"
+    course: "Introductory Probability (MATH 331)"
+    institution: "UW–Madison"
+
+  - term: "Spring 2025"
+    role: "Instructor"
+    course: "Introductory Probability (MATH 331)"
+    institution: "UW–Madison"
+
+  - term: "Fall 2024"
+    role: "Instructor"
+    course: "Elementary Matrix and Linear Algebra (MATH 340)"
+    institution: "UW–Madison"
+
+  - term: "Spring 2024"
+    role: "Instructor"
+    course: "Linear Algebra and Differential Equations (MATH 320)"
+    institution: "UW–Madison"
+
+  - term: "Fall 2023"
+    role: "Instructor"
+    course: "Linear Algebra and Differential Equations (MATH 320)"
+    institution: "UW–Madison"
+
+  - term: "Fall 2018, Spring 2019"
+    role: "Teaching Assistant"
+    course: "Differential Equations and Applications (MAS 201)"
+    institution: "KAIST"
+
+  - term: "Fall 2018"
+    role: "Teaching Assistant"
+    course: "Introduction to Mathematical Biology (MAS 480)"
+    institution: "KAIST"
+
+  - term: "Spring 2018"
+    role: "Teaching Assistant"
+    course: "Linear Algebra (MAS 212)"
+    institution: "KAIST"
+
+  - term: "Spring 2018"
+    role: "Teaching Assistant"
+    course: "Introduction to Linear Algebra (MAS 109)"
+    institution: "KAIST"
+
+mentoring:
+  - period: "Jun. 2024 – present"
+    name: "Ella Buelling"
+    description: "Junior student, Edgewood High School"
+    institution: "UW–Madison"
+    note: "Working on connections between a hypergraph representation of biochemical reaction networks and metabolic control analysis."
+
+  - period: "Jun. 2023 – Mar. 2025"
+    name: "Seokhwan Moon"
+    description: "Undergraduate, Department of Mathematics, POSTECH"
+    institution: "KAIST"
+    note: "Investigated structural conditions under which ODE steady-state solutions remain independent of system parameters. Published in <em>iScience</em>."
+
+  - period: "Spring 2019"
+    name: "Minyoo Kim"
+    description: "Undergraduate, Department of Mathematics, KAIST"
+    institution: "KAIST"
+    note: "Investigated the total quasi-steady-state approximation for a competitive system. Won a poster prize at 2019 KSIAM Spring Conference and a prize in the URP final evaluation."

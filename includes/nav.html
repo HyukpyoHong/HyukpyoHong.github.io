@@ -1,0 +1,15 @@
+<nav>
+  <div class="nav-inner">
+    <a href="{{ '/' | relative_url }}" class="nav-name">Hyukpyo Hong</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+      <a href="{{ '/research/' | relative_url }}" {% if page.url contains 'research' %}class="active"{% endif %}>Research</a>
+      <a href="{{ '/papers/' | relative_url }}" {% if page.url contains 'papers' %}class="active"{% endif %}>Papers &amp; Talks</a>
+      <a href="{{ '/teaching/' | relative_url }}" {% if page.url contains 'teaching' %}class="active"{% endif %}>Teaching</a>
+      <a href="{{ '/assets/HH_CV.pdf' | relative_url }}" target="_blank" class="cv-link">CV</a>
+    </div>
+  </div>
+</nav>

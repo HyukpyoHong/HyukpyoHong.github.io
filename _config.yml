@@ -1,0 +1,19 @@
+title: Hyukpyo Hong
+name: Hyukpyo Hong
+email: hhong78@wisc.edu
+description: Van Vleck Assistant Professor, Department of Mathematics, UW–Madison
+url: "https://hyukpyohong.github.io" # 본인 GitHub Pages 주소로 바꾸세요
+
+# Build
+markdown: kramdown
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-redirect-from
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

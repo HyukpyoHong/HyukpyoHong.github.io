@@ -1,0 +1,193 @@
+# type: invited | contributed | poster
+
+invited:
+  - date: "Oct. 31, 2025"
+    event: "UW–Madison Applied and Computational Mathematics Seminar"
+    location: "Madison, WI, USA"
+    url: "https://wiki.math.wisc.edu/index.php/Applied/ACMS"
+
+  - date: "Oct. 28, 2025"
+    event: "Midwest Mathematical Biology Seminar (online)"
+    url: "https://sites.google.com/view/midwest-mathbio-seminar/home"
+
+  - date: "Oct. 10, 2025"
+    event: "SMB Annual Meeting, Minisymposium"
+    location: "Seoul, Korea"
+
+  - date: "Jul. 22, 2025"
+    event: "SIAM Annual Meeting, Minisymposium"
+    location: "Montréal, Canada"
+
+  - date: "Jun. 19, 2025"
+    event: "KSMB Annual Meeting, Special session"
+    location: "Daejeon, Korea"
+
+  - date: "Apr. 25, 2025"
+    event: "PDE & Mathematical Biology Seminar, UW–Madison"
+    location: "Madison, WI, USA"
+
+  - date: "Jan. 10, 2025"
+    event: "JMM 2025, Special session"
+    location: "Seattle, WA, USA"
+
+  - date: "Nov. 22, 2024"
+    event: "KSIAM Annual Conference, Special session"
+    location: "Jeju, Korea"
+
+  - date: "Nov. 21, 2024"
+    event: "Korean Biophysical Society"
+    location: "Jeju, Korea"
+
+  - date: "Jul. 12, 2024"
+    event: "KSMB-SMB Joint Annual Meeting, Minisymposium"
+    location: "Seoul, Korea"
+
+  - date: "Nov. 14, 2023"
+    event: "UW–Madison Applied Algebra Seminar"
+    location: "Madison, WI, USA"
+
+  - date: "Oct. 20, 2023"
+    event: "KSIAM Annual Conference, Special session"
+    location: "Jeju, Korea"
+
+  - date: "Sep. 20, 2023"
+    event: "Seoul National University, Department of Mathematical Sciences"
+    location: "Seoul, Korea"
+
+  - date: "Jul. 22, 2023"
+    event: "SMB Annual Meeting, Minisymposium"
+    location: "Columbus, OH, USA"
+
+  - date: "Jun. 27, 2023"
+    event: "The 8th CIJK International Conference on Mathematical and Theoretical Biology, Minisymposium"
+    location: "Jeju, Korea"
+
+  - date: "May 19, 2023"
+    event: "KSIAM Spring Conference, Special session"
+    location: "Pyeongchang, Korea"
+
+  - date: "Dec. 19, 2022"
+    event: "Mini-workshop on Recent Trends in Pure and Applied Mathematics"
+    location: "Daejeon, Korea"
+
+  - date: "Nov. 21, 2022"
+    event: "Population Approach Group Korea Annual Meeting"
+    location: "Seoul, Korea"
+
+  - date: "Oct. 19, 2022"
+    event: "Global KMS International Conference, Special session"
+    location: "Seoul, Korea"
+
+  - date: "Jun. 25, 2022"
+    event: "KSMB Annual Meeting, Special session"
+    location: "Yeosu, Korea"
+
+  - date: "May 28, 2022"
+    event: "KSIAM Spring Conference, Special session"
+    location: "Daejeon, Korea"
+
+  - date: "Aug. 27, 2021"
+    event: "KSMB Annual Meeting, Special session"
+    location: "Online, Korea"
+
+  - date: "Jun. 16, 2021"
+    event: "SMB Annual Meeting, Minisymposium"
+    location: "Online"
+
+  - date: "May 27, 2021"
+    event: "SIAM Conference on Dynamical Systems, Minisymposium"
+    location: "Online"
+
+  - date: "May 13, 2021"
+    event: "Seminar on the Mathematics of Reaction Networks"
+    location: "Online"
+    url: "https://researchseminars.org/seminar/MoRN"
+    extra_url: "https://www.youtube.com/watch?v=KC7gRxCBmnc&ab_channel=MathematicsofReactionNetworks"
+    extra_label: "YouTube recording"
+
+  - date: "Oct. 24, 2020"
+    event: "KMS Annual Meeting, Minisymposium"
+    location: "Online"
+
+contributed:
+  - date: "Jun. 27, 2024"
+    event: "KSMB-SMB Satellite Workshop: Tutorials for Recent Advances in Methods of Biomedical Mathematics"
+    location: "Daejeon, Korea"
+    type: poster
+
+  - date: "Jun. 10, 2024"
+    event: "SPT Workshop on Reaction Networks"
+    location: "Cagliari, Italy"
+
+  - date: "Jul. 14, 2023"
+    event: "Dynamical Systems in the Life Sciences"
+    location: "Columbus, OH, USA"
+    type: poster
+
+  - date: "Dec. 6, 2022"
+    event: "Workshop on Non-equilibrium Phenomena in Physics and Biology"
+    location: "Gyeongju, Korea"
+    type: poster
+
+  - date: "Nov. 26, 2022"
+    event: "KSIAM Annual Conference"
+    location: "Jeju, Korea"
+
+  - date: "Oct. 11, 2022"
+    event: "International Conference on Systems Biology, Short talk"
+    location: "Berlin, Germany"
+
+  - date: "Jul. 14, 2022"
+    event: "SIAM Conference on the Life Sciences"
+    location: "Pittsburgh, PA, USA"
+
+  - date: "May 17, 2022"
+    event: "SRBR Biennial Conference"
+    location: "Jacksonville, FL, USA"
+    type: poster
+
+  - date: "Dec. 17, 2021"
+    event: "KSMB Winter Conference"
+    location: "Jeju, Korea"
+    type: poster
+
+  - date: "Dec. 4, 2021"
+    event: "KSIAM Annual Conference"
+    location: "Busan, Korea"
+    type: poster
+
+  - date: "Sep. 28, 2021"
+    event: "Non-equilibrium collective phenomena workshop"
+    location: "Gyeongju, Korea"
+    type: poster
+
+  - date: "Jun. 26, 2021"
+    event: "KSIAM Spring Conference"
+    location: "Gangneung, Korea"
+
+  - date: "Nov. 13, 2020"
+    event: "KSIAM Annual Conference"
+    location: "Online"
+    type: poster
+
+  - date: "Aug. 20, 2020"
+    event: "SMB Annual Meeting"
+    location: "Online"
+
+  - date: "Jul. 23, 2019"
+    event: "SMB Annual Meeting"
+    location: "Montréal, Canada"
+    type: poster
+
+  - date: "Jul. 8, 2019"
+    event: "Chemical Reaction Networks Workshop, Short talk"
+    location: "Torino, Italy"
+    url: "https://areeweb.polito.it/disma-excellence/CRNs/Workshop.html#Speakers"
+
+  - date: "May 18, 2019"
+    event: "KSIAM Spring Conference"
+    location: "Seoul, Korea"
+
+  - date: "May 11, 2019"
+    event: "A3 Workshop on Mathematical Biology"
+    location: "Beijing, China"
