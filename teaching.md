@@ -57,7 +57,7 @@ title: Teaching
       <li class="course-item" style="flex-direction:column;gap:0.2rem;">
         <span style="display:flex;gap:1rem;">
           <span class="course-year">{{ m.period }}</span>
-          <span><strong>{{ m.name }}</strong>, {{ m.description }}</span>
+          <span>{{ m.name }}, {{ m.description }}</span>
         </span>
         <span style="color:var(--text-muted);font-size:0.9rem;">{{ m.note }}</span>
       </li>
@@ -72,7 +72,7 @@ title: Teaching
       <li class="course-item" style="flex-direction:column;gap:0.2rem;">
         <span style="display:flex;gap:1rem;">
           <span class="course-year">{{ m.period }}</span>
-          <span><strong>{{ m.name }}</strong>, {{ m.description }}</span>
+          <span>{{ m.name }}, {{ m.description }}</span>
         </span>
         <span style="color:var(--text-muted);font-size:0.9rem;">{{ m.note }}</span>
       </li>
