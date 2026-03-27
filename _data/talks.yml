@@ -1,13 +1,42 @@
 # type: invited | contributed | poster
 
 invited:
+  - date: "Apr. 28, 2026"
+    event: "Online Seminar on Formal Reaction Kinetics"
+    location: "Online"
+    url: "https://math.bme.hu/~jtoth/seminars.html"
+
+  - date: "Feb. 26, 2026"
+    event: "Mathematics of Reaction Networks (MoRN) Seminar"
+    location: "Online"
+    url: "https://researchseminars.org/seminar/MoRN"
+    extra_url: "https://youtu.be/F-9l6U9fvzM"
+    extra_label: "YouTube recording"
+
+  - date: "Nov. 21, 2025"
+    event: "Math Bio Seminar at Duke University"
+    location: "Durham, NC, USA"
+
+  - date: "Nov. 20, 2025"
+    event: "Seminar in the TPB Cluster at NC State University"
+    location: "Durham, NC, USA"
+
+  - date: "Nov. 19, 2025"
+    event: "Seminar in the Dept. of Math. at NC State University"
+    location: "Durham, NC, USA"
+
+  - date: "Nov. 13, 2025"
+    event: "Seminar at Seoul National University"
+    location: "Seoul, Korea"    
+
   - date: "Oct. 31, 2025"
     event: "UW–Madison Applied and Computational Mathematics Seminar"
     location: "Madison, WI, USA"
     url: "https://wiki.math.wisc.edu/index.php/Applied/ACMS"
 
   - date: "Oct. 28, 2025"
-    event: "Midwest Mathematical Biology Seminar (online)"
+    event: "Midwest Mathematical Biology Seminar"
+    location: "Online"
     url: "https://sites.google.com/view/midwest-mathbio-seminar/home"
 
   - date: "Oct. 10, 2025"
@@ -88,7 +117,7 @@ invited:
 
   - date: "Aug. 27, 2021"
     event: "KSMB Annual Meeting, Special session"
-    location: "Online, Korea"
+    location: "Online"
 
   - date: "Jun. 16, 2021"
     event: "SMB Annual Meeting, Minisymposium"
