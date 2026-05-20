@@ -20,7 +20,7 @@ title: Papers & Talks
   <ol class="paper-list" start="1">
     {% for paper in site.data.papers.preprints %}
     <li class="paper-item">
-      <div class="authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      <div class="authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' | replace: '{*}', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' }}</div>
       <div class="title">
         {{ paper.title }}
         {% if paper.type == 'review' %}
@@ -40,7 +40,7 @@ title: Papers & Talks
   <ol class="paper-list" start="1">
     {% for paper in site.data.papers.published %}
     <li class="paper-item">
-      <div class="authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      <div class="authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' | replace: '{*}', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' }}</div>
       <div class="title">
         {{ paper.title }}
         {% if paper.url_arxiv %}<a href="{{ paper.url_arxiv }}" target="_blank" class="badge badge-arxiv">arXiv</a>{% endif %}

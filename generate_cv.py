@@ -48,15 +48,15 @@ def format_authors(authors):
     """
     **Hyukpyo Hong** → \\textbf{Hyukpyo Hong}
     †  → $\\dagger$
-    *  → ${}^*$
+    {*} → ${}^*$   (corresponding author)
     """
     # bold
     s = re.sub(r'\*\*(.+?)\*\*', r'\\textbf{\1}', authors)
-    # dagger (must come before *)
+    # dagger
     s = s.replace('†', r'$\dagger$')
-    # corresponding (*) — only standalone * not part of **
-    s = re.sub(r'(?<!\*)\*(?!\*)', r'${}^*$', s)
-    # Escape & in author lists (but NOT inside already-processed LaTeX commands)
+    # corresponding author {*} → ${}^*$
+    s = s.replace('{*}', r'${}^*$')
+    # Escape & in author lists
     s = s.replace('&', r'\&')
     return s
 

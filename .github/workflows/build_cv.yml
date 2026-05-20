@@ -3,7 +3,10 @@ name: Build CV and Deploy Site
 on:
   push:
     branches: [main]
-  workflow_dispatch:  # 수동 실행도 가능
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build-cv:
