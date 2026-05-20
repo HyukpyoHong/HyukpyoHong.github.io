@@ -1,34 +1,27 @@
 #!/usr/bin/env python3
 """
-generate_cv.py
-YAML _data/ → CV.tex 자동 생성 스크립트
-
+generate_cv.py  —  YAML _data/ → CV.tex 자동 생성
 Usage:
-    python generate_cv.py              # 전체 CV 생성
-    python generate_cv.py --short      # 논문/발표 최근 N개만 포함
+    python generate_cv.py
+    python generate_cv.py --short   # 논문/발표 최근 N개만
 """
 
-import yaml
-import re
-import argparse
+import yaml, re, argparse
 from pathlib import Path
-from datetime import datetime
 
-# ── 경로 설정 ────────────────────────────────────────────────
 DATA_DIR = Path("_data")
 OUTPUT   = Path("CV.tex")
 
-# ── 헬퍼 함수 ────────────────────────────────────────────────
+# ── 헬퍼 ─────────────────────────────────────────────────────
 
 def load(name):
     with open(DATA_DIR / f"{name}.yml", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
 def tex_escape(s):
-    """일반 텍스트를 LaTeX 특수문자 이스케이프"""
     if not isinstance(s, str):
         return str(s)
-    replacements = [
+    for old, new in [
         ("\\", r"\textbackslash{}"),
         ("&",  r"\&"),
         ("%",  r"\%"),
@@ -39,29 +32,18 @@ def tex_escape(s):
         ("^",  r"\textasciicircum{}"),
         ("{",  r"\{"),
         ("}",  r"\}"),
-    ]
-    for old, new in replacements:
+    ]:
         s = s.replace(old, new)
     return s
 
 def format_authors(authors):
-    """
-    **Hyukpyo Hong** → \\textbf{Hyukpyo Hong}
-    †  → $\\dagger$
-    {*} → ${}^*$   (corresponding author)
-    """
-    # bold
     s = re.sub(r'\*\*(.+?)\*\*', r'\\textbf{\1}', authors)
-    # dagger
     s = s.replace('†', r'$\dagger$')
-    # corresponding author [*] → ${}^*$
     s = s.replace('[*]', r'${}^*$')
-    # Escape & in author lists
     s = s.replace('&', r'\&')
     return s
 
 def format_links(paper):
-    """arXiv / bioRxiv / medRxiv / journal 링크를 LaTeX \\href로 변환"""
     links = []
     for key, label in [
         ('url_arxiv',   'arXiv'),
@@ -74,10 +56,7 @@ def format_links(paper):
             links.append(rf'[\href{{{paper[key]}}}{{\ul{{{label}}}}}]')
     return '; '.join(links)
 
-def vspace(pt="-8pt"):
-    return f"\\vspace{{{pt}}}\n\n"
-
-# ── 섹션 생성 함수 ───────────────────────────────────────────
+# ── 섹션 ─────────────────────────────────────────────────────
 
 def sec_papers(data, short=False):
     lines = []
@@ -87,20 +66,18 @@ def sec_papers(data, short=False):
                  r"names are listed in alphabetical order by last name, as is standard practice in mathematical journals.")
     lines.append("")
 
-    # Preprints
     preprints = [p for p in data['papers']['preprints'] if p.get('cv', True)]
     lines.append(r"\vspace{-5pt}")
     lines.append(r"In preparation or preprint: \vspace{7pt}")
     lines.append(r"\begin{enumerate}[leftmargin=*]")
     for p in preprints:
         authors = format_authors(p['authors'])
-        title   = p['title']
         ptype   = p.get('type', 'prep')
         status  = {'prep': r'\textit{in preparation}',
                    'submitted': r'\textit{Submitted}',
                    'review': r'\textit{Under review}'}.get(ptype, r'\textit{in preparation}')
         links   = format_links(p)
-        entry   = f"    \\item {authors}, {title}, {status}"
+        entry   = f"    \\item {authors}, {p['title']}, {status}"
         if links:
             entry += f"; {links}"
         lines.append(entry)
@@ -108,7 +85,6 @@ def sec_papers(data, short=False):
     lines.append(r"\end{enumerate}")
     lines.append("")
 
-    # Published
     published = [p for p in data['papers']['published'] if p.get('cv', True)]
     if short:
         published = published[:5]
@@ -116,19 +92,14 @@ def sec_papers(data, short=False):
     lines.append(r"Published or accepted: \vspace{7pt}")
     lines.append(r"\begin{enumerate}[leftmargin=*]")
     for p in published:
-        authors = format_authors(p['authors'])
-        title   = p['title']
-        venue   = p['venue']
-        year    = p['year']
-        links   = format_links(p)
-        entry   = f"    \\item {authors}, {title}, \\textit{{{venue}}}, {year}"
+        links = format_links(p)
+        entry = f"    \\item {format_authors(p['authors'])}, {p['title']}, \\textit{{{p['venue']}}}, {p['year']}"
         if links:
             entry += f"; {links}"
         lines.append(entry)
         lines.append("")
     lines.append(r"\end{enumerate}")
 
-    # Book chapters
     if data['papers'].get('book_chapters'):
         lines.append(r"\vspacesection")
         lines.append(r"\section{\sc Book Chapters}")
@@ -136,11 +107,8 @@ def sec_papers(data, short=False):
         for p in data['papers']['book_chapters']:
             if not p.get('cv', True):
                 continue
-            authors = format_authors(p['authors'])
-            title   = p['title']
-            venue   = p['venue']
-            links   = format_links(p)
-            entry   = f"    \\item {authors}, {title}, {venue}"
+            links = format_links(p)
+            entry = f"    \\item {format_authors(p['authors'])}, {p['title']}, {p['venue']}"
             if links:
                 entry += f"; {links}"
             lines.append(entry)
@@ -152,7 +120,6 @@ def sec_papers(data, short=False):
 def sec_talks(data, short=False):
     lines = []
 
-    # Invited
     lines.append(r"\vspacesection")
     lines.append(r"\section{\sc Invited talks}")
     invited = [t for t in data['talks']['invited'] if t.get('cv', True)]
@@ -167,21 +134,23 @@ def sec_talks(data, short=False):
         extra_url   = t.get('extra_url', '')
         extra_label = t.get('extra_label', '')
 
-        # event line — URL을 \textbf 밖으로 분리해서 hyperref 충돌 방지
-        event_str = f"\\textbf{{{date}: {event}}}"
+        # 날짜, 위치
+        loc_part = f", {location}" if location else ""
+        lines.append(f"\\textbf{{{date}{loc_part}}} \\\\")
+        # 학회
         if url:
-            event_str = f"\\textbf{{{date}: {event}}} [\\href{{{url}}}{{link}}]"
-        loc_str = f"\\hfill {{{location}}}\\\\" if location else "\\\\"
-        lines.append(f"{event_str} {loc_str}")
-
+            lines.append(f"\\href{{{url}}}{{{event}}}")
+        else:
+            lines.append(event)
+        # 제목
         if title:
-            lines.append(tex_escape(title))
+            title_line = f"\\textit{{{tex_escape(title)}}}"
             if extra_url:
-                lines[-1] += f" [\\href{{{extra_url}}}{{\\ul{{{extra_label}}}}}]"
+                title_line += f" [\\href{{{extra_url}}}{{\\ul{{{extra_label}}}}}]"
+            lines.append(title_line)
         lines.append(r"\vspace{-8pt}")
         lines.append("")
 
-    # Contributed
     lines.append(r"\section{\sc Contributed talks and \\ Posters}")
     contributed = [t for t in data['talks']['contributed'] if t.get('cv', True)]
     for t in contributed:
@@ -195,14 +164,14 @@ def sec_talks(data, short=False):
         type_label = {'poster': 'Poster', 'short_talk': 'Short talk',
                       'contributed': 'Contributed talk'}.get(ttype, ttype.title())
 
-        event_str = f"\\textbf{{{date}: {event}}}"
+        loc_part = f", {location}" if location else ""
+        lines.append(f"\\textbf{{{date}{loc_part}}} \\\\")
         if url:
-            event_str = f"\\textbf{{{date}: {event}}} [\\href{{{url}}}{{link}}]"
-        loc_str = f"\\hfill {{{location}}}\\\\" if location else "\\\\"
-        lines.append(f"{event_str} {loc_str}")
-
+            lines.append(f"\\href{{{url}}}{{{event}}}")
+        else:
+            lines.append(event)
         if title:
-            lines.append(f"{tex_escape(title)} \\hfill{{{type_label}}}")
+            lines.append(f"\\textit{{{tex_escape(title)}}} \\hfill{{{type_label}}}")
         lines.append(r"\vspace{-8pt}")
         lines.append("")
 
@@ -214,7 +183,7 @@ def sec_teaching(data):
     lines.append(r"\vspacesection")
     lines.append(r"\section{\sc Teaching}")
 
-    uw    = [c for c in data['teaching']['courses'] if c['institution'] == 'UW–Madison']
+    uw    = [c for c in data['teaching']['courses'] if c['institution'] == 'UW\u2013Madison']
     kaist = [c for c in data['teaching']['courses'] if c['institution'] == 'KAIST']
 
     lines.append(r"\textbf{UW--Madison}")
@@ -230,10 +199,9 @@ def sec_teaching(data):
         lines.append(f"    \\item {c['term']}: [{c['role']}] {c['course']}")
     lines.append(r"\end{itemize}")
 
-    # Mentoring
     lines.append("")
     lines.append(r"\section{\sc Mentoring}")
-    uw_m    = [m for m in data['teaching']['mentoring'] if m['institution'] == 'UW–Madison']
+    uw_m    = [m for m in data['teaching']['mentoring'] if m['institution'] == 'UW\u2013Madison']
     kaist_m = [m for m in data['teaching']['mentoring'] if m['institution'] == 'KAIST']
 
     if uw_m:
@@ -241,7 +209,8 @@ def sec_teaching(data):
         lines.append(r"\begin{itemize}")
         for m in uw_m:
             lines.append(f"    \\item {m['period']}: {m['name']}, {m['description']}\\\\")
-            lines.append(f"    {m['note']}")
+            if m.get('note'):
+                lines.append(f"    {m['note']}")
         lines.append(r"\end{itemize}")
         lines.append(r"\vspacesection")
 
@@ -250,7 +219,8 @@ def sec_teaching(data):
         lines.append(r"\begin{itemize}")
         for m in kaist_m:
             lines.append(f"    \\item {m['period']}: {m['name']}, {m['description']}\\\\")
-            lines.append(f"    {m['note']}")
+            if m.get('note'):
+                lines.append(f"    {m['note']}")
         lines.append(r"\end{itemize}")
 
     return '\n'.join(lines)
@@ -286,7 +256,8 @@ def sec_service(data):
     lines.append(r"\section{\sc Academic \\ Service}")
     for s in data['service']['service']:
         lines.append(f"\\textbf{{{s['date']}: {tex_escape(s['title'])}}} \\\\")
-        lines.append(tex_escape(s['note']))
+        if s.get('note'):
+            lines.append(tex_escape(s['note']))
         lines.append(r"\vspace{-5pt}")
         lines.append("")
 
@@ -298,17 +269,22 @@ def sec_service(data):
     lines.append(r"\section{\sc Outreach}")
     for o in data['service']['outreach']:
         url = o.get('url', '')
-        title_str = f"\\href{{{url}}}{{\\textbf{{{o['date']}: {tex_escape(o['title'])}}}}}" if url \
-                    else f"\\textbf{{{o['date']}: {tex_escape(o['title'])}}}"
-        lines.append(f"{title_str} \\hfill {{{tex_escape(o['venue'])}}} \\\\")
-        lines.append(f"\\textit{{{tex_escape(o['talk_title'])}}} \\\\")
-        lines.append(tex_escape(o['note']))
+        event_title = tex_escape(o.get('title', ''))
+        date = o.get('date', '')
+        title_str = f"\\href{{{url}}}{{\\textbf{{{date}: {event_title}}}}}" if url \
+                    else f"\\textbf{{{date}: {event_title}}}"
+        venue = tex_escape(o.get('venue', ''))
+        lines.append(f"{title_str} \\hfill {{{venue}}} \\\\")
+        if o.get('talk_title'):
+            lines.append(f"\\textit{{{tex_escape(o['talk_title'])}}} \\\\")
+        if o.get('note'):
+            lines.append(tex_escape(o['note']))
         lines.append(r"\vspace{-8pt}")
         lines.append("")
     return '\n'.join(lines)
 
 
-# ── 메인 CV 조립 ─────────────────────────────────────────────
+# ── CV 조립 ──────────────────────────────────────────────────
 
 PREAMBLE = r"""\documentclass[margin,line]{res}
 \usepackage{hyperref}
@@ -453,13 +429,11 @@ def build_cv(short=False):
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT, 'w', encoding='utf-8') as f:
         f.write('\n'.join(sections))
-
     print(f"✅  Generated: {OUTPUT}")
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--short', action='store_true',
-                        help='Include only recent papers/talks')
+    parser.add_argument('--short', action='store_true')
     args = parser.parse_args()
     build_cv(short=args.short)

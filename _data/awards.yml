@@ -10,13 +10,13 @@
   web: true
 
 - year: 2025
-  title: "KMS Excellent Dissertation Award"
-  org: "Korean Mathematical Society (KMS)"
+  title: "Excellent Dissertation Award"
+  org: "Korean Mathematical Society"
   web: true
 
 - year: 2024
   title: "KSIAM Next Generation Researcher Award"
-  org: "Korean Society for Industrial and Applied Mathematics (KSIAM)"
+  org: "Korean Society for Industrial and Applied Mathematics"
   web: true
 
 - year: 2022
@@ -28,12 +28,12 @@
   org: "Korean Red Cross"
 
 - year: "2019–2023"
-  title: "Global Ph.D. Fellowship (Full Tuition, approx. 25,000 USD/year)"
-  org: "National Research Foundation of Korea (NRF)"
+  title: "Global Ph.D. Fellowship (Full Tuition)"
+  org: "National Research Foundation of Korea"
 
 - year: 2017
   title: "36th National Undergraduate Mathematics Competition Silver Award"
-  org: "Korean Mathematical Society (KMS)"
+  org: "Korean Mathematical Society"
 
 - year: 2016
   title: "Mirae Asset Global Exchange Scholarship"
@@ -41,7 +41,7 @@
 
 - year: 2014
   title: "33rd National Undergraduate Mathematics Competition Silver Award"
-  org: "Korean Mathematical Society (KMS)"
+  org: "Korean Mathematical Society"
 
 - year: 2014
   title: "Dean's List Award, College of Natural Sciences"
@@ -49,8 +49,8 @@
 
 - year: 2013
   title: "32nd National Undergraduate Mathematics Competition Silver Award"
-  org: "Korean Mathematical Society (KMS)"
+  org: "Korean Mathematical Society"
 
 - year: "2013–2017"
   title: "National Scholarship for Science and Engineering (Full Tuition)"
-  org: "Korea Student Aid Foundation (KOSAF)"
+  org: "Korea Student Aid Foundation"

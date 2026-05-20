@@ -83,9 +83,10 @@ title: Papers & Talks
     <li class="talk-item">
       <span class="talk-date">{{ talk.date }}</span>
       <span class="talk-content">
-        {{ talk.event }}{% if talk.location %}, {{ talk.location }}{% endif %}
+        <span style="font-weight:500;">{{ talk.event }}</span>{% if talk.location %}, {{ talk.location }}{% endif %}
         {% if talk.url %} — <a href="{{ talk.url }}" target="_blank">link</a>{% endif %}
         {% if talk.extra_url %} · <a href="{{ talk.extra_url }}" target="_blank">{{ talk.extra_label }}</a>{% endif %}
+        {% if talk.title %}<br><span style="font-style:italic;color:var(--text-muted);font-size:0.88rem;">{{ talk.title }}</span>{% endif %}
       </span>
     </li>
     {% endfor %}
@@ -100,9 +101,10 @@ title: Papers & Talks
     <li class="talk-item">
       <span class="talk-date">{{ talk.date }}</span>
       <span class="talk-content">
-        {{ talk.event }}{% if talk.location %}, {{ talk.location }}{% endif %}
+        <span style="font-weight:500;">{{ talk.event }}</span>{% if talk.location %}, {{ talk.location }}{% endif %}
         {% if talk.type == 'poster' %} <span style="font-size:0.82rem;color:var(--text-light);">(Poster)</span>{% endif %}
         {% if talk.url %} — <a href="{{ talk.url }}" target="_blank">link</a>{% endif %}
+        {% if talk.title %}<br><span style="font-style:italic;color:var(--text-muted);font-size:0.88rem;">{{ talk.title }}</span>{% endif %}
       </span>
     </li>
     {% endfor %}
