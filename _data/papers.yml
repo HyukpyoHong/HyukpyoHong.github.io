@@ -11,7 +11,7 @@
 preprints:
 
   - title: "Connections between structural sensitivity analysis and metabolic control analysis"
-    authors: "Ella Buelling†, Wolfram Liebermeister{*}, **Hyukpyo Hong**{*}"
+    authors: "Ella Buelling†, Wolfram Liebermeister[*], **Hyukpyo Hong**[*]"
     type: prep
 
   - title: "Necessary and sufficient conditions of the existence of a finite dimensional invariant subspace for polynomial ODEs"
@@ -19,15 +19,15 @@ preprints:
     type: prep
 
   - title: "Non-autonomous dynamics learning via Koopman-based Neural Networks"
-    authors: "Geonhee Ryu†, **Hyukpyo Hong**{*}, Daewook Kim{*}"
+    authors: "Geonhee Ryu†, **Hyukpyo Hong**[*], Daewook Kim[*]"
     type: prep
 
   - title: "Finding Koopman Invariant Subspaces via Personalized PageRank"
-    authors: "**Hyukpyo Hong**†, Qin Li†, Matthew Colbrook, Hanbaek Lyu{*}"
+    authors: "**Hyukpyo Hong**†, Qin Li†, Matthew Colbrook, Hanbaek Lyu[*]"
     type: submitted
 
   - title: "Ubiquitous asymptotic robustness in biochemical systems"
-    authors: "**Hyukpyo Hong**†{*}, Diego Rojas La Luz†, Gheorghe Craciun{*}"
+    authors: "**Hyukpyo Hong**†[*], Diego Rojas La Luz†, Gheorghe Craciun[*]"
     type: review
     url_arxiv: "https://doi.org/10.48550/arXiv.2505.21900"
 
@@ -35,81 +35,81 @@ published:
 
   - year: 2025
     title: "A history-dependent approach for accurate initial condition estimation in epidemic models"
-    authors: "Dongju Lim†, Kyeong Tae Ko†, **Hyukpyo Hong**, Hyojung Lee, Boseung Choi, Won Chang, Sunhwa Choi{*}, Jae Kyoung Kim{*}"
+    authors: "Dongju Lim†, Kyeong Tae Ko†, **Hyukpyo Hong**, Hyojung Lee, Boseung Choi, Won Chang, Sunhwa Choi[*], Jae Kyoung Kim[*]"
     venue: "PLoS Computational Biology"
     url_journal: "https://doi.org/10.1371/journal.pcbi.1013438"
 
   - year: 2025
     title: "Topological criterion for robust perfect adaptation of reaction fluxes in biological networks"
-    authors: "**Hyukpyo Hong**†, Seokhwan Moon†, Yuji Hirono†{*}, Jae Kyoung Kim{*}"
+    authors: "**Hyukpyo Hong**†, Seokhwan Moon†, Yuji Hirono†[*], Jae Kyoung Kim[*]"
     venue: "iScience"
     url_arxiv: "https://doi.org/10.48550/arXiv.2302.01270"
     url_journal: "https://doi.org/10.1016/j.isci.2025.112394"
 
   - year: 2024
     title: "Overcoming bias in estimating epidemiological parameters with realistic history-dependent disease spread dynamics"
-    authors: "**Hyukpyo Hong**†, Eunjin Eom†, Hyojung Lee, Sunhwa Choi{*}, Boseung Choi{*}, Jae Kyoung Kim{*}"
+    authors: "**Hyukpyo Hong**†, Eunjin Eom†, Hyojung Lee, Sunhwa Choi[*], Boseung Choi[*], Jae Kyoung Kim[*]"
     venue: "Nature Communications"
     url_journal: "https://doi.org/10.1038/s41467-024-53095-7"
 
   - year: 2023
     title: "Density physics-informed neural networks reveal sources of cell heterogeneity in signal transduction"
-    authors: "Hyeontae Jo†, **Hyukpyo Hong**†, Hyung Ju Hwang, Won Chang, Jae Kyoung Kim{*}"
+    authors: "Hyeontae Jo†, **Hyukpyo Hong**†, Hyung Ju Hwang, Won Chang, Jae Kyoung Kim[*]"
     venue: "Patterns"
     url_biorxiv: "https://doi.org/10.1101/2023.07.31.551393"
     url_journal: "https://doi.org/10.1016/j.patter.2023.100899"
 
   - year: 2023
     title: "Inferring delays in partially observed gene regulation processes"
-    authors: "**Hyukpyo Hong**†, Mark Jayson Cortez, Yu-Yu Cheng, Hang J. Kim, Boseung Choi{*}, Krešimir Josić{*}, Jae Kyoung Kim{*}"
+    authors: "**Hyukpyo Hong**†, Mark Jayson Cortez, Yu-Yu Cheng, Hang J. Kim, Boseung Choi[*], Krešimir Josić[*], Jae Kyoung Kim[*]"
     venue: "Bioinformatics"
     url_biorxiv: "https://doi.org/10.1101/2022.11.27.518074"
     url_journal: "https://doi.org/10.1093/bioinformatics/btad670"
 
   - year: 2023
     title: "Computational translation framework identifies biochemical reaction networks with special topologies and their long-term dynamics"
-    authors: "**Hyukpyo Hong**, Bryan S. Hernandez, Jinsu Kim, Jae Kyoung Kim{*}"
+    authors: "**Hyukpyo Hong**, Bryan S. Hernandez, Jinsu Kim, Jae Kyoung Kim[*]"
     venue: "SIAM Journal on Applied Mathematics"
     url_arxiv: "https://doi.org/10.48550/arXiv.2212.01171"
     url_journal: "https://doi.org/10.1137/22M150469X"
 
   - year: 2022
     title: "Modeling incorporating the severity-reducing long-term immunity: higher viral transmission paradoxically reduces severe COVID-19 during endemic transition"
-    authors: "**Hyukpyo Hong**†, Ji Yun Noh†, Hyojung Lee, Sunhwa Choi, Boseung Choi, Jae Kyoung Kim{*}, Eui-Cheol Shin{*}"
+    authors: "**Hyukpyo Hong**†, Ji Yun Noh†, Hyojung Lee, Sunhwa Choi, Boseung Choi, Jae Kyoung Kim[*], Eui-Cheol Shin[*]"
     venue: "Immune Network"
     url_medrxiv: "https://doi.org/10.1101/2022.02.09.22270633"
     url_journal: "https://doi.org/10.4110/in.2022.22.e23"
 
   - year: 2022
     title: "Systematic inference identifies a major source of heterogeneity in cell signaling dynamics: the rate-limiting step number"
-    authors: "Dae Wook Kim†, **Hyukpyo Hong**†, Jae Kyoung Kim{*}"
+    authors: "Dae Wook Kim†, **Hyukpyo Hong**†, Jae Kyoung Kim[*]"
     venue: "Science Advances"
     url_journal: "https://www.science.org/doi/10.1126/sciadv.abl4598"
 
   - year: 2021
     title: "Universally valid reduction of multiscale stochastic biochemical systems with simple non-elementary propensities"
-    authors: "Yun Min Song†, **Hyukpyo Hong**†, Jae Kyoung Kim{*}"
+    authors: "Yun Min Song†, **Hyukpyo Hong**†, Jae Kyoung Kim[*]"
     venue: "PLoS Computational Biology"
     url_biorxiv: "https://doi.org/10.1101/2021.04.08.438974"
     url_journal: "https://doi.org/10.1371/journal.pcbi.1008952"
 
   - year: 2021
     title: "Hierarchical Bayesian models for inference in biochemical reactions with delays"
-    authors: "Mark Jayson Cortez†, **Hyukpyo Hong**, Boseung Choi{*}, Jae Kyoung Kim{*}, Krešimir Josić{*}"
+    authors: "Mark Jayson Cortez†, **Hyukpyo Hong**, Boseung Choi[*], Jae Kyoung Kim[*], Krešimir Josić[*]"
     venue: "Bioinformatics"
     url_biorxiv: "https://doi.org/10.1101/2021.08.16.456485"
     url_journal: "https://doi.org/10.1093/bioinformatics/btab618"
 
   - year: 2021
     title: "Personalized sleep-wake patterns aligned with circadian rhythm relieve daytime sleepiness"
-    authors: "Jaehyoung Hong†, Su Jung Choi†, Se Ho Park, **Hyukpyo Hong**, Victoria Booth, Eun Yeon Joo{*}, Jae Kyoung Kim{*}"
+    authors: "Jaehyoung Hong†, Su Jung Choi†, Se Ho Park, **Hyukpyo Hong**, Victoria Booth, Eun Yeon Joo[*], Jae Kyoung Kim[*]"
     venue: "iScience"
     url_biorxiv: "https://doi.org/10.1101/2021.03.15.435366"
     url_journal: "https://doi.org/10.1016/j.isci.2021.103129"
 
   - year: 2021
     title: "Derivation of stationary distributions of biochemical reaction networks via structure transformation"
-    authors: "**Hyukpyo Hong**†, Jinsu Kim†, M. Ali Al-Radhawi, Eduardo D. Sontag, Jae Kyoung Kim{*}"
+    authors: "**Hyukpyo Hong**†, Jinsu Kim†, M. Ali Al-Radhawi, Eduardo D. Sontag, Jae Kyoung Kim[*]"
     venue: "Communications Biology"
     url_biorxiv: "https://doi.org/10.1101/2021.03.23.436681"
     url_journal: "https://www.nature.com/articles/s42003-021-02117-x"
@@ -117,7 +117,7 @@ published:
 book_chapters:
 
   - title: "Beyond the Michaelis-Menten: Bayesian inference for enzyme kinetic analysis"
-    authors: "**Hyukpyo Hong**, Boseung Choi, Jae Kyoung Kim{*}"
+    authors: "**Hyukpyo Hong**, Boseung Choi, Jae Kyoung Kim[*]"
     venue: "Computational Methods for Estimating the Kinetics Parameters of Biological Systems, Methods in Molecular Biology, vol 2385. Humana, New York, NY."
     url_journal: "https://doi.org/10.1007/978-1-0716-1767-0_3"
     url_book: "https://www.springer.com/gp/book/9781071617663"

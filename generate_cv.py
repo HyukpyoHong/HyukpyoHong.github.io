@@ -54,8 +54,8 @@ def format_authors(authors):
     s = re.sub(r'\*\*(.+?)\*\*', r'\\textbf{\1}', authors)
     # dagger
     s = s.replace('†', r'$\dagger$')
-    # corresponding author {*} → ${}^*$
-    s = s.replace('{*}', r'${}^*$')
+    # corresponding author [*] → ${}^*$
+    s = s.replace('[*]', r'${}^*$')
     # Escape & in author lists
     s = s.replace('&', r'\&')
     return s

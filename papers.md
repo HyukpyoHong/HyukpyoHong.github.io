@@ -19,8 +19,9 @@ title: Papers & Talks
   <p style="font-size:0.95rem;font-weight:600;color:var(--text-muted);margin-bottom:0.6rem;">Preprints &amp; In Preparation</p>
   <ol class="paper-list" start="1">
     {% for paper in site.data.papers.preprints %}
+    {% assign display_authors = paper.authors | replace: '[*]', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     <li class="paper-item">
-      <div class="authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' | replace: '{*}', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' }}</div>
+      <div class="authors">{{ display_authors }}</div>
       <div class="title">
         {{ paper.title }}
         {% if paper.type == 'review' %}
@@ -39,8 +40,9 @@ title: Papers & Talks
   <p style="font-size:0.95rem;font-weight:600;color:var(--text-muted);margin-bottom:0.6rem;margin-top:1.5rem;">Published &amp; Accepted</p>
   <ol class="paper-list" start="1">
     {% for paper in site.data.papers.published %}
+    {% assign display_authors = paper.authors | replace: '[*]', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     <li class="paper-item">
-      <div class="authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' | replace: '{*}', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' }}</div>
+      <div class="authors">{{ display_authors }}</div>
       <div class="title">
         {{ paper.title }}
         {% if paper.url_arxiv %}<a href="{{ paper.url_arxiv }}" target="_blank" class="badge badge-arxiv">arXiv</a>{% endif %}
@@ -59,8 +61,9 @@ title: Papers & Talks
   <div class="section-title">Book Chapters</div>
   <ol class="paper-list" start="1">
     {% for chapter in site.data.papers.book_chapters %}
+    {% assign display_authors = chapter.authors | replace: '[*]', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     <li class="paper-item">
-      <div class="authors">{{ chapter.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      <div class="authors">{{ display_authors }}</div>
       <div class="title">
         {{ chapter.title }}
         {% if chapter.url_journal %}<a href="{{ chapter.url_journal }}" target="_blank" class="badge badge-journal">Link</a>{% endif %}
