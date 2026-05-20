@@ -167,10 +167,10 @@ def sec_talks(data, short=False):
         extra_url   = t.get('extra_url', '')
         extra_label = t.get('extra_label', '')
 
-        # event line
+        # event line — URL을 \textbf 밖으로 분리해서 hyperref 충돌 방지
         event_str = f"\\textbf{{{date}: {event}}}"
         if url:
-            event_str = f"\\textbf{{{date}: \\href{{{url}}}{{{event}}}}}"
+            event_str = f"\\textbf{{{date}: {event}}} [\\href{{{url}}}{{link}}]"
         loc_str = f"\\hfill {{{location}}}\\\\" if location else "\\\\"
         lines.append(f"{event_str} {loc_str}")
 
@@ -197,7 +197,7 @@ def sec_talks(data, short=False):
 
         event_str = f"\\textbf{{{date}: {event}}}"
         if url:
-            event_str = f"\\textbf{{{date}: \\href{{{url}}}{{{event}}}}}"
+            event_str = f"\\textbf{{{date}: {event}}} [\\href{{{url}}}{{link}}]"
         loc_str = f"\\hfill {{{location}}}\\\\" if location else "\\\\"
         lines.append(f"{event_str} {loc_str}")
 

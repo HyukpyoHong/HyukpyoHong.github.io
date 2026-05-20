@@ -31,8 +31,8 @@ jobs:
 
       - name: Compile CV.tex → PDF
         run: |
-          latexmk -pdf -f -interaction=nonstopmode CV.tex
-          latexmk -c  # clean aux files
+          latexmk -pdf -f -interaction=nonstopmode CV.tex || true
+          latexmk -c
           mv CV.pdf assets/HH_CV.pdf
 
       - name: Commit CV.pdf back to repo
