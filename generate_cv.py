@@ -10,7 +10,7 @@ import yaml, re, argparse
 from pathlib import Path
 
 DATA_DIR = Path("_data")
-OUTPUT   = Path("CV_latest.tex")
+OUTPUT   = Path("assets/CV_latest.tex")
 
 # ── 헬퍼 ─────────────────────────────────────────────────────
 
@@ -330,7 +330,7 @@ APPOINTMENT = r"""
 {\bf Institute for Basic Science (IBS)}, Daejeon, South Korea\\
 \vspace*{-.1in}
 \begin{list1}
-\item[] Visiting Scholar, Biomedical Mathematics Group \hfill May 2026--present
+\item[] Visiting Research Fellow, Biomedical Mathematics Group \hfill May 2026--present
 \end{list1}
 {\bf University of Wisconsin--Madison}, Madison, Wisconsin, USA\\
 \vspace*{-.1in}
