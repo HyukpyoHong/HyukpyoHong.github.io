@@ -42,12 +42,12 @@ courses:
 
   - term: "Fall 2018"
     role: "Teaching Assistant"
-    course: "Differential Equations and Applications (MAS 201) & Introduction to Mathematical Biology (MAS 480)"
+    course: "Differential Equations and Applications (MAS 201) and Introduction to Mathematical Biology (MAS 480)"
     institution: "KAIST"
 
   - term: "Spring 2018"
     role: "Teaching Assistant"
-    course: "Introduction to Linear Algebra (MAS 109), Linear Algebra (MAS 212)"
+    course: "Introduction to Linear Algebra (MAS 109) and Linear Algebra (MAS 212)"
     institution: "KAIST"
 
 mentoring:

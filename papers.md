@@ -17,14 +17,17 @@ title: Papers & Talks
   <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:1rem;">†: (co-)1st author &nbsp;·&nbsp; *: (co-)corresponding author</p>
 
   <p style="font-size:0.95rem;font-weight:600;color:var(--text-muted);margin-bottom:0.6rem;">Preprints &amp; In Preparation</p>
-  <ol class="paper-list" style="padding-left:0;" reversed>
+  <ol class="paper-list" start="1">
     {% for paper in site.data.papers.preprints %}
     <li class="paper-item">
       <div class="authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
       <div class="title">
         {{ paper.title }}
-        {% if paper.type == 'arxiv' %}
-          <a href="{{ paper.url }}" target="_blank" class="badge badge-arxiv">arXiv</a>
+        {% if paper.type == 'review' %}
+          {% if paper.url_arxiv %}<a href="{{ paper.url_arxiv }}" target="_blank" class="badge badge-arxiv">arXiv</a>{% endif %}
+          <span class="badge badge-preprint">Under Review</span>
+        {% elsif paper.type == 'submitted' %}
+          <span class="badge badge-preprint">Submitted</span>
         {% else %}
           <span class="badge badge-preprint">In Prep</span>
         {% endif %}
@@ -34,13 +37,16 @@ title: Papers & Talks
   </ol>
 
   <p style="font-size:0.95rem;font-weight:600;color:var(--text-muted);margin-bottom:0.6rem;margin-top:1.5rem;">Published &amp; Accepted</p>
-  <ol class="paper-list" style="padding-left:0;" reversed>
+  <ol class="paper-list" start="1">
     {% for paper in site.data.papers.published %}
     <li class="paper-item">
       <div class="authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
       <div class="title">
         {{ paper.title }}
-        <a href="{{ paper.url }}" target="_blank" class="badge badge-journal">Journal</a>
+        {% if paper.url_arxiv %}<a href="{{ paper.url_arxiv }}" target="_blank" class="badge badge-arxiv">arXiv</a>{% endif %}
+        {% if paper.url_biorxiv %}<a href="{{ paper.url_biorxiv }}" target="_blank" class="badge badge-arxiv">bioRxiv</a>{% endif %}
+        {% if paper.url_medrxiv %}<a href="{{ paper.url_medrxiv }}" target="_blank" class="badge badge-arxiv">medRxiv</a>{% endif %}
+        {% if paper.url_journal %}<a href="{{ paper.url_journal }}" target="_blank" class="badge badge-journal">Journal</a>{% endif %}
       </div>
       <div class="venue"><em>{{ paper.venue }}</em>, {{ paper.year }}</div>
     </li>
@@ -51,13 +57,13 @@ title: Papers & Talks
 <!-- BOOK CHAPTERS -->
 <div class="section">
   <div class="section-title">Book Chapters</div>
-  <ol class="paper-list" style="padding-left:0;">
+  <ol class="paper-list" start="1">
     {% for chapter in site.data.papers.book_chapters %}
     <li class="paper-item">
       <div class="authors">{{ chapter.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
       <div class="title">
         {{ chapter.title }}
-        <a href="{{ chapter.url }}" target="_blank" class="badge badge-journal">Link</a>
+        {% if chapter.url_journal %}<a href="{{ chapter.url_journal }}" target="_blank" class="badge badge-journal">Link</a>{% endif %}
       </div>
       <div class="venue">{{ chapter.venue }}</div>
     </li>

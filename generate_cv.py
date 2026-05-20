@@ -29,9 +29,16 @@ def tex_escape(s):
     if not isinstance(s, str):
         return str(s)
     replacements = [
-        ("&", r"\&"), ("%", r"\%"), ("#", r"\#"),
-        ("_", r"\_"), ("~", r"\textasciitilde{}"),
-        ("^", r"\textasciicircum{}"),
+        ("\\", r"\textbackslash{}"),
+        ("&",  r"\&"),
+        ("%",  r"\%"),
+        ("#",  r"\#"),
+        ("$",  r"\$"),
+        ("_",  r"\_"),
+        ("~",  r"\textasciitilde{}"),
+        ("^",  r"\textasciicircum{}"),
+        ("{",  r"\{"),
+        ("}",  r"\}"),
     ]
     for old, new in replacements:
         s = s.replace(old, new)
@@ -49,7 +56,7 @@ def format_authors(authors):
     s = s.replace('†', r'$\dagger$')
     # corresponding (*) — only standalone * not part of **
     s = re.sub(r'(?<!\*)\*(?!\*)', r'${}^*$', s)
-    # Escape & in author lists
+    # Escape & in author lists (but NOT inside already-processed LaTeX commands)
     s = s.replace('&', r'\&')
     return s
 
