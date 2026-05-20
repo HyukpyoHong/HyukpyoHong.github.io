@@ -14,12 +14,12 @@ title: Papers & Talks
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:15px;height:15px;fill:currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h3.6v8.4C4.8 19.5 7.9 21 12 21s7.2-1.5 8.4-3.1V9.5H24L12 0z"/></svg>
     Google Scholar Profile
   </a>
-  <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:1rem;">†: (co-)1st author &nbsp;·&nbsp; *: (co-)corresponding author</p>
+  <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:1rem;">†: (co-)1st author &nbsp;·&nbsp; *: (co-)corresponding author. Note: Where no author is designated as the first author (†), names are listed in alphabetical order by last name, as is standard practice in mathematical journals.</p>
 
   <p style="font-size:0.95rem;font-weight:600;color:var(--text-muted);margin-bottom:0.6rem;">Preprints &amp; In Preparation</p>
   <ol class="paper-list" start="1">
     {% for paper in site.data.papers.preprints %}
-    {% assign display_authors = paper.authors | replace: '[*]', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
+    {% assign display_authors = paper.authors | replace: '[*]', '*' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     <li class="paper-item">
       <div class="authors">{{ display_authors }}</div>
       <div class="title">
@@ -40,7 +40,7 @@ title: Papers & Talks
   <p style="font-size:0.95rem;font-weight:600;color:var(--text-muted);margin-bottom:0.6rem;margin-top:1.5rem;">Published &amp; Accepted</p>
   <ol class="paper-list" start="1">
     {% for paper in site.data.papers.published %}
-    {% assign display_authors = paper.authors | replace: '[*]', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
+    {% assign display_authors = paper.authors | replace: '[*]', '*' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     <li class="paper-item">
       <div class="authors">{{ display_authors }}</div>
       <div class="title">
@@ -61,7 +61,7 @@ title: Papers & Talks
   <div class="section-title">Book Chapters</div>
   <ol class="paper-list" start="1">
     {% for chapter in site.data.papers.book_chapters %}
-    {% assign display_authors = chapter.authors | replace: '[*]', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
+    {% assign display_authors = chapter.authors | replace: '[*]', '*' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     <li class="paper-item">
       <div class="authors">{{ display_authors }}</div>
       <div class="title">

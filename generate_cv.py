@@ -10,7 +10,7 @@ import yaml, re, argparse
 from pathlib import Path
 
 DATA_DIR = Path("_data")
-OUTPUT   = Path("CV.tex")
+OUTPUT   = Path("CV_latest.tex")
 
 # ── 헬퍼 ─────────────────────────────────────────────────────
 
@@ -125,6 +125,8 @@ def sec_talks(data, short=False):
     invited = [t for t in data['talks']['invited'] if t.get('cv', True)]
     if short:
         invited = invited[:10]
+
+    lines.append(r"\begin{itemize}[leftmargin=0pt, label={}]")
     for t in invited:
         date     = t['date']
         event    = tex_escape(t['event'])
@@ -134,46 +136,16 @@ def sec_talks(data, short=False):
         extra_url   = t.get('extra_url', '')
         extra_label = t.get('extra_label', '')
 
-        # 날짜, 위치
-        loc_part = f", {location}" if location else ""
-        lines.append(f"\\textbf{{{date}{loc_part}}} \\\\")
-        # 학회
-        if url:
-            lines.append(f"\\href{{{url}}}{{{event}}}")
-        else:
-            lines.append(event)
-        # 제목
+        loc_part   = f", {location}" if location else ""
+        event_part = f"\\href{{{url}}}{{{event}}}" if url else event
+        item_line  = f"    \\item \\textbf{{{date}{loc_part}, {event_part}}}"
         if title:
-            title_line = f"\\textit{{{tex_escape(title)}}}"
+            title_line = tex_escape(title)
             if extra_url:
                 title_line += f" [\\href{{{extra_url}}}{{\\ul{{{extra_label}}}}}]"
-            lines.append(title_line)
-        lines.append(r"\vspace{-8pt}")
-        lines.append("")
-
-    lines.append(r"\section{\sc Contributed talks and \\ Posters}")
-    contributed = [t for t in data['talks']['contributed'] if t.get('cv', True)]
-    for t in contributed:
-        date     = t['date']
-        event    = tex_escape(t['event'])
-        location = tex_escape(t.get('location', ''))
-        title    = t.get('title', '')
-        ttype    = t.get('type', 'contributed')
-        url      = t.get('url', '')
-
-        type_label = {'poster': 'Poster', 'short_talk': 'Short talk',
-                      'contributed': 'Contributed talk'}.get(ttype, ttype.title())
-
-        loc_part = f", {location}" if location else ""
-        lines.append(f"\\textbf{{{date}{loc_part}}} \\\\")
-        if url:
-            lines.append(f"\\href{{{url}}}{{{event}}}")
-        else:
-            lines.append(event)
-        if title:
-            lines.append(f"\\textit{{{tex_escape(title)}}} \\hfill{{{type_label}}}")
-        lines.append(r"\vspace{-8pt}")
-        lines.append("")
+            item_line += f" \\\\\n    \\textit{{{title_line}}}"
+        lines.append(item_line)
+    lines.append(r"\end{itemize}")
 
     return '\n'.join(lines)
 
@@ -267,6 +239,7 @@ def sec_service(data):
     lines.append("")
 
     lines.append(r"\section{\sc Outreach}")
+    lines.append(r"\begin{itemize}[leftmargin=0pt, label={}]")
     for o in data['service']['outreach']:
         url = o.get('url', '')
         event_title = tex_escape(o.get('title', ''))
@@ -274,13 +247,13 @@ def sec_service(data):
         title_str = f"\\href{{{url}}}{{\\textbf{{{date}: {event_title}}}}}" if url \
                     else f"\\textbf{{{date}: {event_title}}}"
         venue = tex_escape(o.get('venue', ''))
-        lines.append(f"{title_str} \\hfill {{{venue}}} \\\\")
+        item_line = f"    \\item {title_str}, {venue}"
         if o.get('talk_title'):
-            lines.append(f"\\textit{{{tex_escape(o['talk_title'])}}} \\\\")
+            item_line += f" \\\\\n    \\textit{{{tex_escape(o['talk_title'])}}}"
         if o.get('note'):
-            lines.append(tex_escape(o['note']))
-        lines.append(r"\vspace{-8pt}")
-        lines.append("")
+            item_line += f" \\\\\n    {tex_escape(o['note'])}"
+        lines.append(item_line)
+    lines.append(r"\end{itemize}")
     return '\n'.join(lines)
 
 

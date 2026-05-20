@@ -5,7 +5,7 @@ _site/
 .jekyll-metadata
 
 # ===== LaTeX temp files =====
-CV.tex
+CV_latest.tex
 *.aux
 *.log
 *.fls

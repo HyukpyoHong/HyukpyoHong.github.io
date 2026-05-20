@@ -4,16 +4,21 @@
 # =============================================================
 
 invited:
-
   - date: "Apr. 28, 2026"
     event: "Formal reaction kinetics and related questions"
     location: "Online"
     title: "Ubiquitous Asymptotic Robustness in Biochemical Systems"
+    url: "https://math.bme.hu/~jtoth/seminars.html"
+    extra_url: "https://youtu.be/UGHbM6dK7qo?si=iq3MJ9as1dHn2DSf"
+    extra_label: "video"
 
   - date: "Feb. 26, 2026"
     event: "Mathematics of Reaction Networks (MoRN) Seminar"
     location: "Online"
     title: "Ubiquitous Asymptotic Robustness in Biochemical Systems"
+    url: "https://researchseminars.org/seminar/MoRN"
+    extra_url: "https://www.youtube.com/watch?v=KC7gRxCBmnc&ab_channel=MathematicsofReactionNetworks"
+    extra_label: "video"
 
   - date: "Nov. 21, 2025"
     event: "Duke University Math Bio Seminar"
@@ -47,11 +52,6 @@ invited:
     title: "Ubiquitous Asymptotic Robustness in Biochemical Systems"
     url: "https://sites.google.com/view/midwest-mathbio-seminar/home"
 
-  - date: "Oct. 10, 2025"
-    event: "SMB Annual Meeting, Minisymposium"
-    location: "Seoul, Korea"
-    title: "Ubiquitous Asymptotic Robustness in Biochemical Systems"
-
   - date: "Oct. 1, 2025"
     event: "Seminar at Korea University"
     location: "Seoul, Korea"
@@ -61,11 +61,6 @@ invited:
     event: "2025 GLSIAM Meeting"
     location: "Chicago, IL, USA"
     title: "Digital biomarker of cognitive impairment: fractal patterns of human activity data"
-
-  - date: "Jul. 22, 2025"
-    event: "SIAM Annual Meeting, Minisymposium"
-    location: "Montréal, Canada"
-    title: "Ubiquitous Asymptotic Robustness in Biochemical Systems"
 
   - date: "Jul. 17, 2025"
     event: "SMB Annual Meeting"
@@ -80,11 +75,6 @@ invited:
   - date: "Jun. 20, 2025"
     event: "Pusan National University Math Seminar"
     location: "Busan, Korea"
-    title: "Parameter inference in Markovian and non-Markovian models"
-
-  - date: "Jun. 19, 2025"
-    event: "KSMB Annual Meeting, Special session"
-    location: "Daejeon, Korea"
     title: "Parameter inference in Markovian and non-Markovian models"
 
   - date: "Jun. 4, 2025"
@@ -107,29 +97,9 @@ invited:
     location: "Denver, CO, USA"
     title: "Network Translation of a Stochastic Reaction Network to Reveal Stationary Distributions"
 
-  - date: "Apr. 25, 2025"
-    event: "PDE & Mathematical Biology Seminar, UW–Madison"
-    location: "Madison, WI, USA"
-    title: "Ubiquitous Asymptotic Robustness in Biochemical Systems"
-
   - date: "Mar. 3, 2025"
     event: "Computational and Applied Math / Data Science Seminar, Arizona State University"
     location: "Online"
-    title: "Koopman representation: Linear representation of nonlinear dynamics"
-
-  - date: "Jan. 10, 2025"
-    event: "JMM 2025, Special session"
-    location: "Seattle, WA, USA"
-    title: "Ubiquitous Asymptotic Robustness in Biochemical Systems"
-
-  - date: "Nov. 22, 2024"
-    event: "KSIAM Annual Conference, Special session"
-    location: "Jeju, Korea"
-    title: "Koopman representation: Linear representation of nonlinear dynamics"
-
-  - date: "Nov. 21, 2024"
-    event: "Korean Biophysical Society"
-    location: "Jeju, Korea"
     title: "Koopman representation: Linear representation of nonlinear dynamics"
 
   - date: "Oct. 25, 2024"
@@ -165,44 +135,24 @@ invited:
   - date: "Jun. 3, 2024"
     event: "Data Science Seminar at Sogang University"
     location: "Seoul, Korea"
-    title: "Analysis of dynamical systems using \"easier\" representations"
+    title: "Analysis of dynamical systems using ``easier'' representations"
 
   - date: "May 23, 2024"
     event: "CM2LA Seminar at POSTECH"
     location: "Pohang, Korea"
-    title: "Analysis of dynamical systems using \"easier\" representations"
+    title: "Analysis of dynamical systems using ``easier'' representations"
 
   - date: "Apr. 25, 2024"
     event: "Mathematical Biology Seminar at UIUC"
     location: "Champaign, IL, USA"
-    title: "Analyzing long-term behavior of dynamical systems using \"easy-to-handle\" representations"
-
-  - date: "Jul. 12, 2024"
-    event: "KSMB-SMB Joint Annual Meeting, Minisymposium"
-    location: "Seoul, Korea"
-    title: "Inferring delays in partially observed gene regulation processes"
-
-  - date: "Nov. 14, 2023"
-    event: "UW–Madison Applied Algebra Seminar"
-    location: "Madison, WI, USA"
-    title: "Network translation allows for revealing long-term dynamics of stochastic reaction networks"
-
-  - date: "Oct. 20, 2023"
-    event: "KSIAM Annual Conference, Special session"
-    location: "Jeju, Korea"
-    title: "Network translation allows for revealing long-term dynamics of stochastic reaction networks"
-
-  - date: "Sep. 20, 2023"
-    event: "Seoul National University, Department of Mathematical Sciences"
-    location: "Seoul, Korea"
-    title: "Network translation allows for revealing long-term dynamics of stochastic reaction networks"
+    title: "Analyzing long-term behavior of dynamical systems using ``easy-to-handle'' representations"
 
   - date: "Aug. 17, 2023"
     event: "ICIAM 2023 Satellite Workshop: Stochastic Modeling and Data Analysis for Biological Systems"
     location: "Daejeon, Korea"
     title: "Network translation allows for revealing long-term dynamics of stochastic reaction networks"
 
-  - date: "Jul. 22, 2023"
+  - date: "Jul. 17, 2023"
     event: "SMB Annual Meeting, Minisymposium"
     location: "Columbus, OH, USA"
     title: "Network translation allows for revealing long-term dynamics of stochastic reaction networks"
@@ -373,7 +323,6 @@ contributed:
     location: "Torino, Italy"
     title: "Product-form stationary distributions for non-complex balanced networks"
     type: short_talk
-    url: "https://areeweb.polito.it/disma-excellence/CRNs/Workshop.html#Speakers"
 
   - date: "May 18, 2019"
     event: "KSIAM Spring Conference"

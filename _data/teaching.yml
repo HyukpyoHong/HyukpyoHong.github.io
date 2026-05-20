@@ -7,47 +7,47 @@ award: "2025 Postdoctoral Excellence in Teaching Award, Department of Mathematic
 courses:
   - term: "Spring 2026"
     role: "Instructor"
-    course: "Introductory Probability (MATH 331)"
+    course: "MATH331: Introductory Probability"
     institution: "UW–Madison"
 
   - term: "Fall 2025"
     role: "Instructor"
-    course: "Introductory Probability (MATH 331)"
+    course: "MATH331: Introductory Probability"
     institution: "UW–Madison"
 
   - term: "Spring 2025"
     role: "Instructor"
-    course: "Introductory Probability (MATH 331)"
+    course: "MATH331: Introductory Probability"
     institution: "UW–Madison"
 
   - term: "Fall 2024"
     role: "Instructor"
-    course: "Elementary Matrix and Linear Algebra (MATH 340)"
+    course: "MATH340: Elementary Matrix and Linear Algebra"
     institution: "UW–Madison"
 
   - term: "Spring 2024"
     role: "Instructor"
-    course: "Linear Algebra and Differential Equations (MATH 320)"
+    course: "MATH320: Linear Algebra and Differential Equations"
     institution: "UW–Madison"
 
   - term: "Fall 2023"
     role: "Instructor"
-    course: "Linear Algebra and Differential Equations (MATH 320)"
+    course: "MATH320: Linear Algebra and Differential Equations"
     institution: "UW–Madison"
 
   - term: "Spring 2019"
     role: "Teaching Assistant"
-    course: "Differential Equations and Applications (MAS 201)"
+    course: "MAS201: Differential Equations and Applications"
     institution: "KAIST"
 
   - term: "Fall 2018"
     role: "Teaching Assistant"
-    course: "Differential Equations and Applications (MAS 201) and Introduction to Mathematical Biology (MAS 480)"
+    course: "MAS201: Differential Equations and Applications, MAS480: Introduction to Mathematical Biology"
     institution: "KAIST"
 
   - term: "Spring 2018"
     role: "Teaching Assistant"
-    course: "Introduction to Linear Algebra (MAS 109) and Linear Algebra (MAS 212)"
+    course: "MAS109: Introduction to Linear Algebra,  MAS212: Linear Algebra"
     institution: "KAIST"
 
 mentoring:

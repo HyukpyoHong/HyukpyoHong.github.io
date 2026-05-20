@@ -1,0 +1,346 @@
+\documentclass[margin,line]{res}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{soul}
+\usepackage{kotex}
+\usepackage{multicol}
+\usepackage{comment}
+\usepackage{fancyhdr}
+\newcommand{\shorttoday}{%
+  \ifcase\month
+  \or Jan.\or Feb.\or Mar.\or Apr.\or May\or Jun.\or Jul.\or Aug.\or Sep.\or Oct.\or Nov.\or Dec.\fi
+  \space\number\day, \number\year}
+
+\hypersetup{
+    colorlinks=false,
+    linkcolor=blue,
+    linkbordercolor=black,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdfborderstyle={/S/U/W 1}
+}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\textheight=9.1in
+\itemsep=0in
+\parsep=0in
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight}
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\newcommand{\vspaceaward}{\vspace*{-3.0mm}}
+\newcommand{\vspacesection}{\vspace*{-1.5mm}}
+
+\begin{document}
+\name{Hyukpyo Hong \vspace*{.1in} \hspace{10.5cm} \small{Last updated: \shorttoday}}
+
+\begin{resume}
+
+
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{2.7in}p{4in}}
+\href{https://ibs.re.kr/bimag}{Biomedical Mathematics Group} & {\it E-mail:} hyukpyo.hong13@gmail.com \\
+Institute for Basic Science (IBS) & {\it Web:} \url{https://hyukpyohong.github.io}\\
+55 Expo-ro Yuseong-gu & \\
+Daejeon 34126, South Korea & \\
+\end{tabular}
+\vspacesection
+
+
+\section{\sc Appointments}
+{\bf Institute for Basic Science (IBS)}, Daejeon, South Korea\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Visiting Scholar, Biomedical Mathematics Group \hfill May 2026--present
+\end{list1}
+{\bf University of Wisconsin--Madison}, Madison, Wisconsin, USA\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Van Vleck Assistant Professor, Department of Mathematics \hfill Aug. 2023--May 2026
+\end{list1}
+\vspacesection
+
+
+\section{\sc Education}
+{\bf KAIST}, Daejeon, South Korea\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Ph.D.\ in Mathematical Sciences \hfill Feb.\ 2018--Aug.\ 2023 \\
+Advisor: \href{https://mathsci.kaist.ac.kr/~jaekkim}{Jae Kyoung Kim} \\
+Thesis: Development of stochastic model reduction framework for \\
+\phantom{HHHHi} analysis and inference of biochemical reaction networks
+\vspace*{.05in}
+\item[] B.S.\ in Mathematical Sciences \hfill Mar.\ 2013--Feb.\ 2018
+\end{list1}
+\vspacesection
+
+
+\section{\sc Research Interests}
+\textbf{Fields}: Mathematical biology, ODEs, Stochastic processes, Bayesian statistics, Digital medicine
+
+\vspace{-10pt}
+\textbf{Topics}: Steady states of ODEs, stationary distributions of CTMCs, Koopman operator theory,
+MCMC methods, parameter estimation for non-Markovian stochastic models,
+metabolic control analysis, homeostasis and adaptation in biological systems,
+neurodegenerative disease-related alteration of human motor activity
+\vspacesection
+
+\section{\sc Papers}
+$\dagger$: (co-)1st author, ${}^*$: (co-)corresponding author. \\
+Note: Where no author is designated as the first author ($\dagger$), names are listed in alphabetical order by last name, as is standard practice in mathematical journals.
+
+\vspace{-5pt}
+In preparation or preprint: \vspace{7pt}
+\begin{enumerate}[leftmargin=*]
+    \item Ella Buelling$\dagger$, Wolfram Liebermeister${}^*$, \textbf{Hyukpyo Hong}${}^*$, Connections between structural sensitivity analysis and metabolic control analysis, \textit{in preparation}
+
+    \item \textbf{Hyukpyo Hong}, Seewoo Lee, Necessary and sufficient conditions of the existence of a finite dimensional invariant subspace for polynomial ODEs, \textit{in preparation}
+
+    \item Geonhee Ryu$\dagger$, \textbf{Hyukpyo Hong}${}^*$, Daewook Kim${}^*$, Non-autonomous dynamics learning via Koopman-based Neural Networks, \textit{in preparation}
+
+    \item \textbf{Hyukpyo Hong}$\dagger$, Qin Li$\dagger$, Matthew Colbrook, Hanbaek Lyu${}^*$, Finding Koopman Invariant Subspaces via Personalized PageRank, \textit{Submitted}
+
+    \item \textbf{Hyukpyo Hong}$\dagger$${}^*$, Diego Rojas La Luz$\dagger$, Gheorghe Craciun${}^*$, Ubiquitous asymptotic robustness in biochemical systems, \textit{Under review}; [\href{https://doi.org/10.48550/arXiv.2505.21900}{\ul{arXiv}}]
+
+\end{enumerate}
+
+\vspace{-5pt}
+Published or accepted: \vspace{7pt}
+\begin{enumerate}[leftmargin=*]
+    \item Dongju Lim$\dagger$, Kyeong Tae Ko$\dagger$, \textbf{Hyukpyo Hong}, Hyojung Lee, Boseung Choi, Won Chang, Sunhwa Choi${}^*$, Jae Kyoung Kim${}^*$, A history-dependent approach for accurate initial condition estimation in epidemic models, \textit{PLoS Computational Biology}, 2025; [\href{https://doi.org/10.1371/journal.pcbi.1013438}{\ul{journal}}]
+
+    \item \textbf{Hyukpyo Hong}$\dagger$, Seokhwan Moon$\dagger$, Yuji Hirono$\dagger$${}^*$, Jae Kyoung Kim${}^*$, Topological criterion for robust perfect adaptation of reaction fluxes in biological networks, \textit{iScience}, 2025; [\href{https://doi.org/10.48550/arXiv.2302.01270}{\ul{arXiv}}]; [\href{https://doi.org/10.1016/j.isci.2025.112394}{\ul{journal}}]
+
+    \item \textbf{Hyukpyo Hong}$\dagger$, Eunjin Eom$\dagger$, Hyojung Lee, Sunhwa Choi${}^*$, Boseung Choi${}^*$, Jae Kyoung Kim${}^*$, Overcoming bias in estimating epidemiological parameters with realistic history-dependent disease spread dynamics, \textit{Nature Communications}, 2024; [\href{https://doi.org/10.1038/s41467-024-53095-7}{\ul{journal}}]
+
+    \item Hyeontae Jo$\dagger$, \textbf{Hyukpyo Hong}$\dagger$, Hyung Ju Hwang, Won Chang, Jae Kyoung Kim${}^*$, Density physics-informed neural networks reveal sources of cell heterogeneity in signal transduction, \textit{Patterns}, 2023; [\href{https://doi.org/10.1101/2023.07.31.551393}{\ul{bioRxiv}}]; [\href{https://doi.org/10.1016/j.patter.2023.100899}{\ul{journal}}]
+
+    \item \textbf{Hyukpyo Hong}$\dagger$, Mark Jayson Cortez, Yu-Yu Cheng, Hang J. Kim, Boseung Choi${}^*$, Krešimir Josić${}^*$, Jae Kyoung Kim${}^*$, Inferring delays in partially observed gene regulation processes, \textit{Bioinformatics}, 2023; [\href{https://doi.org/10.1101/2022.11.27.518074}{\ul{bioRxiv}}]; [\href{https://doi.org/10.1093/bioinformatics/btad670}{\ul{journal}}]
+
+    \item \textbf{Hyukpyo Hong}, Bryan S. Hernandez, Jinsu Kim, Jae Kyoung Kim${}^*$, Computational translation framework identifies biochemical reaction networks with special topologies and their long-term dynamics, \textit{SIAM Journal on Applied Mathematics}, 2023; [\href{https://doi.org/10.48550/arXiv.2212.01171}{\ul{arXiv}}]; [\href{https://doi.org/10.1137/22M150469X}{\ul{journal}}]
+
+    \item \textbf{Hyukpyo Hong}$\dagger$, Ji Yun Noh$\dagger$, Hyojung Lee, Sunhwa Choi, Boseung Choi, Jae Kyoung Kim${}^*$, Eui-Cheol Shin${}^*$, Modeling incorporating the severity-reducing long-term immunity: higher viral transmission paradoxically reduces severe COVID-19 during endemic transition, \textit{Immune Network}, 2022; [\href{https://doi.org/10.1101/2022.02.09.22270633}{\ul{medRxiv}}]; [\href{https://doi.org/10.4110/in.2022.22.e23}{\ul{journal}}]
+
+    \item Dae Wook Kim$\dagger$, \textbf{Hyukpyo Hong}$\dagger$, Jae Kyoung Kim${}^*$, Systematic inference identifies a major source of heterogeneity in cell signaling dynamics: the rate-limiting step number, \textit{Science Advances}, 2022; [\href{https://www.science.org/doi/10.1126/sciadv.abl4598}{\ul{journal}}]
+
+    \item Yun Min Song$\dagger$, \textbf{Hyukpyo Hong}$\dagger$, Jae Kyoung Kim${}^*$, Universally valid reduction of multiscale stochastic biochemical systems with simple non-elementary propensities, \textit{PLoS Computational Biology}, 2021; [\href{https://doi.org/10.1101/2021.04.08.438974}{\ul{bioRxiv}}]; [\href{https://doi.org/10.1371/journal.pcbi.1008952}{\ul{journal}}]
+
+    \item Mark Jayson Cortez$\dagger$, \textbf{Hyukpyo Hong}, Boseung Choi${}^*$, Jae Kyoung Kim${}^*$, Krešimir Josić${}^*$, Hierarchical Bayesian models for inference in biochemical reactions with delays, \textit{Bioinformatics}, 2021; [\href{https://doi.org/10.1101/2021.08.16.456485}{\ul{bioRxiv}}]; [\href{https://doi.org/10.1093/bioinformatics/btab618}{\ul{journal}}]
+
+    \item Jaehyoung Hong$\dagger$, Su Jung Choi$\dagger$, Se Ho Park, \textbf{Hyukpyo Hong}, Victoria Booth, Eun Yeon Joo${}^*$, Jae Kyoung Kim${}^*$, Personalized sleep-wake patterns aligned with circadian rhythm relieve daytime sleepiness, \textit{iScience}, 2021; [\href{https://doi.org/10.1101/2021.03.15.435366}{\ul{bioRxiv}}]; [\href{https://doi.org/10.1016/j.isci.2021.103129}{\ul{journal}}]
+
+    \item \textbf{Hyukpyo Hong}$\dagger$, Jinsu Kim$\dagger$, M. Ali Al-Radhawi, Eduardo D. Sontag, Jae Kyoung Kim${}^*$, Derivation of stationary distributions of biochemical reaction networks via structure transformation, \textit{Communications Biology}, 2021; [\href{https://doi.org/10.1101/2021.03.23.436681}{\ul{bioRxiv}}]; [\href{https://www.nature.com/articles/s42003-021-02117-x}{\ul{journal}}]
+
+\end{enumerate}
+\vspacesection
+\section{\sc Book Chapters}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Hyukpyo Hong}, Boseung Choi, Jae Kyoung Kim${}^*$, Beyond the Michaelis-Menten: Bayesian inference for enzyme kinetic analysis, Computational Methods for Estimating the Kinetics Parameters of Biological Systems, Methods in Molecular Biology, vol 2385. Humana, New York, NY.; [\href{https://doi.org/10.1007/978-1-0716-1767-0_3}{\ul{journal}}]; [\href{https://www.springer.com/gp/book/9781071617663}{\ul{link}}]
+\end{enumerate}
+\section{\sc Research Grants}
+2019–2023 National Research Foundation of Korea (NRF), NRF-2019-Fostering Core Leaders of the Future Basic Science Program/Global Ph.D. Fellowship Program, 2019H1A2A1075303, \textbf{Principal Investigator} (120,000 USD)\\
+Title: \textit{Development of Stochastic Model Reduction Methodology and its Application to an Optogenetic System}
+
+\vspacesection
+\section{\sc Honors and Awards}
+\begin{itemize}[leftmargin=-1pt, label={}]
+    \item 2025 Postdoctoral Excellence in Teaching Award, UW–Madison
+    \item 2025 Excellent Dissertation Award, Korean Mathematical Society
+    \item 2024 KSIAM Next Generation Researcher Award, Korean Society for Industrial and Applied Mathematics
+    \item 2022 SIAM Student Travel Award, SIAM
+    \item 2022 Blood Donor Hall of Fame (100 donations), Korean Red Cross
+    \item 2019–2023 Global Ph.D. Fellowship (Full Tuition), National Research Foundation of Korea
+    \item 2017 36th National Undergraduate Mathematics Competition Silver Award, Korean Mathematical Society
+    \item 2016 Mirae Asset Global Exchange Scholarship, Mirae Asset Park Hyeon Joo Foundation
+    \item 2014 33rd National Undergraduate Mathematics Competition Silver Award, Korean Mathematical Society
+    \item 2014 Dean's List Award, College of Natural Sciences, KAIST
+    \item 2013 32nd National Undergraduate Mathematics Competition Silver Award, Korean Mathematical Society
+    \item 2013–2017 National Scholarship for Science and Engineering (Full Tuition), Korea Student Aid Foundation
+\end{itemize}
+\vspacesection
+\section{\sc Teaching}
+\textbf{UW--Madison}
+\begin{itemize}
+    \item Spring 2026: [Instructor] Introductory Probability (MATH 331)
+    \item Fall 2025: [Instructor] Introductory Probability (MATH 331)
+    \item Spring 2025: [Instructor] Introductory Probability (MATH 331)
+    \item Fall 2024: [Instructor] Elementary Matrix and Linear Algebra (MATH 340)
+    \item Spring 2024: [Instructor] Linear Algebra and Differential Equations (MATH 320)
+    \item Fall 2023: [Instructor] Linear Algebra and Differential Equations (MATH 320)
+\end{itemize}
+\vspacesection
+
+\textbf{KAIST}
+\begin{itemize}
+    \item Spring 2019: [Teaching Assistant] Differential Equations and Applications (MAS 201)
+    \item Fall 2018: [Teaching Assistant] Differential Equations and Applications (MAS 201) and Introduction to Mathematical Biology (MAS 480)
+    \item Spring 2018: [Teaching Assistant] Introduction to Linear Algebra (MAS 109) and Linear Algebra (MAS 212)
+\end{itemize}
+
+\section{\sc Mentoring}
+\textbf{UW--Madison}
+\begin{itemize}
+    \item Jun. 2024 – present: Ella Buelling, Junior student, Edgewood High School\\
+    Working on connections between the hypergraph representation of biochemical reaction networks and metabolic control analysis.
+\end{itemize}
+\vspacesection
+\textbf{KAIST}
+\begin{itemize}
+    \item Jun. 2023 – Mar. 2025: Seokhwan Moon, Undergraduate, Department of Mathematics, POSTECH\\
+    Investigated structural conditions under which ODE steady-state solutions remain independent of system parameters. Published in \textit{iScience}.
+    \item Spring 2019: Minyoo Kim, Undergraduate, Department of Mathematics, KAIST\\
+    Investigated \textit{the total quasi-steady-state approximation for a competitive system}. Won a poster prize at the 2019 KSIAM Spring Conference and a prize in the URP final evaluation.
+\end{itemize}
+\vspacesection
+\section{\sc Invited talks}
+\begin{itemize}[leftmargin=0pt, label={}]
+    \item \textbf{Apr. 28, 2026, Online, Formal reaction kinetics and related questions} \\
+    \textit{Ubiquitous Asymptotic Robustness in Biochemical Systems}
+    \item \textbf{Feb. 26, 2026, Online, Mathematics of Reaction Networks (MoRN) Seminar} \\
+    \textit{Ubiquitous Asymptotic Robustness in Biochemical Systems}
+    \item \textbf{Nov. 21, 2025, Durham, NC, USA, Duke University Math Bio Seminar} \\
+    \textit{Identifying major sources of heterogeneity in antibiotic cell responses via Bayesian inference and Physics-informed neural networks}
+    \item \textbf{Nov. 20, 2025, Durham, NC, USA, NC State Univ. TPB Cluster} \\
+    \textit{Bridging Mathematical Theory and Biological Challenges: From intracellular networks to human-scale dynamics}
+    \item \textbf{Nov. 19, 2025, Durham, NC, USA, NC State Univ. Dept. of Mathematics} \\
+    \textit{Leveraging Koopman Operator Theory and Graph Representation for Deeper Insight into Complex Dynamical Systems}
+    \item \textbf{Nov. 13, 2025, Seoul, Korea, Seminar at Seoul National University} \\
+    \textit{Finite-Dimensional Representations of the Koopman Operator: Equation- and Data-Driven Approaches}
+    \item \textbf{Oct. 31, 2025, Madison, WI, USA, \href{https://wiki.math.wisc.edu/index.php/Applied/ACMS}{UW–Madison Applied and Computational Mathematics Seminar}} \\
+    \textit{Finite-Dimensional Representations of the Koopman Operator: Equation- and Data-Driven Approaches}
+    \item \textbf{Oct. 28, 2025, Online, \href{https://sites.google.com/view/midwest-mathbio-seminar/home}{Midwest Mathematical Biology Seminar}} \\
+    \textit{Ubiquitous Asymptotic Robustness in Biochemical Systems}
+    \item \textbf{Oct. 10, 2025, Seoul, Korea, SMB Annual Meeting, Minisymposium} \\
+    \textit{Ubiquitous Asymptotic Robustness in Biochemical Systems}
+    \item \textbf{Oct. 1, 2025, Seoul, Korea, Seminar at Korea University} \\
+    \textit{Leveraging Koopman Operator Theory and Graph Representation for Deeper Insight into Complex Dynamical Systems}
+    \item \textbf{Sep. 27, 2025, Chicago, IL, USA, 2025 GLSIAM Meeting} \\
+    \textit{Digital biomarker of cognitive impairment: fractal patterns of human activity data}
+    \item \textbf{Jul. 22, 2025, Montréal, Canada, SIAM Annual Meeting, Minisymposium} \\
+    \textit{Ubiquitous Asymptotic Robustness in Biochemical Systems}
+    \item \textbf{Jul. 17, 2025, Edmonton, Canada, SMB Annual Meeting} \\
+    \textit{Inferring delay distributions in partially observed biological processes}
+    \item \textbf{Jul. 8, 2025, Madison, WI, USA, SIAM Conference on Applied Algebraic Geometry} \\
+    \textit{Ubiquitous Asymptotic Robustness in Biochemical Systems}
+    \item \textbf{Jun. 20, 2025, Busan, Korea, Pusan National University Math Seminar} \\
+    \textit{Parameter inference in Markovian and non-Markovian models}
+    \item \textbf{Jun. 19, 2025, Daejeon, Korea, KSMB Annual Meeting, Special session} \\
+    \textit{Parameter inference in Markovian and non-Markovian models}
+    \item \textbf{Jun. 4, 2025, Daejeon, Korea, KAIST Brain \& Cognitive Sciences Seminar} \\
+    \textit{Digital biomarker of cognitive impairment: fractal patterns of human activity data}
+    \item \textbf{Jun. 2, 2025, Seoul, Korea, Konkuk University Math Seminar} \\
+    \textit{Parameter inference in Markovian and non-Markovian models}
+    \item \textbf{May 17, 2025, Seoul, Korea, KSIAM Spring Conference} \\
+    \textit{KSIAM Next Generation Researcher Award speech}
+    \item \textbf{May 15, 2025, Denver, CO, USA, SIAM Conference on Applied Dynamical Systems} \\
+    \textit{Network Translation of a Stochastic Reaction Network to Reveal Stationary Distributions}
+    \item \textbf{Apr. 25, 2025, Madison, WI, USA, PDE \& Mathematical Biology Seminar, UW–Madison} \\
+    \textit{Ubiquitous Asymptotic Robustness in Biochemical Systems}
+    \item \textbf{Mar. 3, 2025, Online, Computational and Applied Math / Data Science Seminar, Arizona State University} \\
+    \textit{Koopman representation: Linear representation of nonlinear dynamics}
+    \item \textbf{Jan. 10, 2025, Seattle, WA, USA, JMM 2025, Special session} \\
+    \textit{Ubiquitous Asymptotic Robustness in Biochemical Systems}
+    \item \textbf{Nov. 22, 2024, Jeju, Korea, KSIAM Annual Conference, Special session} \\
+    \textit{Koopman representation: Linear representation of nonlinear dynamics}
+    \item \textbf{Nov. 21, 2024, Jeju, Korea, Korean Biophysical Society} \\
+    \textit{Koopman representation: Linear representation of nonlinear dynamics}
+    \item \textbf{Oct. 25, 2024, Cincinnati, OH, USA, Applied Math Seminar at the University of Cincinnati} \\
+    \textit{Koopman representation: Linear representation of nonlinear dynamics}
+    \item \textbf{Oct. 7, 2024, Online, Seminar at the University of the Philippines Diliman} \\
+    \textit{Accurate epidemiological parameters estimation with realistic history-dependent disease spread dynamics}
+    \item \textbf{Aug. 1, 2024, Busan, Korea, Seminar at Pusan National University} \\
+    \textit{Analysis of dynamical systems using "easier" representations}
+    \item \textbf{Jul. 31, 2024, Daejeon, Korea, Biomedical Mathematics Seminar at Institute for Basic Science} \\
+    \textit{Koopman representation: Linear representation--not an approximation--of nonlinear dynamics}
+    \item \textbf{Jul. 2–4, 2024, Seoul, Korea, SMB Annual Meeting} \\
+    \textit{1. Inferring delays in partially observed gene regulation processes; 2. Density-PINNs reveal that multiple pathways reduce cell-to-cell heterogeneity in antibiotic responses}
+    \item \textbf{Jun. 4, 2024, Sejong, Korea, Data Computational Sciences Special Lecture at Korea University, Sejong Campus} \\
+    \textit{How to sample random numbers from a target distribution}
+    \item \textbf{Jun. 3, 2024, Seoul, Korea, Data Science Seminar at Sogang University} \\
+    \textit{Analysis of dynamical systems using "easier" representations}
+    \item \textbf{May 23, 2024, Pohang, Korea, CM2LA Seminar at POSTECH} \\
+    \textit{Analysis of dynamical systems using "easier" representations}
+    \item \textbf{Apr. 25, 2024, Champaign, IL, USA, Mathematical Biology Seminar at UIUC} \\
+    \textit{Analyzing long-term behavior of dynamical systems using "easy-to-handle" representations}
+    \item \textbf{Jul. 12, 2024, Seoul, Korea, KSMB-SMB Joint Annual Meeting, Minisymposium} \\
+    \textit{Inferring delays in partially observed gene regulation processes}
+    \item \textbf{Nov. 14, 2023, Madison, WI, USA, UW–Madison Applied Algebra Seminar} \\
+    \textit{Network translation allows for revealing long-term dynamics of stochastic reaction networks}
+    \item \textbf{Oct. 20, 2023, Jeju, Korea, KSIAM Annual Conference, Special session} \\
+    \textit{Network translation allows for revealing long-term dynamics of stochastic reaction networks}
+    \item \textbf{Sep. 20, 2023, Seoul, Korea, Seoul National University, Department of Mathematical Sciences} \\
+    \textit{Network translation allows for revealing long-term dynamics of stochastic reaction networks}
+    \item \textbf{Aug. 17, 2023, Daejeon, Korea, ICIAM 2023 Satellite Workshop: Stochastic Modeling and Data Analysis for Biological Systems} \\
+    \textit{Network translation allows for revealing long-term dynamics of stochastic reaction networks}
+    \item \textbf{Jul. 22, 2023, Columbus, OH, USA, SMB Annual Meeting, Minisymposium} \\
+    \textit{Network translation allows for revealing long-term dynamics of stochastic reaction networks}
+    \item \textbf{Jun. 27, 2023, Jeju, Korea, The 8th CIJK International Conference on Mathematical and Theoretical Biology, Minisymposium} \\
+    \textit{Things we have been overlooking in infectious disease modeling}
+    \item \textbf{May 19, 2023, Pyeongchang, Korea, KSIAM Spring Conference, Special session} \\
+    \textit{Increasing viral transmission paradoxically reduces severe COVID-19 during endemic transition}
+    \item \textbf{Dec. 19, 2022, Daejeon, Korea, Mini-workshop on Recent Trends in Pure and Applied Mathematics} \\
+    \textit{Inferring delays in partially observed gene regulatory networks}
+    \item \textbf{Nov. 21, 2022, Seoul, Korea, Population Approach Group Korea Annual Meeting} \\
+    \textit{Increasing viral transmission paradoxically reduces severe COVID-19 during endemic transition}
+    \item \textbf{Oct. 19, 2022, Seoul, Korea, Global KMS International Conference, Special session} \\
+    \textit{Systematic inference identifies a major source of heterogeneity in non-Markovian cell signaling dynamics}
+    \item \textbf{Jun. 25, 2022, Yeosu, Korea, KSMB Annual Meeting, Special session} \\
+    \textit{Increasing viral transmission paradoxically reduces severe COVID-19 during endemic transition}
+    \item \textbf{Jun. 22, 2022, Online, \href{https://www.ibric.org/bric/webinar/academic-all.do?mode=view&id=394}{BRIC Webinar}} \\
+    \textit{Systematic inference for cell signalling pathways identifies a key determinant of cell-to-cell variability}
+    \item \textbf{May 28, 2022, Daejeon, Korea, KSIAM Spring Conference, Special session} \\
+    \textit{Systematic inference for cell signalling pathways identifies a key determinant of cell-to-cell variability}
+    \item \textbf{Aug. 27, 2021, Online, Korea, KSMB Annual Meeting, Special session} \\
+    \textit{Inference of stochastic dynamics in biochemical reaction networks}
+    \item \textbf{Jun. 16, 2021, Online, SMB Annual Meeting, Minisymposium} \\
+    \textit{Inference of stochastic dynamics in biochemical reaction networks}
+    \item \textbf{May 27, 2021, Online, SIAM Conference on Applications of Dynamical Systems, Minisymposium} \\
+    \textit{Derivation of stationary distributions of stochastic chemical reaction networks via network translation}
+    \item \textbf{May 13, 2021, Online, \href{https://researchseminars.org/seminar/MoRN}{Seminar on the Mathematics of Reaction Networks}} \\
+    \textit{Derivation of stationary distributions of stochastic chemical reaction networks via network translation [\href{https://www.youtube.com/watch?v=KC7gRxCBmnc&ab_channel=MathematicsofReactionNetworks}{\ul{video}}]}
+    \item \textbf{Oct. 24, 2020, Online, KMS Annual Meeting, Minisymposium} \\
+    \textit{Derivation of stationary distributions of biochemical reaction networks via structure transformation}
+\end{itemize}
+\vspacesection
+\section{\sc Academic \\ Service}
+\textbf{Jun. 2021: Support Staff, SMB Annual Meeting} \\
+Hosted Zoom sessions for the Asia time zone.
+\vspace{-5pt}
+
+\section{\sc Peer Review}
+PLoS Computational Biology, Acta Biotheoretica, Stat, PCI Math Comp Biol, Frontiers in Public Health
+\vspace{-8pt}
+
+\section{\sc Outreach}
+\begin{itemize}[leftmargin=0pt, label={}]
+    \item \textbf{May. 26, 2026: Alumni Career Talk}, KAIST Department of Mathematical Sciences \\
+    \textit{Preparing for a Postdoc Abroad: A Three-Year Retrospective}
+    \item \textbf{Jun. 20, 2023: KAIST Math Graduate Student Seminar}, KAIST, Daejeon, Korea \\
+    \textit{Preparation for Postdoc Positions}
+    \item \textbf{Sep. 16, 2022: Science Slam-D Public Lecture}, Yongsan High School, Daejeon, Korea \\
+    \textit{Mathematics Meets Biology: Discovering the Optimal Sleep Pattern through Mathematical Modeling} \\
+    Hosted by NST, IBS, Daejeon MBC (TV network), and Hello DD (Press). Delivered for high school students.
+    \item \href{https://youtu.be/MyAU7jTFzMc?feature=shared}{\textbf{Apr. 27, 2021: Mobile Science Classroom}}, National Research Foundation of Korea \\
+    \textit{Mathematical Biology: Bridging Mathematics and the Life Sciences} \\
+    Delivered for middle school students.
+\end{itemize}
+
+\vspace{-8pt}
+\end{resume}
+\end{document}
