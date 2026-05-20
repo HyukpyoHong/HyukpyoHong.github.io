@@ -17,9 +17,9 @@ title: ""
       Hyukpyo Hong
       <span class="profile-name-ko">&nbsp;(홍혁표)</span>
     </div>
-    <div class="profile-title">Visiting Scholar</div>
+    <div class="profile-title">Visiting Research Fellow</div>
     <div class="profile-inst">
-      <a href="https://math.wisc.edu/" target="_blank">Biomedical Mathematics Group</a>,
+      <a href="https://www.ibs.re.kr/bimag/" target="_blank">Biomedical Mathematics Group</a>,
       Institue for Basic Science
     </div>
     <div class="profile-email">hyukpyo.hong13 [at] gmail [dot] com</div>
@@ -44,7 +44,7 @@ title: ""
 <div class="section">
   <div class="section-title">About</div>
   <div class="bio-text">
-    <p>I am a Van Vleck Assistant Professor in the <a href="https://math.wisc.edu/" target="_blank">Department of Mathematics at the University of Wisconsin–Madison</a>. My postdoctoral mentor is <a href="https://people.math.wisc.edu/~craciun/" target="_blank">Gheorghe Craciun</a>. I also collaborate with <a href="https://hanbaeklyu.com/" target="_blank">Hanbaek Lyu</a>, <a href="https://people.math.wisc.edu/~qli36/" target="_blank">Qin Li</a>, and <a href="https://www.damtp.cam.ac.uk/user/mjc249/home.html" target="_blank">Matthew Colbrook</a> on Koopman theory, and with <a href="https://wolfram-liebermeister.pages.mia.inra.fr/web/" target="_blank">Wolfram Liebermeister</a> on structural sensitivity analysis and metabolic control analysis.</p>
+    <p>I am a Visiting Research Fellow in the <a href="https://www.ibs.re.kr/bimag/" target="_blank">Biomedical Mathematics Group at Institute for Basic Science</a>. Recently until May 2026, I was a Van Vleck Assisntant Professor in the <a href="https://www.math.wisc.edu" target="_blank">Department of Mathematics at the University of Wisconsin–Madison</a>, where my postdoctoral mentor was <a href="https://people.math.wisc.edu/~craciun/" target="_blank">Gheorghe Craciun</a>. I also collaborate with <a href="https://hanbaeklyu.com/" target="_blank">Hanbaek Lyu</a>, <a href="https://people.math.wisc.edu/~qli36/" target="_blank">Qin Li</a>, and <a href="https://www.damtp.cam.ac.uk/user/mjc249/home.html" target="_blank">Matthew Colbrook</a> on Koopman theory, and with <a href="https://wolfram-liebermeister.pages.mia.inra.fr/web/" target="_blank">Wolfram Liebermeister</a> on structural sensitivity analysis and metabolic control analysis.</p>
     <p>I received my Ph.D. from the <a href="https://mathsci.kaist.ac.kr/home/en/" target="_blank">Department of Mathematical Sciences at KAIST</a>, under the supervision of <a href="http://mathsci.kaist.ac.kr/~jaekkim/" target="_blank">Jae Kyoung Kim</a>. My research focuses primarily on mathematical biology and dynamical systems.</p>
   </div>
 </div>
