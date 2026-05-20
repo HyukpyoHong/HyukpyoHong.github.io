@@ -1,0 +1,44 @@
+name: Build CV and Deploy Site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:  # 수동 실행도 가능
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install pyyaml
+
+      - name: Generate CV.tex from YAML
+        run: python generate_cv.py
+
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y texlive-latex-base texlive-latex-extra \
+            texlive-fonts-recommended texlive-lang-cjk ko.TeX latexmk
+
+      - name: Compile CV.tex → PDF
+        run: |
+          cd assets
+          latexmk -pdf -interaction=nonstopmode CV.tex
+          latexmk -c  # clean aux files
+
+      - name: Commit CV.pdf back to repo
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/CV.pdf assets/CV.tex
+          git diff --staged --quiet || git commit -m "Auto-build CV.pdf [skip ci]"
+          git push

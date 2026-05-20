@@ -1,0 +1,56 @@
+# =============================================================
+# HONORS & AWARDS — Single source of truth
+# cv: true/false (default true)
+# web: true/false (default false — usually CV only)
+# =============================================================
+
+- year: 2025
+  title: "Postdoctoral Excellence in Teaching Award"
+  org: "UW–Madison"
+  web: true
+
+- year: 2025
+  title: "KMS Excellent Dissertation Award"
+  org: "Korean Mathematical Society (KMS)"
+  web: true
+
+- year: 2024
+  title: "KSIAM Next Generation Researcher Award"
+  org: "Korean Society for Industrial and Applied Mathematics (KSIAM)"
+  web: true
+
+- year: 2022
+  title: "SIAM Student Travel Award"
+  org: "SIAM"
+
+- year: 2022
+  title: "Blood Donor Hall of Fame (100 donations)"
+  org: "Korean Red Cross"
+
+- year: "2019–2023"
+  title: "Global Ph.D. Fellowship (Full Tuition, ~$25,000/year)"
+  org: "National Research Foundation of Korea (NRF)"
+
+- year: 2017
+  title: "36th National Undergraduate Mathematics Competition Silver Award"
+  org: "Korean Mathematical Society (KMS)"
+
+- year: 2016
+  title: "Mirae Asset Global Exchange Scholarship"
+  org: "Mirae Asset Park Hyeon Joo Foundation"
+
+- year: 2014
+  title: "33rd National Undergraduate Mathematics Competition Silver Award"
+  org: "Korean Mathematical Society (KMS)"
+
+- year: 2014
+  title: "Dean's List Award, College of Natural Sciences"
+  org: "KAIST"
+
+- year: 2013
+  title: "32nd National Undergraduate Mathematics Competition Silver Award"
+  org: "Korean Mathematical Society (KMS)"
+
+- year: "2013–2017"
+  title: "National Scholarship for Science and Engineering (Full Tuition)"
+  org: "Korea Student Aid Foundation (KOSAF)"

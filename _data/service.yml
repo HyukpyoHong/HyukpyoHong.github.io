@@ -1,0 +1,28 @@
+# =============================================================
+# ACADEMIC SERVICE & OUTREACH
+# =============================================================
+
+service:
+  - date: "Jun. 2021"
+    title: "Support Staff, SMB Annual Meeting"
+    note: "Hosted Zoom sessions for the Asia time zone."
+
+peer_review:
+  - "PLoS Computational Biology"
+  - "Acta Biotheoretica"
+  - "Stat"
+  - "PCI Math Comp Biol"
+
+outreach:
+  - date: "Sep. 16, 2022"
+    title: "Science Slam-D Public Lecture"
+    venue: "Yongsan High School, Daejeon, Korea"
+    talk_title: "Mathematics Meets Biology: Discovering the Optimal Sleep Pattern through Mathematical Modeling"
+    note: "Hosted by NST, IBS, Daejeon MBC, and Hello DD. Delivered for high school students."
+
+  - date: "Apr. 27, 2021"
+    title: "Mobile Science Classroom"
+    venue: "National Research Foundation of Korea"
+    talk_title: "Mathematical Biology: Bridging Mathematics and the Life Sciences"
+    url: "https://youtu.be/MyAU7jTFzMc?feature=shared"
+    note: "Delivered for middle school students."
