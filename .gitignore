@@ -1,0 +1,35 @@
+# ===== Jekyll build output =====
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# ===== LaTeX temp files =====
+CV.tex
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.out
+*.toc
+*.bbl
+*.blg
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+
+# ===== Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== Misc =====
+Gemfile.lock
