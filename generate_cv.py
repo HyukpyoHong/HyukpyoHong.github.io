@@ -16,7 +16,7 @@ from datetime import datetime
 
 # ── 경로 설정 ────────────────────────────────────────────────
 DATA_DIR = Path("_data")
-OUTPUT   = Path("assets/CV.tex")
+OUTPUT   = Path("CV.tex")
 
 # ── 헬퍼 함수 ────────────────────────────────────────────────
 
