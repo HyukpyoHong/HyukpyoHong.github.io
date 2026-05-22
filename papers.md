@@ -123,7 +123,7 @@ title: Papers & Talks
       <span class="talk-content">
         <span style="font-weight:500;">{{ item.title }}</span>, {{ item.venue }}
         {% if item.url %} — <a href="{{ item.url }}" target="_blank">link</a>{% endif %}
-        {% if talk.slides_url %} · <a href="{{ talk.slides_url }}" target="_blank">slides</a>{% endif %}
+        {% if item.slides_url %} · <a href="{{ talk.slides_url }}" target="_blank">slides</a>{% endif %}
         {% if item.talk_title %}<br><span style="font-style:italic;color:var(--text-muted);font-size:0.88rem;">{{ item.talk_title }}</span>{% endif %}
         {% if item.note %}<br><span style="font-size:0.88rem;color:var(--text-light);">{{ item.note }}</span>{% endif %}
       </span>
