@@ -20,6 +20,8 @@ CV_latest.tex
 __pycache__/
 *.py[cod]
 .venv/
+sync_from_sheets.py
+generate_cv.py
 
 # ===== macOS =====
 .DS_Store
@@ -33,3 +35,6 @@ __pycache__/
 
 # ===== Misc =====
 Gemfile.lock
+
+# ===== Folder ====
+/_data/old/

@@ -1,10 +1,13 @@
-# =============================================================
-# RESEARCH GRANTS
-# =============================================================
-
 - period: "2019–2023"
-  title: "Development of Stochastic Model Reduction Methodology and its Application to an Optogenetic System"
+  title: "Development of Stochastic Model Reduction Methodology and its Application\
+    \ to an Optogenetic System"
   funder: "National Research Foundation of Korea (NRF)"
-  grant_number: "NRF-2019-Fostering Core Leaders of the Future Basic Science Program/Global Ph.D. Fellowship Program, 2019H1A2A1075303"
-  role: "Principal Investigator"
-  amount: "120,000 USD"
+  grant_number: "NRF-2019-Fostering Core Leaders of the Future Basic Science Program/Global\
+    \ Ph.D. Fellowship Program, 2019H1A2A1075303"
+  role: "PI"
+  pi_type: "single"
+  amount: "120000"
+  currency: "USD"
+  institution: "KAIST"
+  status: "completed"
+  num_pi: "1"

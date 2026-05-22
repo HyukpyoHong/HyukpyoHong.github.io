@@ -1,72 +1,65 @@
-# =============================================================
-# TEACHING & MENTORING — Single source of truth
-# =============================================================
-
-award: "2025 Postdoctoral Excellence in Teaching Award, Department of Mathematics, UW–Madison"
-
+award: "2025 Postdoctoral Excellence in Teaching Award, Department of Mathematics,\
+  \ UW–Madison"
 courses:
-  - term: "Spring 2026"
-    role: "Instructor"
-    course: "MATH331: Introductory Probability"
-    institution: "UW–Madison"
-
-  - term: "Fall 2025"
-    role: "Instructor"
-    course: "MATH331: Introductory Probability"
-    institution: "UW–Madison"
-
-  - term: "Spring 2025"
-    role: "Instructor"
-    course: "MATH331: Introductory Probability"
-    institution: "UW–Madison"
-
-  - term: "Fall 2024"
-    role: "Instructor"
-    course: "MATH340: Elementary Matrix and Linear Algebra"
-    institution: "UW–Madison"
-
-  - term: "Spring 2024"
-    role: "Instructor"
-    course: "MATH320: Linear Algebra and Differential Equations"
-    institution: "UW–Madison"
-
-  - term: "Fall 2023"
-    role: "Instructor"
-    course: "MATH320: Linear Algebra and Differential Equations"
-    institution: "UW–Madison"
-
-  - term: "Spring 2019"
-    role: "Teaching Assistant"
-    course: "MAS201: Differential Equations and Applications"
-    institution: "KAIST"
-
-  - term: "Fall 2018"
-    role: "Teaching Assistant"
-    course: "MAS201: Differential Equations and Applications, MAS480: Introduction to Mathematical Biology"
-    institution: "KAIST"
-
-  - term: "Spring 2018"
-    role: "Teaching Assistant"
-    course: "MAS109: Introduction to Linear Algebra,  MAS212: Linear Algebra"
-    institution: "KAIST"
-
+- term: "Spring 2026"
+  role: "Instructor"
+  course: "MATH331: Introductory Probability"
+  institution: "UW–Madison"
+- term: "Fall 2025"
+  role: "Instructor"
+  course: "MATH331: Introductory Probability"
+  institution: "UW–Madison"
+- term: "Spring 2025"
+  role: "Instructor"
+  course: "MATH331: Introductory Probability"
+  institution: "UW–Madison"
+- term: "Fall 2024"
+  role: "Instructor"
+  course: "MATH340: Elementary Matrix and Linear Algebra"
+  institution: "UW–Madison"
+- term: "Spring 2024"
+  role: "Instructor"
+  course: "MATH320: Linear Algebra and Differential Equations"
+  institution: "UW–Madison"
+- term: "Fall 2023"
+  role: "Instructor"
+  course: "MATH320: Linear Algebra and Differential Equations"
+  institution: "UW–Madison"
+- term: "Spring 2019"
+  role: "Teaching Assistant"
+  course: "MAS201: Differential Equations and Applications"
+  institution: "KAIST"
+- term: "Fall 2018"
+  role: "Teaching Assistant"
+  course: "MAS201: Differential Equations and Applications, MAS480: Introduction to\
+    \ Mathematical Biology"
+  institution: "KAIST"
+- term: "Spring 2018"
+  role: "Teaching Assistant"
+  course: "MAS109: Introduction to Linear Algebra,  MAS212: Linear Algebra"
+  institution: "KAIST"
 mentoring:
-  - period: "Jun. 2024 – present"
-    name: "Ella Buelling"
-    description: "Junior student, Edgewood High School"
-    institution: "UW–Madison"
-    note: "Working on connections between the hypergraph representation of biochemical reaction networks and metabolic control analysis."
-
-  - period: "Jun. 2023 – Mar. 2025"
-    name: "Seokhwan Moon"
-    description: "Undergraduate, Department of Mathematics, POSTECH"
-    institution: "KAIST"
-    note: "Investigated structural conditions under which ODE steady-state solutions remain independent of system parameters. Published in \\textit{iScience}."
-    note_web: "Investigated structural conditions under which ODE steady-state solutions remain independent of system parameters. Published in <em>iScience</em>."
-
-  - period: "Spring 2019"
-    name: "Minyoo Kim"
-    description: "Undergraduate, Department of Mathematics, KAIST"
-    institution: "KAIST"
-    note: "Investigated \\textit{the total quasi-steady-state approximation for a competitive system}. Won a poster prize at the 2019 KSIAM Spring Conference and a prize in the URP final evaluation."
-    note_web: "Investigated the total quasi-steady-state approximation for a competitive system. Won a poster prize at the 2019 KSIAM Spring Conference and a prize in the URP final evaluation."
+- period: "Jun. 2024 – present"
+  name: "Ella Buelling"
+  description: "Junior student, Edgewood High School"
+  institution: "UW–Madison"
+  note: "Working on connections between the hypergraph representation of biochemical\
+    \ reaction networks and metabolic control analysis."
+- period: "Jun. 2023 – Mar. 2025"
+  name: "Seokhwan Moon"
+  description: "Undergraduate, Department of Mathematics, POSTECH"
+  institution: "KAIST"
+  note: "Investigated structural conditions under which ODE steady-state solutions\
+    \ remain independent of system parameters. Published in \\textit{iScience}."
+  note_web: "Investigated structural conditions under which ODE steady-state solutions\
+    \ remain independent of system parameters. Published in <em>iScience</em>."
+- period: "Spring 2019"
+  name: "Minyoo Kim"
+  description: "Undergraduate, Department of Mathematics, KAIST"
+  institution: "KAIST"
+  note: "Investigated \\textit{the total quasi-steady-state approximation for a competitive\
+    \ system}. Won a poster prize at the 2019 KSIAM Spring Conference and a prize\
+    \ in the URP final evaluation."
+  note_web: "Investigated the total quasi-steady-state approximation for a competitive\
+    \ system. Won a poster prize at the 2019 KSIAM Spring Conference and a prize in\
+    \ the URP final evaluation."

@@ -1,42 +1,34 @@
-# =============================================================
-# ACADEMIC SERVICE & OUTREACH
-# =============================================================
-
 service:
-  - date: "Jun. 2021"
-    title: "Support Staff, SMB Annual Meeting"
-    note: "Hosted Zoom sessions for the Asia time zone."
-
+- date: "2021-06"
+  title: "Support Staff, SMB Annual Meeting"
+  note: "Hosted Zoom sessions for the Asia time zone."
 peer_review:
-  - "PLoS Computational Biology"
-  - "Acta Biotheoretica"
-  - "Stat"
-  - "PCI Math Comp Biol"
-  - "Frontiers in Public Health"
-
+- "PLoS Computational Biology"
+- "Acta Biotheoretica"
+- "Stat"
+- "PCI Math Comp Biol"
+- "Frontiers in Public Health"
 outreach:
-  - date: "May. 26, 2026"
-    title: "Alumni Career Talk"
-    venue: "KAIST Department of Mathematical Sciences"
-    talk_title: "Preparing for a Postdoc Abroad: A Three-Year Retrospective"
-    note: "Slides are available but written in Korean."
-    slides_url: "https://github.com/HyukpyoHong/HyukpyoHong.github.io/releases/download/talks-2025/20260526_KAIST-postdoc-prep.pdf"
-
-  - date: "Jun. 20, 2023"
-    title: "KAIST Math Graduate Student Seminar"
-    venue: "KAIST, Daejeon, Korea"
-    talk_title: "Preparation for Postdoc Positions"
-    note: ""
-
-  - date: "Sep. 16, 2022"
-    title: "Science Slam-D Public Lecture"
-    venue: "Yongsan High School, Daejeon, Korea"
-    talk_title: "Mathematics Meets Biology: Discovering the Optimal Sleep Pattern through Mathematical Modeling"
-    note: "Hosted by NST, IBS, Daejeon MBC (TV network), and Hello DD (Press). Delivered for high school students."
-
-  - date: "Apr. 27, 2021"
-    title: "Mobile Science Classroom"
-    venue: "National Research Foundation of Korea"
-    talk_title: "Mathematical Biology: Bridging Mathematics and the Life Sciences"
-    url: "https://youtu.be/MyAU7jTFzMc?feature=shared"
-    note: "Delivered for middle school students."
+- date: "2026-05-26"
+  title: "Alumni Career Talk"
+  venue: "KAIST Department of Mathematical Sciences"
+  talk_title: "Preparing for a Postdoc Abroad: A Three-Year Retrospective"
+  slides_url: "https://github.com/HyukpyoHong/HyukpyoHong.github.io/releases/download/talks-2025/20260526_KAIST-postdoc-prep.pdf"
+  note: "Slides are available but written in Korean."
+- date: "2023-06-20"
+  title: "KAIST Math Graduate Student Seminar"
+  venue: "KAIST Department of Mathematical Sciences"
+  talk_title: "Preparation for Postdoc Positions"
+- date: "2022-09-16"
+  title: "Science Slam-D Public Lecture"
+  venue: "Yongsan High School, Daejeon, Korea"
+  talk_title: "Mathematics Meets Biology: Discovering the Optimal Sleep Pattern through\
+    \ Mathematical Modeling"
+  note: "Hosted by NST, IBS, Daejeon MBC (TV network), and Hello DD (Press). Delivered\
+    \ for high school students."
+- date: "2021-04-27"
+  title: "Mobile Science Classroom"
+  venue: "National Research Foundation of Korea"
+  talk_title: "Mathematical Biology: Bridging Mathematics and the Life Sciences"
+  url: "https://youtu.be/MyAU7jTFzMc?feature=shared"
+  note: "Delivered for middle school students."
