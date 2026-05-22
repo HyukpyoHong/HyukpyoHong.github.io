@@ -106,12 +106,15 @@ invited:
   location: "Daejeon, Korea"
   title: "Koopman representation: Linear representation--not an approximation--of\
     \ nonlinear dynamics"
+- date: "2024-07-04"
+  event: "SMB Annual Meeting"
+  location: "Seoul, Korea"
+  title: "Density-PINNs reveal that multiple pathways reduce cell-to-cell heterogeneity\
+    \ in antibiotic responses"
 - date: "2024-07-02"
   event: "SMB Annual Meeting"
   location: "Seoul, Korea"
-  title: "1. Inferring delays in partially observed gene regulation processes; 2.\
-    \ Density-PINNs reveal that multiple pathways reduce cell-to-cell heterogeneity\
-    \ in antibiotic responses"
+  title: "Inferring delays in partially observed gene regulation processes"
 - date: "2024-06-04"
   event: "Data Computational Sciences Special Lecture at Korea University, Sejong\
     \ Campus"
