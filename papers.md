@@ -7,7 +7,37 @@ title: Papers & Talks
   <h1>Papers &amp; Talks</h1>
 </div>
 
-<!-- PAPERS -->
+<style>
+  /* Common badge styles */
+  .badge-custom {
+    display: inline-block;
+    padding: 0.15rem 0.45rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 4px;
+    text-decoration: none !important;
+    margin-left: 0.3rem;
+    transition: opacity 0.15s ease-in-out;
+  }
+  .badge-custom:hover {
+    opacity: 0.85;
+  }
+  
+  /* Color palette optimized for color-blind accessibility */
+  .badge-slides {
+    background-color: #0056b3; /* High-contrast Blue */
+    color: #ffffff !important;
+  }
+  .badge-video-link {
+    background-color: #d95f02; /* Vivid Orange/Amber */
+    color: #ffffff !important;
+  }
+</style>
+
 <div class="section">
   <div class="section-title">Papers</div>
   <a href="https://scholar.google.com/citations?user=SC1r-GAAAAAJ&hl=ko&oi=ao" target="_blank" class="scholar-link">
@@ -44,7 +74,7 @@ title: Papers & Talks
     <li class="paper-item">
       <div class="authors">{{ display_authors }}</div>
       <div class="title">
-        {{ paper.title }}
+        <em>{{ paper.title }}</em>
         {% if paper.url_arxiv %}<a href="{{ paper.url_arxiv }}" target="_blank" class="badge badge-arxiv">arXiv</a>{% endif %}
         {% if paper.url_biorxiv %}<a href="{{ paper.url_biorxiv }}" target="_blank" class="badge badge-arxiv">bioRxiv</a>{% endif %}
         {% if paper.url_medrxiv %}<a href="{{ paper.url_medrxiv }}" target="_blank" class="badge badge-arxiv">medRxiv</a>{% endif %}
@@ -56,7 +86,6 @@ title: Papers & Talks
   </ol>
 </div>
 
-<!-- BOOK CHAPTERS -->
 <div class="section">
   <div class="section-title">Book Chapters</div>
   <ol class="paper-list" start="1">
@@ -65,7 +94,7 @@ title: Papers & Talks
     <li class="paper-item">
       <div class="authors">{{ display_authors }}</div>
       <div class="title">
-        {{ chapter.title }}
+        <em>{{ chapter.title }}</em>
         {% if chapter.url_journal %}<a href="{{ chapter.url_journal }}" target="_blank" class="badge badge-journal">Link</a>{% endif %}
       </div>
       <div class="venue">{{ chapter.venue }}</div>
@@ -74,7 +103,6 @@ title: Papers & Talks
   </ol>
 </div>
 
-<!-- INVITED TALKS -->
 <div class="section">
   <div class="section-title">Invited Talks</div>
   <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:0.8rem;">SMB: Society for Mathematical Biology · KSMB: Korean SMB · SIAM: Society for Industrial and Applied Mathematics · KSIAM: Korean SIAM · KMS: Korean Mathematical Society</p>
@@ -84,9 +112,9 @@ title: Papers & Talks
       <span class="talk-date">{{ talk.date }}</span>
       <span class="talk-content">
         <span style="font-weight:500;">{{ talk.event }}</span>{% if talk.location %}, {{ talk.location }}{% endif %}
-        {% if talk.url %} — <a href="{{ talk.url }}" target="_blank">link</a>{% endif %}
-        {% if talk.extra_url %} · <a href="{{ talk.extra_url }}" target="_blank">{{ talk.extra_label }}</a>{% endif %}
-        {% if talk.slides_url %} · <a href="{{ talk.slides_url }}" target="_blank">slides</a>{% endif %}
+        {% if talk.url %}<a href="{{ talk.url }}" target="_blank" class="badge-custom badge-video-link">Link</a>{% endif %}
+        {% if talk.extra_url %}<a href="{{ talk.extra_url }}" target="_blank" class="badge-custom badge-video-link">{{ talk.extra_label }}</a>{% endif %}
+        {% if talk.slides_url %}<a href="{{ talk.slides_url }}" target="_blank" class="badge-custom badge-slides">Slides</a>{% endif %}
         {% if talk.title %}<br><span style="font-style:italic;color:var(--text-muted);font-size:0.88rem;">{{ talk.title }}</span>{% endif %}
       </span>
     </li>
@@ -94,7 +122,6 @@ title: Papers & Talks
   </ul>
 </div>
 
-<!-- CONTRIBUTED TALKS & POSTERS -->
 <div class="section">
   <div class="section-title">Contributed Talks &amp; Posters</div>
   <ul class="talk-list">
@@ -104,8 +131,8 @@ title: Papers & Talks
       <span class="talk-content">
         <span style="font-weight:500;">{{ talk.event }}</span>{% if talk.location %}, {{ talk.location }}{% endif %}
         {% if talk.type == 'poster' %} <span style="font-size:0.82rem;color:var(--text-light);">(Poster)</span>{% endif %}
-        {% if talk.url %} — <a href="{{ talk.url }}" target="_blank">link</a>{% endif %}
-        {% if talk.slides_url %} · <a href="{{ talk.slides_url }}" target="_blank">slides</a>{% endif %}
+        {% if talk.url %}<a href="{{ talk.url }}" target="_blank" class="badge-custom badge-video-link">Link</a>{% endif %}
+        {% if talk.slides_url %}<a href="{{ talk.slides_url }}" target="_blank" class="badge-custom badge-slides">Slides</a>{% endif %}
         {% if talk.title %}<br><span style="font-style:italic;color:var(--text-muted);font-size:0.88rem;">{{ talk.title }}</span>{% endif %}
       </span>
     </li>
@@ -113,7 +140,6 @@ title: Papers & Talks
   </ul>
 </div>
 
-<!-- OUTREACH & PUBLIC ENGAGEMENT -->
 <div class="section">
   <div class="section-title">Outreach &amp; Public Engagement</div>
   <ul class="talk-list">
@@ -122,8 +148,8 @@ title: Papers & Talks
       <span class="talk-date">{{ item.date }}</span>
       <span class="talk-content">
         <span style="font-weight:500;">{{ item.title }}</span>, {{ item.venue }}
-        {% if item.url %} — <a href="{{ item.url }}" target="_blank">link</a>{% endif %}
-        {% if item.slides_url %} · <a href="{{ talk.slides_url }}" target="_blank">slides</a>{% endif %}
+        {% if item.url %}<a href="{{ item.url }}" target="_blank" class="badge-custom badge-video-link">Link</a>{% endif %}
+        {% if item.slides_url %}<a href="{{ item.slides_url }}" target="_blank" class="badge-custom badge-slides">Slides</a>{% endif %}
         {% if item.talk_title %}<br><span style="font-style:italic;color:var(--text-muted);font-size:0.88rem;">{{ item.talk_title }}</span>{% endif %}
         {% if item.note %}<br><span style="font-size:0.88rem;color:var(--text-light);">{{ item.note }}</span>{% endif %}
       </span>
