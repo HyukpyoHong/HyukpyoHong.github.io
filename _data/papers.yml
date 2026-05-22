@@ -22,13 +22,13 @@ published:
     \ epidemic models"
   authors: "Dongju Lim†, Kyeong Tae Ko†, **Hyukpyo Hong**, Hyojung Lee, Boseung Choi,\
     \ Won Chang, Sunhwa Choi[*], Jae Kyoung Kim[*]"
-  year: 2025
+  year: "2025"
   venue: "PLoS Computational Biology"
   url_journal: "https://doi.org/10.1371/journal.pcbi.1013438"
 - title: "Topological criterion for robust perfect adaptation of reaction fluxes in\
     \ biological networks"
   authors: "**Hyukpyo Hong**†, Seokhwan Moon†, Yuji Hirono†[*], Jae Kyoung Kim[*]"
-  year: 2025
+  year: "2025"
   venue: "iScience"
   url_journal: "https://doi.org/10.1016/j.isci.2025.112394"
   url_arxiv: "https://doi.org/10.48550/arXiv.2302.01270"
@@ -36,28 +36,28 @@ published:
     \ history-dependent disease spread dynamics"
   authors: "**Hyukpyo Hong**†, Eunjin Eom†, Hyojung Lee, Sunhwa Choi[*], Boseung Choi[*],\
     \ Jae Kyoung Kim[*]"
-  year: 2024
+  year: "2024"
   venue: "Nature Communications"
   url_journal: "https://doi.org/10.1038/s41467-024-53095-7"
 - title: "Density physics-informed neural networks reveal sources of cell heterogeneity\
     \ in signal transduction"
   authors: "Hyeontae Jo†, **Hyukpyo Hong**†, Hyung Ju Hwang, Won Chang, Jae Kyoung\
     \ Kim[*]"
-  year: 2023
+  year: "2023"
   venue: "Patterns"
   url_journal: "https://doi.org/10.1016/j.patter.2023.100899"
   url_biorxiv: "https://doi.org/10.1101/2023.07.31.551393"
 - title: "Inferring delays in partially observed gene regulation processes"
   authors: "**Hyukpyo Hong**†, Mark Jayson Cortez, Yu-Yu Cheng, Hang J. Kim, Boseung\
     \ Choi[*], Krešimir Josić[*], Jae Kyoung Kim[*]"
-  year: 2023
+  year: "2023"
   venue: "Bioinformatics"
   url_journal: "https://doi.org/10.1093/bioinformatics/btad670"
   url_biorxiv: "https://doi.org/10.1101/2022.11.27.518074"
 - title: "Computational translation framework identifies biochemical reaction networks\
     \ with special topologies and their long-term dynamics"
   authors: "**Hyukpyo Hong**, Bryan S. Hernandez, Jinsu Kim, Jae Kyoung Kim[*]"
-  year: 2023
+  year: "2023"
   venue: "SIAM Journal on Applied Mathematics"
   url_journal: "https://doi.org/10.1137/22M150469X"
   url_arxiv: "https://doi.org/10.48550/arXiv.2212.01171"
@@ -65,28 +65,28 @@ published:
     \ viral transmission paradoxically reduces severe COVID-19 during endemic transition"
   authors: "**Hyukpyo Hong**†, Ji Yun Noh†, Hyojung Lee, Sunhwa Choi, Boseung Choi,\
     \ Jae Kyoung Kim[*], Eui-Cheol Shin[*]"
-  year: 2022
+  year: "2022"
   venue: "Immune Network"
   url_journal: "https://doi.org/10.4110/in.2022.22.e23"
   url_medrxiv: "https://doi.org/10.1101/2022.02.09.22270633"
 - title: "Systematic inference identifies a major source of heterogeneity in cell\
     \ signaling dynamics: the rate-limiting step number"
   authors: "Dae Wook Kim†, **Hyukpyo Hong**†, Jae Kyoung Kim[*]"
-  year: 2022
+  year: "2022"
   venue: "Science Advances"
   url_journal: "https://www.science.org/doi/10.1126/sciadv.abl4598"
 - title: "Personalized sleep-wake patterns aligned with circadian rhythm relieve daytime\
     \ sleepiness"
   authors: "Jaehyoung Hong†, Su Jung Choi†, Se Ho Park, **Hyukpyo Hong**, Victoria\
     \ Booth, Eun Yeon Joo[*], Jae Kyoung Kim[*]"
-  year: 2021
+  year: "2021"
   venue: "iScience"
   url_journal: "https://doi.org/10.1016/j.isci.2021.103129"
   url_biorxiv: "https://doi.org/10.1101/2021.03.15.435366"
 - title: "Universally valid reduction of multiscale stochastic biochemical systems\
     \ with simple non-elementary propensities"
   authors: "Yun Min Song†, **Hyukpyo Hong**†, Jae Kyoung Kim[*]"
-  year: 2021
+  year: "2021"
   venue: "PLoS Computational Biology"
   url_journal: "https://doi.org/10.1371/journal.pcbi.1008952"
   url_biorxiv: "https://doi.org/10.1101/2021.04.08.438974"
@@ -94,7 +94,7 @@ published:
     \ delays"
   authors: "Mark Jayson Cortez†, **Hyukpyo Hong**, Boseung Choi[*], Jae Kyoung Kim[*],\
     \ Krešimir Josić[*]"
-  year: 2021
+  year: "2021"
   venue: "Bioinformatics"
   url_journal: "https://doi.org/10.1093/bioinformatics/btab618"
   url_biorxiv: "https://doi.org/10.1101/2021.08.16.456485"
@@ -102,7 +102,7 @@ published:
     \ via structure transformation"
   authors: "**Hyukpyo Hong**†, Jinsu Kim†, M. Ali Al-Radhawi, Eduardo D. Sontag, Jae\
     \ Kyoung Kim[*]"
-  year: 2021
+  year: "2021"
   venue: "Communications Biology"
   url_journal: "https://www.nature.com/articles/s42003-021-02117-x"
   url_biorxiv: "https://doi.org/10.1101/2021.03.23.436681"
