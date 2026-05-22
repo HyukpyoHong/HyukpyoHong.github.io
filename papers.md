@@ -86,6 +86,7 @@ title: Papers & Talks
         <span style="font-weight:500;">{{ talk.event }}</span>{% if talk.location %}, {{ talk.location }}{% endif %}
         {% if talk.url %} — <a href="{{ talk.url }}" target="_blank">link</a>{% endif %}
         {% if talk.extra_url %} · <a href="{{ talk.extra_url }}" target="_blank">{{ talk.extra_label }}</a>{% endif %}
+        {% if talk.slides_url %} · <a href="{{ talk.slides_url }}" target="_blank">slides</a>{% endif %}
         {% if talk.title %}<br><span style="font-style:italic;color:var(--text-muted);font-size:0.88rem;">{{ talk.title }}</span>{% endif %}
       </span>
     </li>
@@ -104,7 +105,27 @@ title: Papers & Talks
         <span style="font-weight:500;">{{ talk.event }}</span>{% if talk.location %}, {{ talk.location }}{% endif %}
         {% if talk.type == 'poster' %} <span style="font-size:0.82rem;color:var(--text-light);">(Poster)</span>{% endif %}
         {% if talk.url %} — <a href="{{ talk.url }}" target="_blank">link</a>{% endif %}
+        {% if talk.slides_url %} · <a href="{{ talk.slides_url }}" target="_blank">slides</a>{% endif %}
         {% if talk.title %}<br><span style="font-style:italic;color:var(--text-muted);font-size:0.88rem;">{{ talk.title }}</span>{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- OUTREACH & PUBLIC ENGAGEMENT -->
+<div class="section">
+  <div class="section-title">Outreach &amp; Public Engagement</div>
+  <ul class="talk-list">
+    {% for item in site.data.service.outreach %}
+    <li class="talk-item">
+      <span class="talk-date">{{ item.date }}</span>
+      <span class="talk-content">
+        <span style="font-weight:500;">{{ item.title }}</span>, {{ item.venue }}
+        {% if item.url %} — <a href="{{ item.url }}" target="_blank">link</a>{% endif %}
+        {% if talk.slides_url %} · <a href="{{ talk.slides_url }}" target="_blank">slides</a>{% endif %}
+        {% if item.talk_title %}<br><span style="font-style:italic;color:var(--text-muted);font-size:0.88rem;">{{ item.talk_title }}</span>{% endif %}
+        {% if item.note %}<br><span style="font-size:0.88rem;color:var(--text-light);">{{ item.note }}</span>{% endif %}
       </span>
     </li>
     {% endfor %}

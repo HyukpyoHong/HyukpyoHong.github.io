@@ -19,7 +19,8 @@ outreach:
     title: "Alumni Career Talk"
     venue: "KAIST Department of Mathematical Sciences"
     talk_title: "Preparing for a Postdoc Abroad: A Three-Year Retrospective"
-    note: ""
+    note: "Slides are available but written in Korean."
+    slides_url: "https://github.com/HyukpyoHong/HyukpyoHong.github.io/releases/download/talks-2025/20260526_KAIST-postdoc-prep.pdf"
 
   - date: "Jun. 20, 2023"
     title: "KAIST Math Graduate Student Seminar"
