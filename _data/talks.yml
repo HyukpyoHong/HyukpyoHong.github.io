@@ -100,7 +100,7 @@ invited:
 - date: "2024-08-01"
   event: "Seminar at Pusan National University"
   location: "Busan, Korea"
-  title: "Analysis of dynamical systems using \"easier\" representations"
+  title: "Analysis of dynamical systems using ``easier'' representations"
 - date: "2024-07-31"
   event: "Biomedical Mathematics Seminar at Institute for Basic Science"
   location: "Daejeon, Korea"
@@ -140,13 +140,12 @@ invited:
   title: "Network translation allows for revealing long-term dynamics of stochastic\
     \ reaction networks"
 - date: "2023-07-17"
-  event: "SMB Annual Meeting, Minisymposium"
+  event: "SMB Annual Meeting"
   location: "Columbus, OH, USA"
   title: "Network translation allows for revealing long-term dynamics of stochastic\
     \ reaction networks"
 - date: "2023-06-27"
-  event: "The 8th CIJK International Conference on Mathematical and Theoretical Biology,\
-    \ Minisymposium"
+  event: "The 8th CIJK International Conference on Mathematical and Theoretical Biology"
   location: "Jeju, Korea"
   title: "Things we have been overlooking in infectious disease modeling"
 - date: "2023-05-19"
@@ -164,12 +163,12 @@ invited:
   title: "Increasing viral transmission paradoxically reduces severe COVID-19 during\
     \ endemic transition"
 - date: "2022-10-19"
-  event: "Global KMS International Conference, Special session"
+  event: "Global KMS International Conference"
   location: "Seoul, Korea"
   title: "Systematic inference identifies a major source of heterogeneity in non-Markovian\
     \ cell signaling dynamics"
 - date: "2022-06-25"
-  event: "KSMB Annual Meeting, Special session"
+  event: "KSMB Annual Meeting"
   location: "Yeosu, Korea"
   title: "Increasing viral transmission paradoxically reduces severe COVID-19 during\
     \ endemic transition"
@@ -180,20 +179,20 @@ invited:
     \ of cell-to-cell variability"
   url: "https://www.ibric.org/bric/webinar/academic-all.do?mode=view&id=394"
 - date: "2022-05-28"
-  event: "KSIAM Spring Conference, Special session"
+  event: "KSIAM Spring Conference"
   location: "Daejeon, Korea"
   title: "Systematic inference for cell signalling pathways identifies a key determinant\
     \ of cell-to-cell variability"
 - date: "2021-08-27"
-  event: "KSMB Annual Meeting, Special session"
+  event: "KSMB Annual Meeting"
   location: "Online, Korea"
   title: "Inference of stochastic dynamics in biochemical reaction networks"
 - date: "2021-06-16"
-  event: "SMB Annual Meeting, Minisymposium"
+  event: "SMB Annual Meeting"
   location: "Online"
   title: "Inference of stochastic dynamics in biochemical reaction networks"
 - date: "2021-05-27"
-  event: "SIAM Conference on Applications of Dynamical Systems, Minisymposium"
+  event: "SIAM Conference on Applications of Dynamical Systems"
   location: "Online"
   title: "Derivation of stationary distributions of stochastic chemical reaction networks\
     \ via network translation"
@@ -212,8 +211,7 @@ invited:
     \ via structure transformation"
 contributed:
 - date: "2024-06-27"
-  event: "KSMB-SMB Satellite Workshop: Tutorials for Recent Advances in Methods of\
-    \ Biomedical Mathematics"
+  event: "KSMB-SMB Satellite Workshop"
   location: "Daejeon, Korea"
   title: "Inferring delays in partially observed gene regulation processes"
   type: "poster"
