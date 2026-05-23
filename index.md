@@ -13,7 +13,7 @@ title: ""
          onload="this.style.display='block';document.getElementById('photo-placeholder').style.display='none';" />
   </div>
   <div>
-    <div class="profile-name">
+    <!-- <div class="profile-name">
       Hyukpyo Hong
       <span class="profile-name-ko">&nbsp;(홍혁표)</span>
     </div>
@@ -22,7 +22,17 @@ title: ""
       <a href="https://www.ibs.re.kr/bimag/" target="_blank">Biomedical Mathematics Group</a>,
       Institue for Basic Science
     </div>
-    <div class="profile-email">hyukpyo.hong13 [at] gmail [dot] com</div>
+    <div class="profile-email">hyukpyo.hong13 [at] gmail [dot] com</div> -->
+      <div class="profile-name">
+      Hyukpyo Hong
+      <span class="profile-name-ko">&nbsp;(홍혁표)</span>
+    </div>
+    <div class="profile-title">Van Vleck Assistant Professor</div>
+    <div class="profile-inst">
+      <a href="https://math.wisc.edu/" target="_blank">Department of Mathematics</a>,
+      University of Wisconsin–Madison
+    </div>
+    <div class="profile-email">hhong78 [at] wisc [dot] edu</div>
     <div class="social-links">
       <a href="https://scholar.google.com/citations?user=SC1r-GAAAAAJ&hl=ko&oi=ao" target="_blank" class="social-link">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h3.6v8.4C4.8 19.5 7.9 21 12 21s7.2-1.5 8.4-3.1V9.5H24L12 0z"/></svg>
@@ -43,8 +53,12 @@ title: ""
 <!-- ABOUT -->
 <div class="section">
   <div class="section-title">About</div>
-  <div class="bio-text">
+  <!-- <div class="bio-text">
     <p>I am a Visiting Research Fellow in the <a href="https://www.ibs.re.kr/bimag/" target="_blank">Biomedical Mathematics Group at Institute for Basic Science</a>. Recently until May 2026, I was a Van Vleck Assisntant Professor in the <a href="https://www.math.wisc.edu" target="_blank">Department of Mathematics at the University of Wisconsin–Madison</a>, where my postdoctoral mentor was <a href="https://people.math.wisc.edu/~craciun/" target="_blank">Gheorghe Craciun</a>. I also collaborate with <a href="https://hanbaeklyu.com/" target="_blank">Hanbaek Lyu</a>, <a href="https://people.math.wisc.edu/~qli36/" target="_blank">Qin Li</a>, and <a href="https://www.damtp.cam.ac.uk/user/mjc249/home.html" target="_blank">Matthew Colbrook</a> on Koopman theory, and with <a href="https://wolfram-liebermeister.pages.mia.inra.fr/web/" target="_blank">Wolfram Liebermeister</a> on structural sensitivity analysis and metabolic control analysis.</p>
+    <p>I received my Ph.D. from the <a href="https://mathsci.kaist.ac.kr/home/en/" target="_blank">Department of Mathematical Sciences at KAIST</a>, under the supervision of <a href="http://mathsci.kaist.ac.kr/~jaekkim/" target="_blank">Jae Kyoung Kim</a>. My research focuses primarily on mathematical biology and dynamical systems.</p>
+  </div> -->
+  <div class="bio-text">
+    <p>I am a Van Vleck Assistant Professor in the <a href="https://math.wisc.edu/" target="_blank">Department of Mathematics at the University of Wisconsin–Madison</a>. My postdoctoral mentor is <a href="https://people.math.wisc.edu/~craciun/" target="_blank">Gheorghe Craciun</a>. I also collaborate with <a href="https://hanbaeklyu.com/" target="_blank">Hanbaek Lyu</a>, <a href="https://people.math.wisc.edu/~qli36/" target="_blank">Qin Li</a>, and <a href="https://www.damtp.cam.ac.uk/user/mjc249/home.html" target="_blank">Matthew Colbrook</a> on Koopman theory, and with <a href="https://wolfram-liebermeister.pages.mia.inra.fr/web/" target="_blank">Wolfram Liebermeister</a> on structural sensitivity analysis and metabolic control analysis.</p>
     <p>I received my Ph.D. from the <a href="https://mathsci.kaist.ac.kr/home/en/" target="_blank">Department of Mathematical Sciences at KAIST</a>, under the supervision of <a href="http://mathsci.kaist.ac.kr/~jaekkim/" target="_blank">Jae Kyoung Kim</a>. My research focuses primarily on mathematical biology and dynamical systems.</p>
   </div>
 </div>
@@ -53,11 +67,11 @@ title: ""
 <div class="section">
   <div class="section-title">Appointment</div>
   <div class="info-item">
-    <span class="info-year">May. 2026 – Present</span>
+    <span class="info-year">May. 2026-present</span>
     <span class="info-content">Visiting Research Fellow, Biomedical Mathematics Group, Institute for Basic Science</span>
   </div>
   <div class="info-item">
-    <span class="info-year">Aug. 2023 – May 2026</span>
+    <span class="info-year">Aug. 2023-present</span>
     <span class="info-content">Van Vleck Assistant Professor, Department of Mathematics, University of Wisconsin–Madison</span>
   </div>
 </div>
