@@ -59,7 +59,7 @@ title: ""
   </div> -->
   <div class="bio-text">
     <p>I am a Van Vleck Assistant Professor in the <a href="https://math.wisc.edu/" target="_blank">Department of Mathematics at the University of Wisconsin–Madison</a>. My postdoctoral mentor is <a href="https://people.math.wisc.edu/~craciun/" target="_blank">Gheorghe Craciun</a>. I also collaborate with <a href="https://hanbaeklyu.com/" target="_blank">Hanbaek Lyu</a>, <a href="https://people.math.wisc.edu/~qli36/" target="_blank">Qin Li</a>, and <a href="https://www.damtp.cam.ac.uk/user/mjc249/home.html" target="_blank">Matthew Colbrook</a> on Koopman theory, and with <a href="https://wolfram-liebermeister.pages.mia.inra.fr/web/" target="_blank">Wolfram Liebermeister</a> on structural sensitivity analysis and metabolic control analysis.</p>
-    <p>I received my Ph.D. from the <a href="https://mathsci.kaist.ac.kr/home/en/" target="_blank">Department of Mathematical Sciences at KAIST</a>, under the supervision of <a href="http://mathsci.kaist.ac.kr/~jaekkim/" target="_blank">Jae Kyoung Kim</a>. My research focuses primarily on mathematical biology and dynamical systems.</p>
+    <p>I received my Ph.D. from the <a href="https://mathsci.kaist.ac.kr/home/en/" target="_blank">Department of Mathematical Sciences at KAIST</a>, under the supervision of <a href="http://mathsci.kaist.ac.kr/~jaekkim/" target="_blank">Jae Kyoung Kim</a>. My research focuses primarily on mathematical biology and dynamical systems.</p> Please visit the <a href="{{ '/research/' | relative_url }}">Research</a> tab for more details.
   </div>
 </div>
 

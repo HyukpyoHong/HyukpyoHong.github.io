@@ -38,3 +38,4 @@ Gemfile.lock
 
 # ===== Folder ====
 /_data/old/
+*-old.*
