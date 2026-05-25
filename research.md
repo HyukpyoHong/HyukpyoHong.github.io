@@ -16,9 +16,16 @@ title: Research
   Yuji Hirono: https://sites.google.com/site/yujihironooo/
   Wolfram Liebermeister: https://wolfram-liebermeister.pages-forge.inrae.fr/web/
   Jae Kyoung Kim: https://mathsci.kaist.ac.kr/~jaekkim/
-  Boseung Choi: (url tbd)
-  Kresimir Josic: (url tbd)
+  Boseung Choi: http://nslab.korea.ac.kr/
+  Kresimir Josic: https://math.uh.edu/~josic/
   Hyeontae Jo: https://sites.google.com/view/hyeontae-site/
+  Hyun Woong Roh: https://sites.google.com/ajou.ac.kr/ineuva-labs/
+  Eun Young Kim: https://keyclocklab.wixsite.com/keyclock
+  Won Chang: https://www.wonchang.net
+  Hang J. Kim: https://homepages.uc.edu/~kim3h4/
+  Yun Min Song: https://sites.google.com/view/yun-min-song/home
+  Eui-Cheol Shin: https://pure.kaist.ac.kr/en/persons/eui-cheol-shin/
+  Ji Yun Noh: https://scholarworks.korea.ac.kr/kumedicine/researcher-profile?ep=180
 -->
 
 <style>
@@ -434,7 +441,7 @@ title: Research
 ════════════════════════════════════════════════ -->
 <div class="topic-group">
   <div class="topic-group-header">
-    <span class="topic-icon">✦</span>
+    <!-- <span class="topic-icon">✦</span> -->
     V. Other Topics
   </div>
 
@@ -447,7 +454,7 @@ title: Research
     <div class="accordion-content">
       <div class="topic-inner">
         <div class="topic-text">
-          <p>I am contributing to a project on (auto)formalizing graduate-level algebra in the <em>LEAN</em> proof assistant, specifically targeting problems from the textbook <em>Abstract Algebra</em> by Dummit and Foote. 
+          <p>I am contributing to a project on (auto)formalizing graduate-level algebra in the <em>LEAN</em> proof assistant, specifically targeting problems from the textbook <em>Abstract Algebra</em> by Dummit and Foote. We are building a dataset of formalized graduate-level algebra problems, namely <a href="https://www.kaggle.com/datasets/b8d166d6fecce97ae60db6e8a9560e6c015c7db50f609000f72d7cd05b70729d" target="_blank"><strong>LEAN-GAP</strong></a>.
             <!-- This has resulted in <strong>LEAN-GAP</strong>, a dataset of formalized graduate algebra problems. -->
           </p>
         </div>
