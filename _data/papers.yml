@@ -10,9 +10,15 @@ preprints:
 - title: "Non-autonomous dynamics learning via Koopman-based Neural Networks"
   authors: "Geonhee Ryu†, **Hyukpyo Hong**[*], Daewook Kim[*]"
   type: "prep"
-- title: "Finding Koopman Invariant Subspaces via Personalized PageRank"
-  authors: "**Hyukpyo Hong**†, Qin Li†, Matthew Colbrook, Hanbaek Lyu[*]"
+- title: "LEAN-GAP: A Dataset of Formalized Graduate Algebra Problems"
+  authors: "Seewoo Lee†, Byung-Hak Hwang†, Hyojae Lim, Jihoon Hyun, Ilkyoo Choi, Yeachan\
+    \ Park, Jineon Baek, **Hyukpyo Hong**, Keewoo Lee, Jaeseong Heo, Hyungryul Baik,\
+    \ Chul-hee Lee[*], Kyu-Hwan Lee"
   type: "submitted"
+- title: "Finding Koopman Invariant Subspaces via Personalized PageRank"
+  authors: "**Hyukpyo Hong**†, Qin Li, Matthew Colbrook, Hanbaek Lyu[*]"
+  type: "submitted"
+  url_arxiv: "https://arxiv.org/abs/2605.24666"
 - title: "Ubiquitous asymptotic robustness in biochemical systems"
   authors: "**Hyukpyo Hong**†[*], Diego Rojas La Luz†, Gheorghe Craciun[*]"
   type: "review"
