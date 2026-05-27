@@ -53,7 +53,7 @@ title: Papers & Talks
   <p style="font-size:0.95rem;font-weight:600;color:var(--text-muted);margin-bottom:0.6rem;">Preprints &amp; In Preparation</p>
   <ol class="paper-list">
     {% for paper in site.data.papers.preprints %}
-    {% assign display_authors = paper.authors | replace: '[*]', '<span>*</span>' | replace: '†', '<span>†</span>' | markdownify | remove: '<p>' | remove: '</p>' %}
+    {% assign display_authors = paper.authors | replace: '[*]', '<span>*</span>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     {% assign current_num = total_papers_count | minus: forloop.index0 %}
     <li class="paper-item" value="{{ current_num }}">
       <div class="authors">{{ display_authors }}</div>
@@ -76,7 +76,7 @@ title: Papers & Talks
   <p style="font-size:0.95rem;font-weight:600;color:var(--text-muted);margin-bottom:0.6rem;margin-top:1.5rem;">Published &amp; Accepted</p>
   <ol class="paper-list">
     {% for paper in site.data.papers.published %}
-    {% assign display_authors = paper.authors | replace: '[*]', '*' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
+    {% assign display_authors = paper.authors | replace: '[*]', '<span>*</span>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     {% assign current_num = total_papers_count | minus: prep_count | minus: forloop.index0 %}
     <li class="paper-item" value="{{ current_num }}">
       <div class="authors">{{ display_authors }}</div>
@@ -98,7 +98,7 @@ title: Papers & Talks
   {% assign book_count = site.data.papers.book_chapters.size %}
   <ol class="paper-list">
     {% for chapter in site.data.papers.book_chapters %}
-    {% assign display_authors = chapter.authors | replace: '[*]', '*' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
+    {% assign display_authors = chapter.authors | replace: '[*]', '<span>*</span>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     {% assign current_book_num = book_count | minus: forloop.index0 %}
     <li class="paper-item" value="{{ current_book_num }}">
       <div class="authors">{{ display_authors }}</div>
