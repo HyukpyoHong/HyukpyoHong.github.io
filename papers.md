@@ -54,15 +54,14 @@ title: Papers & Talks
   <ol class="paper-list">
     {% for paper in site.data.papers.preprints %}
     {% assign display_authors = paper.authors | replace: '[*]', '*' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
-    
     {% assign current_num = total_papers_count | minus: forloop.index0 %}
-    
     <li class="paper-item" value="{{ current_num }}">
       <div class="authors">{{ display_authors }}</div>
       <div class="title">
         {{ paper.title }}
+        {% if paper.url_arxiv %}<a href="{{ paper.url_arxiv }}" target="_blank" class="badge badge-arxiv">arXiv</a>{% endif %}
+        {% if paper.url_biorxiv %}<a href="{{ paper.url_biorxiv }}" target="_blank" class="badge badge-arxiv">bioRxiv</a>{% endif %}
         {% if paper.type == 'review' %}
-          {% if paper.url_arxiv %}<a href="{{ paper.url_arxiv }}" target="_blank" class="badge badge-arxiv">arXiv</a>{% endif %}
           <span class="badge badge-preprint">Under Review</span>
         {% elsif paper.type == 'submitted' %}
           <span class="badge badge-preprint">Submitted</span>
@@ -78,9 +77,7 @@ title: Papers & Talks
   <ol class="paper-list">
     {% for paper in site.data.papers.published %}
     {% assign display_authors = paper.authors | replace: '[*]', '*' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
-    
     {% assign current_num = total_papers_count | minus: prep_count | minus: forloop.index0 %}
-    
     <li class="paper-item" value="{{ current_num }}">
       <div class="authors">{{ display_authors }}</div>
       <div class="title">
