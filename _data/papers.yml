@@ -18,7 +18,7 @@ preprints:
 - title: "Finding Koopman Invariant Subspaces via Personalized PageRank"
   authors: "**Hyukpyo Hong**†, Qin Li, Matthew Colbrook, Hanbaek Lyu[*]"
   type: "submitted"
-  url_arxiv: "https://arxiv.org/abs/2605.24666"
+  url_arxiv: "https://doi.org/10.48550/arXiv.2605.24666"
 - title: "Ubiquitous asymptotic robustness in biochemical systems"
   authors: "**Hyukpyo Hong**†[*], Diego Rojas La Luz†, Gheorghe Craciun[*]"
   type: "review"
