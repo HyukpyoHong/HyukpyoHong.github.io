@@ -15,6 +15,7 @@ preprints:
     \ Park, Jineon Baek, **Hyukpyo Hong**, Keewoo Lee, Jaeseong Heo, Hyungryul Baik,\
     \ Chul-hee Lee[*], Kyu-Hwan Lee"
   type: "submitted"
+  url_arxiv: "https://doi.org/10.48550/arXiv.2606.02588"
 - title: "Finding Koopman Invariant Subspaces via Personalized PageRank"
   authors: "**Hyukpyo Hong**†, Qin Li, Matthew Colbrook, Hanbaek Lyu[*]"
   type: "submitted"
