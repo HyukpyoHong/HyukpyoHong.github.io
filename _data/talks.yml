@@ -1,4 +1,9 @@
 invited:
+- date: "2026-08-09"
+  event: "A3 Foresight Workshop: Beyond Data — Synergy between Mathematics and AI"
+  location: "Daejeon, Korea"
+  title: "Data-driven Discovery of Non-autonomous Dynamics via Koopman Embedding and\
+    \ Neural Networks"
 - date: "2026-04-28"
   event: "Formal reaction kinetics and related questions"
   location: "Online"
@@ -6,6 +11,7 @@ invited:
   url: "https://math.bme.hu/~jtoth/seminars.html"
   extra_url: "https://youtu.be/UGHbM6dK7qo?si=iq3MJ9as1dHn2DSf"
   extra_label: "video"
+  slides_url: "https://github.com/HyukpyoHong/HyukpyoHong.github.io/releases/download/talks-2026/20260428_FormalReactionKinetics_Ubiq.pdf"
 - date: "2026-02-26"
   event: "Mathematics of Reaction Networks (MoRN) Seminar"
   location: "Online"
@@ -210,6 +216,13 @@ invited:
   title: "Derivation of stationary distributions of biochemical reaction networks\
     \ via structure transformation"
 contributed:
+- date: "2026-06-24"
+  event: "Int'l Conference for the 80th Anniversary of the KMS"
+  location: "Seoul, Korea"
+  title: "Data-driven identification of finite-dimensional representations of the\
+    \ Koopman operator"
+  slides_url: "https://github.com/HyukpyoHong/HyukpyoHong.github.io/releases/download/talks-2026/20260624_KMS-Koopman.pdf"
+  type: "contributed"
 - date: "2024-06-27"
   event: "KSMB-SMB Satellite Workshop"
   location: "Daejeon, Korea"
