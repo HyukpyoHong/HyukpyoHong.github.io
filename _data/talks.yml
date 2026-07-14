@@ -4,6 +4,11 @@ invited:
   location: "Daejeon, Korea"
   title: "Data-driven Discovery of Non-autonomous Dynamics via Koopman Embedding and\
     \ Neural Networks"
+- date: "2026-07-28"
+  event: "ibs BIMAG Biomedical Mathematics Seminar"
+  location: "Daejeon, Korea"
+  title: "Global Linearization of Nonlinear Dynamics via Koopman Operators: A Gentle\
+    \ Introduction, Applications, and Open Challenges"
 - date: "2026-04-28"
   event: "Formal reaction kinetics and related questions"
   location: "Online"
