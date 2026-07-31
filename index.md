@@ -17,12 +17,12 @@ title: ""
       Hyukpyo Hong
       <span class="profile-name-ko">&nbsp;(홍혁표)</span>
     </div>
-    <div class="profile-title">Visiting Research Fellow</div>
+    <div class="profile-title">AI Fellow (AI Assistant Professor)</div>
     <div class="profile-inst">
-      <a href="https://www.ibs.re.kr/bimag/" target="_blank">Biomedical Mathematics Group</a>,
-      Institue for Basic Science
+      Center for AI and Natural Sciences (CAINS), <a href="https://www.kias.re.kr/" target="_blank">Korea Institute for Advanced Study (KIAS)</a>
     </div>
     <div class="profile-email">hyukpyo.hong13 [at] gmail [dot] com</div>
+    <!-- <div class="profile-email">hphong [at] kias [dot] re [dot] kr</div> -->
       <!-- <div class="profile-name">
       Hyukpyo Hong
       <span class="profile-name-ko">&nbsp;(홍혁표)</span>
@@ -54,8 +54,8 @@ title: ""
 <div class="section">
   <div class="section-title">About</div>
   <div class="bio-text">
-    <p>I am a Visiting Research Fellow in the <a href="https://www.ibs.re.kr/bimag/" target="_blank">Biomedical Mathematics Group at Institute for Basic Science</a>. Recently until May 2026, I was a Van Vleck Assisntant Professor in the <a href="https://www.math.wisc.edu" target="_blank">Department of Mathematics at the University of Wisconsin–Madison</a>, where my postdoctoral mentor was <a href="https://people.math.wisc.edu/~craciun/" target="_blank">Gheorghe Craciun</a>. I also collaborate with <a href="https://hanbaeklyu.com/" target="_blank">Hanbaek Lyu</a>, <a href="https://people.math.wisc.edu/~qli36/" target="_blank">Qin Li</a>, and <a href="https://www.damtp.cam.ac.uk/user/mjc249/home.html" target="_blank">Matthew Colbrook</a> on Koopman theory, and with <a href="https://wolfram-liebermeister.pages.mia.inra.fr/web/" target="_blank">Wolfram Liebermeister</a> on structural sensitivity analysis and metabolic control analysis.</p>
-    <p>I received my Ph.D. from the <a href="https://mathsci.kaist.ac.kr/home/en/" target="_blank">Department of Mathematical Sciences at KAIST</a>, under the supervision of <a href="http://mathsci.kaist.ac.kr/~jaekkim/" target="_blank">Jae Kyoung Kim</a>. My research focuses primarily on mathematical biology and dynamical systems.</p>
+    <p>I am an AI Fellow (AI Assistant Professor) in the <a href="https://www.kias.re.kr/" target="_blank">Center for AI and Natural Sciences (CAINS) at Korea Institute for Advanced Study (KIAS)</a>. Recently until May 2026, I was a Van Vleck Assisntant Professor in the <a href="https://www.math.wisc.edu" target="_blank">Department of Mathematics at the University of Wisconsin–Madison</a>, where my postdoctoral mentor was <a href="https://people.math.wisc.edu/~craciun/" target="_blank">Gheorghe Craciun</a>. I also collaborate with <a href="https://hanbaeklyu.com/" target="_blank">Hanbaek Lyu</a>, <a href="https://people.math.wisc.edu/~qli36/" target="_blank">Qin Li</a>, and <a href="https://www.damtp.cam.ac.uk/user/mjc249/home.html" target="_blank">Matthew Colbrook</a> on Koopman theory, and with <a href="https://wolfram-liebermeister.pages.mia.inra.fr/web/" target="_blank">Wolfram Liebermeister</a> on structural sensitivity analysis and metabolic control analysis.</p>
+    <p>I received my Ph.D. from the <a href="https://mathsci.kaist.ac.kr/home/en/" target="_blank">Department of Mathematical Sciences at KAIST</a>, under the supervision of <a href="http://mathsci.kaist.ac.kr/~jaekkim/" target="_blank">Jae Kyoung Kim</a>. My research focuses primarily on mathematical biology, dynamical systems, and scientific machine learning (sciML).</p>
   </div>
   <!--<div class="bio-text">
     <p>I am a Van Vleck Assistant Professor in the <a href="https://math.wisc.edu/" target="_blank">Department of Mathematics at the University of Wisconsin–Madison</a>. My postdoctoral mentor is <a href="https://people.math.wisc.edu/~craciun/" target="_blank">Gheorghe Craciun</a>. I also collaborate with <a href="https://hanbaeklyu.com/" target="_blank">Hanbaek Lyu</a>, <a href="https://people.math.wisc.edu/~qli36/" target="_blank">Qin Li</a>, and <a href="https://www.damtp.cam.ac.uk/user/mjc249/home.html" target="_blank">Matthew Colbrook</a> on Koopman theory, and with <a href="https://wolfram-liebermeister.pages.mia.inra.fr/web/" target="_blank">Wolfram Liebermeister</a> on structural sensitivity analysis and metabolic control analysis.</p>
@@ -68,7 +68,11 @@ title: ""
 <div class="section">
   <div class="section-title">Appointment</div>
   <div class="info-item">
-    <span class="info-year">May 2026-present</span>
+    <span class="info-year">Aug. 2026-present</span>
+    <span class="info-content">AI Fellow (AI Assistant Professor), Center for AI and Natural Sciences, Korea Institute for Advanced Study</span>
+  </div>
+  <div class="info-item">
+    <span class="info-year">May 2026-Aug. 2026</span>
     <span class="info-content">Visiting Research Fellow, Biomedical Mathematics Group, Institute for Basic Science</span>
   </div>
   <div class="info-item">
