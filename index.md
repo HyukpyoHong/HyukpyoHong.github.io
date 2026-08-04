@@ -21,8 +21,8 @@ title: ""
     <div class="profile-inst">
       Center for AI and Natural Sciences (CAINS), <a href="https://www.kias.re.kr/" target="_blank">Korea Institute for Advanced Study (KIAS)</a>
     </div>
-    <div class="profile-email">hyukpyo.hong13 [at] gmail [dot] com</div>
-    <!-- <div class="profile-email">hphong [at] kias [dot] re [dot] kr</div> -->
+    <!-- <div class="profile-email">hyukpyo.hong13 [at] gmail [dot] com</div> -->
+    <div class="profile-email">hhong78 [at] kias [dot] re [dot] kr</div>
       <!-- <div class="profile-name">
       Hyukpyo Hong
       <span class="profile-name-ko">&nbsp;(홍혁표)</span>
