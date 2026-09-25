@@ -1,4 +1,22 @@
 invited:
+- date: "2026-11-03"
+  event: "KIAS CAINS Workshop"
+  location: "Byeonsan, Korea"
+  title: "Data-driven Discovery of Non-autonomous Dynamics via Koopman Embedding and\
+    \ Neural Networks"
+  url: "https://symposia.kias.re.kr/cains-nov2026"
+- date: "2026-10-30"
+  event: "2026 Korean Society of Biological Psychiatry (KSBP) Fall Conference"
+  location: "Seoul, Korea"
+  title: "Digital Biomarker of Neurodegeneraion: Fractal Patterns of Human Activity\
+    \ Data"
+  url: "https://www.biolpsychiatry.or.kr/html/?pmode=inputList&smode=view&part=&intAcSeq=234"
+- date: "2026-10-22"
+  event: "2026 Korean Physical Society (KPS) Fall Meeting"
+  location: "Jeju, Korea"
+  title: "Data-driven Discovery of Non-autonomous Dynamics via Koopman Embedding and\
+    \ Neural Networks"
+  url: "https://www.kps.or.kr/conference/event/index.php"
 - date: "2026-08-09"
   event: "A3 Foresight Workshop: Beyond Data — Synergy between Mathematics and AI"
   location: "Daejeon, Korea"
