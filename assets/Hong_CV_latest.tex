@@ -7,6 +7,7 @@
 \usepackage{multicol}
 \usepackage{comment}
 \usepackage{fancyhdr}
+\usepackage{array}
 \newcommand{\shorttoday}{%
   \ifcase\month
   \or Jan.\or Feb.\or Mar.\or Apr.\or May\or Jun.\or Jul.\or Aug.\or Sep.\or Oct.\or Nov.\or Dec.\fi
@@ -50,11 +51,12 @@
 \name{Hyukpyo Hong \vspace*{.1in} \hspace{10.5cm} \small{Last updated: \shorttoday}}
 
 \begin{resume}
+\raggedright
 
 
 \section{\sc Contact Information}
 \vspace{.05in}  
-\begin{tabular}{@{}p{3.2in}p{4in}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.53\linewidth}>{\raggedright\arraybackslash}p{\dimexpr0.47\linewidth-2\tabcolsep\relax}@{}}
 \href{https://www.kias.re.kr/kias/cp/centrsPgmsMng/people.do?centrspgmsCd=AI&menuNo=403021}{Center for AI and Natural Sciences (CAINS)} & {\it E-mail:} hhong78@kias.re.kr \\
 \href{https://www.kias.re.kr/}{Korea Institute for Advanced Study (KIAS)} & {\it Web:} \url{https://hyukpyohong.github.io}\\
 85 Hoegiro, Dongdaemun-gu & \\
@@ -65,17 +67,14 @@ Seoul 02455, South Korea & \\
 
 \section{\sc Appointments}
 {\bf Korea Institute for Advanced Study}, Seoul, South Korea\\
-\vspace*{-.1in}
 \begin{list1}
 \item[] AI Fellow (AI Assistant Professor), Center for AI and Natural Sciences \hfill Aug. 2026--Present
 \end{list1}
-{\bf Institute for Basic Sciences}, Daejeon, South Korea\\
-\vspace*{-.1in}
+{\bf Institute for Basic Science}, Daejeon, South Korea\\
 \begin{list1}
 \item[] Visiting Research Fellow, Biomedical Mathematics Group \hfill May 2026--Aug. 2026
 \end{list1}
 {\bf University of Wisconsin--Madison}, Madison, Wisconsin, USA\\
-\vspace*{-.1in}
 \begin{list1}
 \item[] Van Vleck Assistant Professor, Department of Mathematics \hfill Aug. 2023--May 2026
 \end{list1}
@@ -84,7 +83,6 @@ Seoul 02455, South Korea & \\
 
 \section{\sc Education}
 {\bf KAIST}, Daejeon, South Korea\\
-\vspace*{-.1in}
 \begin{list1}
 \item[] Ph.D.\ in Mathematical Sciences \hfill Feb.\ 2018--Aug.\ 2023 \\
 Advisor: \href{https://mathsci.kaist.ac.kr/~jaekkim}{Jae Kyoung Kim} \\

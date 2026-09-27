@@ -1,53 +1,63 @@
 preprints:
-- title: "Connections between structural sensitivity analysis and metabolic control\
+- cv: "True"
+  title: "Connections between structural sensitivity analysis and metabolic control\
     \ analysis"
   authors: "Ella Buelling†, Wolfram Liebermeister[*], **Hyukpyo Hong**[*]"
   type: "prep"
-- title: "Necessary and sufficient conditions of the existence of a finite dimensional\
+- cv: "True"
+  title: "Necessary and sufficient conditions of the existence of a finite dimensional\
     \ invariant subspace for polynomial ODEs"
   authors: "**Hyukpyo Hong**, Seewoo Lee"
   type: "prep"
-- title: "Non-autonomous dynamics learning via Koopman-based Neural Networks"
+- cv: "True"
+  title: "Non-autonomous dynamics learning via Koopman-based Neural Networks"
   authors: "Geonhee Ryu†, **Hyukpyo Hong**[*], Daewook Kim[*]"
   type: "prep"
-- title: "LEAN-GAP: A Dataset of Formalized Graduate Algebra Problems"
+- cv: "True"
+  title: "LEAN-GAP: A Dataset of Formalized Graduate Algebra Problems"
   authors: "Seewoo Lee†, Byung-Hak Hwang†, Hyojae Lim, Jihoon Hyun, Ilkyoo Choi, Yeachan\
     \ Park, Jineon Baek, **Hyukpyo Hong**, Keewoo Lee, Jaeseong Heo, Hyungryul Baik,\
     \ Chul-hee Lee[*], Kyu-Hwan Lee"
   type: "submitted"
   url_arxiv: "https://doi.org/10.48550/arXiv.2606.02588"
-- title: "Ubiquitous asymptotic robustness in biochemical systems"
+- cv: "True"
+  title: "Ubiquitous asymptotic robustness in biochemical systems"
   authors: "**Hyukpyo Hong**†[*], Diego Rojas La Luz†, Gheorghe Craciun[*]"
   type: "review"
   url_arxiv: "https://doi.org/10.48550/arXiv.2505.21900"
 published:
-- title: "Finding Koopman Invariant Subspaces via Personalized PageRank"
+- cv: "True"
+  title: "Finding Koopman Invariant Subspaces via Personalized PageRank"
   authors: "**Hyukpyo Hong**†, Qin Li, Matthew Colbrook, Hanbaek Lyu[*]"
   year: "2026"
   venue: "Accepted to NeurIPS 2026"
   url_arxiv: "https://doi.org/10.48550/arXiv.2605.24666"
-- title: "A history-dependent approach for accurate initial condition estimation in\
+- cv: "True"
+  title: "A history-dependent approach for accurate initial condition estimation in\
     \ epidemic models"
   authors: "Dongju Lim†, Kyeong Tae Ko†, **Hyukpyo Hong**, Hyojung Lee, Boseung Choi,\
     \ Won Chang, Sunhwa Choi[*], Jae Kyoung Kim[*]"
   year: "2025"
   venue: "PLoS Computational Biology"
   url_journal: "https://doi.org/10.1371/journal.pcbi.1013438"
-- title: "Topological criterion for robust perfect adaptation of reaction fluxes in\
+- cv: "True"
+  title: "Topological criterion for robust perfect adaptation of reaction fluxes in\
     \ biological networks"
   authors: "**Hyukpyo Hong**†, Seokhwan Moon†, Yuji Hirono†[*], Jae Kyoung Kim[*]"
   year: "2025"
   venue: "iScience"
   url_journal: "https://doi.org/10.1016/j.isci.2025.112394"
   url_arxiv: "https://doi.org/10.48550/arXiv.2302.01270"
-- title: "Overcoming bias in estimating epidemiological parameters with realistic\
+- cv: "True"
+  title: "Overcoming bias in estimating epidemiological parameters with realistic\
     \ history-dependent disease spread dynamics"
   authors: "**Hyukpyo Hong**†, Eunjin Eom†, Hyojung Lee, Sunhwa Choi[*], Boseung Choi[*],\
     \ Jae Kyoung Kim[*]"
   year: "2024"
   venue: "Nature Communications"
   url_journal: "https://doi.org/10.1038/s41467-024-53095-7"
-- title: "Density physics-informed neural networks reveal sources of cell heterogeneity\
+- cv: "True"
+  title: "Density physics-informed neural networks reveal sources of cell heterogeneity\
     \ in signal transduction"
   authors: "Hyeontae Jo†, **Hyukpyo Hong**†, Hyung Ju Hwang, Won Chang, Jae Kyoung\
     \ Kim[*]"
@@ -55,21 +65,24 @@ published:
   venue: "Patterns"
   url_journal: "https://doi.org/10.1016/j.patter.2023.100899"
   url_biorxiv: "https://doi.org/10.1101/2023.07.31.551393"
-- title: "Inferring delays in partially observed gene regulation processes"
+- cv: "True"
+  title: "Inferring delays in partially observed gene regulation processes"
   authors: "**Hyukpyo Hong**†, Mark Jayson Cortez, Yu-Yu Cheng, Hang J. Kim, Boseung\
     \ Choi[*], Krešimir Josić[*], Jae Kyoung Kim[*]"
   year: "2023"
   venue: "Bioinformatics"
   url_journal: "https://doi.org/10.1093/bioinformatics/btad670"
   url_biorxiv: "https://doi.org/10.1101/2022.11.27.518074"
-- title: "Computational translation framework identifies biochemical reaction networks\
+- cv: "True"
+  title: "Computational translation framework identifies biochemical reaction networks\
     \ with special topologies and their long-term dynamics"
   authors: "**Hyukpyo Hong**, Bryan S. Hernandez, Jinsu Kim, Jae Kyoung Kim[*]"
   year: "2023"
   venue: "SIAM Journal on Applied Mathematics"
   url_journal: "https://doi.org/10.1137/22M150469X"
   url_arxiv: "https://doi.org/10.48550/arXiv.2212.01171"
-- title: "Modeling incorporating the severity-reducing long-term immunity: higher\
+- cv: "True"
+  title: "Modeling incorporating the severity-reducing long-term immunity: higher\
     \ viral transmission paradoxically reduces severe COVID-19 during endemic transition"
   authors: "**Hyukpyo Hong**†, Ji Yun Noh†, Hyojung Lee, Sunhwa Choi, Boseung Choi,\
     \ Jae Kyoung Kim[*], Eui-Cheol Shin[*]"
@@ -77,13 +90,15 @@ published:
   venue: "Immune Network"
   url_journal: "https://doi.org/10.4110/in.2022.22.e23"
   url_medrxiv: "https://doi.org/10.1101/2022.02.09.22270633"
-- title: "Systematic inference identifies a major source of heterogeneity in cell\
+- cv: "True"
+  title: "Systematic inference identifies a major source of heterogeneity in cell\
     \ signaling dynamics: the rate-limiting step number"
   authors: "Dae Wook Kim†, **Hyukpyo Hong**†, Jae Kyoung Kim[*]"
   year: "2022"
   venue: "Science Advances"
   url_journal: "https://www.science.org/doi/10.1126/sciadv.abl4598"
-- title: "Personalized sleep-wake patterns aligned with circadian rhythm relieve daytime\
+- cv: "True"
+  title: "Personalized sleep-wake patterns aligned with circadian rhythm relieve daytime\
     \ sleepiness"
   authors: "Jaehyoung Hong†, Su Jung Choi†, Se Ho Park, **Hyukpyo Hong**, Victoria\
     \ Booth, Eun Yeon Joo[*], Jae Kyoung Kim[*]"
@@ -91,14 +106,16 @@ published:
   venue: "iScience"
   url_journal: "https://doi.org/10.1016/j.isci.2021.103129"
   url_biorxiv: "https://doi.org/10.1101/2021.03.15.435366"
-- title: "Universally valid reduction of multiscale stochastic biochemical systems\
+- cv: "True"
+  title: "Universally valid reduction of multiscale stochastic biochemical systems\
     \ with simple non-elementary propensities"
   authors: "Yun Min Song†, **Hyukpyo Hong**†, Jae Kyoung Kim[*]"
   year: "2021"
   venue: "PLoS Computational Biology"
   url_journal: "https://doi.org/10.1371/journal.pcbi.1008952"
   url_biorxiv: "https://doi.org/10.1101/2021.04.08.438974"
-- title: "Hierarchical Bayesian models for inference in biochemical reactions with\
+- cv: "True"
+  title: "Hierarchical Bayesian models for inference in biochemical reactions with\
     \ delays"
   authors: "Mark Jayson Cortez†, **Hyukpyo Hong**, Boseung Choi[*], Jae Kyoung Kim[*],\
     \ Krešimir Josić[*]"
@@ -106,7 +123,8 @@ published:
   venue: "Bioinformatics"
   url_journal: "https://doi.org/10.1093/bioinformatics/btab618"
   url_biorxiv: "https://doi.org/10.1101/2021.08.16.456485"
-- title: "Derivation of stationary distributions of biochemical reaction networks\
+- cv: "True"
+  title: "Derivation of stationary distributions of biochemical reaction networks\
     \ via structure transformation"
   authors: "**Hyukpyo Hong**†, Jinsu Kim†, M. Ali Al-Radhawi, Eduardo D. Sontag, Jae\
     \ Kyoung Kim[*]"
@@ -115,7 +133,8 @@ published:
   url_journal: "https://www.nature.com/articles/s42003-021-02117-x"
   url_biorxiv: "https://doi.org/10.1101/2021.03.23.436681"
 book_chapters:
-- title: "Beyond the Michaelis-Menten: Bayesian inference for enzyme kinetic analysis"
+- cv: "True"
+  title: "Beyond the Michaelis-Menten: Bayesian inference for enzyme kinetic analysis"
   authors: "**Hyukpyo Hong**, Boseung Choi, Jae Kyoung Kim[*]"
   venue: "Computational Methods for Estimating the Kinetics Parameters of Biological\
     \ Systems, Methods in Molecular Biology"

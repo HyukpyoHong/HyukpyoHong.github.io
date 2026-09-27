@@ -410,7 +410,7 @@ title: Research
     <div class="accordion-content">
       <div class="topic-inner">
         <div class="topic-text">
-          <p>Cell-to-cell heterogeneity in signaling responses is a ubiquotous phenomena of biological systems, yet its sources are often difficult to disentangle. In collaboration with <a href="https://sites.google.com/view/hyeontae-site/" target="_blank">Hyeontae Jo</a>, we developed density physics-informed neural networks (Density-PINNs) that directly learn the distribution of parameters from population-level data, identifying key sources of cell-to-cell heterogeneity in antibiotic responses.</p>
+          <p>Cell-to-cell heterogeneity in signaling responses is a ubiquitous phenomenon of biological systems, yet its sources are often difficult to disentangle. In collaboration with <a href="https://sites.google.com/view/hyeontae-site/" target="_blank">Hyeontae Jo</a>, we developed density physics-informed neural networks (Density-PINNs) that directly learn the distribution of parameters from population-level data, identifying key sources of cell-to-cell heterogeneity in antibiotic responses.</p>
           <!-- <div class="collaborators">
             <strong>Collaborators:</strong>
             <a href="https://sites.google.com/view/hyeontae-site/" target="_blank">Hyeontae Jo</a>,
