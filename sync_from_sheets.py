@@ -57,6 +57,50 @@ def clean(val):
     v = str(val).strip()
     return v if v else None
 
+def validated_sheet(tab_name):
+    """Validate nonempty CSV rows before building YAML; row 1 is the header."""
+    sections = {
+        'papers': ('preprints', 'published', 'book_chapters'),
+        'talks': ('invited', 'contributed'),
+    }
+    required_fields = {
+        'papers': ('title', 'authors'),
+        'talks': ('date', 'event'),
+        'teaching_courses': ('term', 'role', 'course', 'institution'),
+        'teaching_mentoring': ('period', 'name', 'description', 'institution'),
+        'awards': ('title',),
+        'grants': ('title',),
+        'service_academic': ('date', 'title'),
+        'service_peer_review': ('journal',),
+        'service_outreach': ('title',),
+        'news': ('text',),
+        'press': ('title',),
+    }
+    validated = []
+    for row_number, row in enumerate(fetch_sheet(tab_name), start=2):
+        if not any(clean(value) for value in row.values()):
+            continue
+        section = clean(row.get('section'))
+        if tab_name in sections and section not in sections[tab_name]:
+            allowed = ', '.join(sections[tab_name])
+            raise RuntimeError(
+                f"Sheet '{tab_name}', row {row_number}: invalid section {section!r}; "
+                f"expected one of: {allowed}."
+            )
+        required = required_fields[tab_name]
+        if tab_name == 'papers' and section in ('published', 'book_chapters'):
+            required += ('venue',)
+        missing = [field for field in required
+                   if not clean(clean_date(row.get(field)) if field == 'date'
+                                else row.get(field))]
+        if missing:
+            raise RuntimeError(
+                f"Sheet '{tab_name}', row {row_number}: missing required field(s): "
+                f"{', '.join(missing)}."
+            )
+        validated.append(row)
+    return validated
+
 def dump_yml(data, path):
     """Save data as YAML, forcing double quotes only for string values."""
     
@@ -93,7 +137,7 @@ def dump_yml(data, path):
 # ── Builders ──────────────────────────────────────────────────
 
 def build_papers():
-    rows = fetch_sheet('papers')
+    rows = validated_sheet('papers')
     preprints, published, book_chapters = [], [], []
 
     for r in rows:
@@ -133,7 +177,7 @@ def build_papers():
 
 
 def build_talks():
-    rows = fetch_sheet('talks')
+    rows = validated_sheet('talks')
     invited, contributed = [], []
 
     for r in rows:
@@ -164,8 +208,8 @@ def build_talks():
 
 
 def build_teaching():
-    courses_rows = fetch_sheet('teaching_courses')
-    mentor_rows  = fetch_sheet('teaching_mentoring')
+    courses_rows = validated_sheet('teaching_courses')
+    mentor_rows  = validated_sheet('teaching_mentoring')
 
     courses = []
     for r in courses_rows:
@@ -205,7 +249,7 @@ def build_teaching():
 
 
 def build_awards():
-    rows = fetch_sheet('awards')
+    rows = validated_sheet('awards')
     awards = []
     for r in rows:
         if not clean(r.get('title')):
@@ -226,7 +270,7 @@ def build_awards():
 
 
 def build_grants():
-    rows = fetch_sheet('grants')
+    rows = validated_sheet('grants')
     grants = []
     for r in rows:
         if not clean(r.get('title')):
@@ -253,9 +297,9 @@ def build_grants():
 
 
 def build_service():
-    svc_rows = fetch_sheet('service_academic')
-    pr_rows  = fetch_sheet('service_peer_review')
-    out_rows = fetch_sheet('service_outreach')
+    svc_rows = validated_sheet('service_academic')
+    pr_rows  = validated_sheet('service_peer_review')
+    out_rows = validated_sheet('service_outreach')
 
     service = []
     for r in svc_rows:
@@ -292,7 +336,7 @@ def build_service():
 
 
 def build_news():
-    rows = fetch_sheet('news')
+    rows = validated_sheet('news')
     news = []
     for r in rows:
         if not clean(r.get('text')):
@@ -312,7 +356,7 @@ def build_news():
 
 
 def build_press():
-    rows = fetch_sheet('press')
+    rows = validated_sheet('press')
     press = []
     for r in rows:
         if not clean(r.get('title')):
