@@ -46,13 +46,19 @@ title: Papers & Talks
   </a>
   <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:1rem;">†: (co-)1st author &nbsp;·&nbsp; *: (co-)corresponding author &nbsp;·&nbsp; Note: Where no author is designated as the first author (†), names are listed in alphabetical order by last name, as is standard practice in mathematical journals.</p>
 
-  {% assign prep_count = site.data.papers.preprints.size %}
-  {% assign pub_count = site.data.papers.published.size %}
+  {% assign visible_preprints = site.data.papers.preprints | where_exp: "entry", "entry.web != 'FALSE'" %}
+  {% assign visible_published = site.data.papers.published | where_exp: "entry", "entry.web != 'FALSE'" %}
+  {% assign visible_chapters = site.data.papers.book_chapters | where_exp: "entry", "entry.web != 'FALSE'" %}
+  {% assign visible_invited = site.data.talks.invited | where_exp: "entry", "entry.web != 'FALSE'" %}
+  {% assign visible_contributed = site.data.talks.contributed | where_exp: "entry", "entry.web != 'FALSE'" %}
+  {% assign visible_outreach = site.data.service.outreach | where_exp: "entry", "entry.web != 'FALSE'" %}
+  {% assign prep_count = visible_preprints.size %}
+  {% assign pub_count = visible_published.size %}
   {% assign total_papers_count = prep_count | plus: pub_count %}
 
   <p style="font-size:0.95rem;font-weight:600;color:var(--text-muted);margin-bottom:0.6rem;">Preprints &amp; In Preparation</p>
   <ol class="paper-list">
-    {% for paper in site.data.papers.preprints %}
+    {% for paper in visible_preprints %}
     {% assign display_authors = paper.authors | replace: '[*]', '<span>*</span>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     {% assign current_num = total_papers_count | minus: forloop.index0 %}
     <li class="paper-item" value="{{ current_num }}">
@@ -75,7 +81,7 @@ title: Papers & Talks
 
   <p style="font-size:0.95rem;font-weight:600;color:var(--text-muted);margin-bottom:0.6rem;margin-top:1.5rem;">Published &amp; Accepted</p>
   <ol class="paper-list">
-    {% for paper in site.data.papers.published %}
+    {% for paper in visible_published %}
     {% assign display_authors = paper.authors | replace: '[*]', '<span>*</span>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     {% assign current_num = total_papers_count | minus: prep_count | minus: forloop.index0 %}
     <li class="paper-item" value="{{ current_num }}">
@@ -95,9 +101,9 @@ title: Papers & Talks
 
 <div class="section">
   <div class="section-title">Book Chapters</div>
-  {% assign book_count = site.data.papers.book_chapters.size %}
+  {% assign book_count = visible_chapters.size %}
   <ol class="paper-list">
-    {% for chapter in site.data.papers.book_chapters %}
+    {% for chapter in visible_chapters %}
     {% assign display_authors = chapter.authors | replace: '[*]', '<span>*</span>' | replace: '†', '<sup>†</sup>' | markdownify | remove: '<p>' | remove: '</p>' %}
     {% assign current_book_num = book_count | minus: forloop.index0 %}
     <li class="paper-item" value="{{ current_book_num }}">
@@ -116,7 +122,7 @@ title: Papers & Talks
   <div class="section-title">Invited Talks</div>
   <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:0.8rem;">SMB: Society for Mathematical Biology · KSMB: Korean SMB · SIAM: Society for Industrial and Applied Mathematics · KSIAM: Korean SIAM · KMS: Korean Mathematical Society</p>
   <ul class="talk-list">
-    {% for talk in site.data.talks.invited %}
+    {% for talk in visible_invited %}
     <li class="talk-item">
       <span class="talk-date">{{ talk.date }}</span>
       <span class="talk-content">
@@ -134,7 +140,7 @@ title: Papers & Talks
 <div class="section">
   <div class="section-title">Contributed Talks &amp; Posters</div>
   <ul class="talk-list">
-    {% for talk in site.data.talks.contributed %}
+    {% for talk in visible_contributed %}
     <li class="talk-item">
       <span class="talk-date">{{ talk.date }}</span>
       <span class="talk-content">
@@ -152,7 +158,7 @@ title: Papers & Talks
 <div class="section">
   <div class="section-title">Outreach &amp; Public Engagement</div>
   <ul class="talk-list">
-    {% for item in site.data.service.outreach %}
+    {% for item in visible_outreach %}
     <li class="talk-item">
       <span class="talk-date">{{ item.date }}</span>
       <span class="talk-content">

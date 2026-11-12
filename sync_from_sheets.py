@@ -2,6 +2,7 @@
 """
 sync_from_sheets.py
 Syncs Google Sheets data to _data/*.yml files as pure strings.
+Sheet rows remain untouched; output lists are ordered newest first.
 Then generates the CV manuscript and compiles assets/Hong_CV_latest.pdf.
 
 Usage:
@@ -30,7 +31,7 @@ DATA_DIR.mkdir(exist_ok=True)
 def fetch_sheet(tab_name):
     """Download a Google Sheets tab as CSV and return list of dicts."""
     url = (f"https://docs.google.com/spreadsheets/d/{SHEET_ID}"
-           f"/gviz/tq?tqx=out:csv&sheet={tab_name}")
+           f"/gviz/tq?tqx=out:csv&headers=1&sheet={tab_name}")
     context = ssl.create_default_context()
     # Python.org installations may not have their own CA bundle configured.
     system_certs = Path('/etc/ssl/cert.pem')
@@ -57,6 +58,37 @@ def clean(val):
     v = str(val).strip()
     return v if v else None
 
+def date_key(value):
+    """Sort ISO dates, terms, and date ranges by their starting date."""
+    value = clean_date(value) or ''
+    year = re.search(r'\b(\d{4})\b', value)
+    if not year:
+        return (0, 0, 0)
+    iso = re.match(r'(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?', value)
+    if iso:
+        return (int(iso[1]), int(iso[2] or 0), int(iso[3] or 0))
+    months = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5,
+              'jun': 6, 'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10,
+              'nov': 11, 'dec': 12, 'spring': 3, 'summer': 6,
+              'fall': 9, 'autumn': 9, 'winter': 1}
+    prefix = value[:year.start()].lower()
+    month = next((number for name, number in months.items()
+                  if re.search(r'\b' + name, prefix)), 0)
+    return (int(year[1]), month, 0)
+
+
+def newest_first(tab_name, rows):
+    # Papers have no reliable full date; appending rows defines their order.
+    if tab_name == 'papers':
+        return list(reversed(rows))
+    fields = {'talks': 'date', 'teaching_courses': 'term',
+              'teaching_mentoring': 'period', 'awards': 'year',
+              'grants': 'period', 'service_academic': 'date',
+              'service_outreach': 'date', 'news': 'date', 'press': 'date'}
+    field = fields.get(tab_name)
+    return sorted(rows, key=lambda row: date_key(row.get(field)), reverse=True) if field else rows
+
+
 def validated_sheet(tab_name):
     """Validate nonempty CSV rows before building YAML; row 1 is the header."""
     sections = {
@@ -80,6 +112,12 @@ def validated_sheet(tab_name):
     for row_number, row in enumerate(fetch_sheet(tab_name), start=2):
         if not any(clean(value) for value in row.values()):
             continue
+        for flag in ('cv', 'web'):
+            if clean(row.get(flag)):
+                row[flag] = clean(row[flag]).upper()
+        # Neither output needs these rows; do not publish private scratch entries.
+        if row.get('cv') == 'FALSE' and row.get('web') == 'FALSE':
+            continue
         section = clean(row.get('section'))
         if tab_name in sections and section not in sections[tab_name]:
             allowed = ', '.join(sections[tab_name])
@@ -99,7 +137,7 @@ def validated_sheet(tab_name):
                 f"{', '.join(missing)}."
             )
         validated.append(row)
-    return validated
+    return newest_first(tab_name, validated)
 
 def dump_yml(data, path):
     """Save data as YAML, forcing double quotes only for string values."""
@@ -145,7 +183,7 @@ def build_papers():
         if not section:
             continue
 
-        entry = {'cv': clean(r.get('cv'))}
+        entry = {'cv': clean(r.get('cv')), 'web': clean(r.get('web'))}
         entry['title']   = clean(r.get('title'))
         entry['authors'] = clean(r.get('authors'))
 
@@ -185,7 +223,7 @@ def build_talks():
         if not section:
             continue
 
-        entry = {'cv': clean(r.get('cv'))}
+        entry = {'cv': clean(r.get('cv')), 'web': clean(r.get('web'))}
         entry['date']     = clean_date(r.get('date'))
         entry['event']    = clean(r.get('event'))
         entry['location'] = clean(r.get('location'))
@@ -221,6 +259,7 @@ def build_teaching():
             'course':      clean(r.get('course')),
             'institution': clean(r.get('institution')),
             'cv':          clean(r.get('cv')),
+            'web':         clean(r.get('web')),
         }
         courses.append(entry)
 
@@ -234,6 +273,7 @@ def build_teaching():
             'description': clean(r.get('description')),
             'institution': clean(r.get('institution')),
             'cv':          clean(r.get('cv')),
+            'web':         clean(r.get('web')),
             'note':        clean(r.get('note')),
             'note_web':    clean(r.get('note_web')),
         }
@@ -324,7 +364,7 @@ def build_service():
             'venue':      clean(r.get('venue')),
             'talk_title': clean(r.get('talk_title')),
         }
-        for key in ['slides_url', 'url', 'note', 'cv']:
+        for key in ['slides_url', 'url', 'note', 'cv', 'web']:
             v = clean(r.get(key))
             if v:
                 entry[key] = v

@@ -22,3 +22,4 @@ exclude:
   - Gemfile.lock
   - sync_from_sheets.py
   - assets/generate_cv.py
+  - tests

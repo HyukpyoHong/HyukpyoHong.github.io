@@ -1,38 +1,45 @@
 preprints:
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Connections between structural sensitivity analysis and metabolic control\
     \ analysis"
   authors: "Ella Buelling†, Wolfram Liebermeister[*], **Hyukpyo Hong**[*]"
   type: "prep"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Necessary and sufficient conditions of the existence of a finite dimensional\
     \ invariant subspace for polynomial ODEs"
   authors: "**Hyukpyo Hong**, Seewoo Lee"
   type: "prep"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Non-autonomous dynamics learning via Koopman-based Neural Networks"
   authors: "Geonhee Ryu†, **Hyukpyo Hong**[*], Daewook Kim[*]"
   type: "prep"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "LEAN-GAP: A Dataset of Formalized Graduate Algebra Problems"
   authors: "Seewoo Lee†, Byung-Hak Hwang†, Hyojae Lim, Jihoon Hyun, Ilkyoo Choi, Yeachan\
     \ Park, Jineon Baek, **Hyukpyo Hong**, Keewoo Lee, Jaeseong Heo, Hyungryul Baik,\
     \ Chul-hee Lee[*], Kyu-Hwan Lee"
   type: "submitted"
   url_arxiv: "https://doi.org/10.48550/arXiv.2606.02588"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Ubiquitous asymptotic robustness in biochemical systems"
   authors: "**Hyukpyo Hong**†[*], Diego Rojas La Luz†, Gheorghe Craciun[*]"
   type: "review"
   url_arxiv: "https://doi.org/10.48550/arXiv.2505.21900"
 published:
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Finding Koopman Invariant Subspaces via Personalized PageRank"
   authors: "**Hyukpyo Hong**†, Qin Li, Matthew Colbrook, Hanbaek Lyu[*]"
   year: "2026"
   venue: "Accepted to NeurIPS 2026"
   url_arxiv: "https://doi.org/10.48550/arXiv.2605.24666"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "A history-dependent approach for accurate initial condition estimation in\
     \ epidemic models"
   authors: "Dongju Lim†, Kyeong Tae Ko†, **Hyukpyo Hong**, Hyojung Lee, Boseung Choi,\
@@ -40,7 +47,8 @@ published:
   year: "2025"
   venue: "PLoS Computational Biology"
   url_journal: "https://doi.org/10.1371/journal.pcbi.1013438"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Topological criterion for robust perfect adaptation of reaction fluxes in\
     \ biological networks"
   authors: "**Hyukpyo Hong**†, Seokhwan Moon†, Yuji Hirono†[*], Jae Kyoung Kim[*]"
@@ -48,7 +56,8 @@ published:
   venue: "iScience"
   url_journal: "https://doi.org/10.1016/j.isci.2025.112394"
   url_arxiv: "https://doi.org/10.48550/arXiv.2302.01270"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Overcoming bias in estimating epidemiological parameters with realistic\
     \ history-dependent disease spread dynamics"
   authors: "**Hyukpyo Hong**†, Eunjin Eom†, Hyojung Lee, Sunhwa Choi[*], Boseung Choi[*],\
@@ -56,7 +65,8 @@ published:
   year: "2024"
   venue: "Nature Communications"
   url_journal: "https://doi.org/10.1038/s41467-024-53095-7"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Density physics-informed neural networks reveal sources of cell heterogeneity\
     \ in signal transduction"
   authors: "Hyeontae Jo†, **Hyukpyo Hong**†, Hyung Ju Hwang, Won Chang, Jae Kyoung\
@@ -65,7 +75,8 @@ published:
   venue: "Patterns"
   url_journal: "https://doi.org/10.1016/j.patter.2023.100899"
   url_biorxiv: "https://doi.org/10.1101/2023.07.31.551393"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Inferring delays in partially observed gene regulation processes"
   authors: "**Hyukpyo Hong**†, Mark Jayson Cortez, Yu-Yu Cheng, Hang J. Kim, Boseung\
     \ Choi[*], Krešimir Josić[*], Jae Kyoung Kim[*]"
@@ -73,7 +84,8 @@ published:
   venue: "Bioinformatics"
   url_journal: "https://doi.org/10.1093/bioinformatics/btad670"
   url_biorxiv: "https://doi.org/10.1101/2022.11.27.518074"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Computational translation framework identifies biochemical reaction networks\
     \ with special topologies and their long-term dynamics"
   authors: "**Hyukpyo Hong**, Bryan S. Hernandez, Jinsu Kim, Jae Kyoung Kim[*]"
@@ -81,7 +93,8 @@ published:
   venue: "SIAM Journal on Applied Mathematics"
   url_journal: "https://doi.org/10.1137/22M150469X"
   url_arxiv: "https://doi.org/10.48550/arXiv.2212.01171"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Modeling incorporating the severity-reducing long-term immunity: higher\
     \ viral transmission paradoxically reduces severe COVID-19 during endemic transition"
   authors: "**Hyukpyo Hong**†, Ji Yun Noh†, Hyojung Lee, Sunhwa Choi, Boseung Choi,\
@@ -90,14 +103,16 @@ published:
   venue: "Immune Network"
   url_journal: "https://doi.org/10.4110/in.2022.22.e23"
   url_medrxiv: "https://doi.org/10.1101/2022.02.09.22270633"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Systematic inference identifies a major source of heterogeneity in cell\
     \ signaling dynamics: the rate-limiting step number"
   authors: "Dae Wook Kim†, **Hyukpyo Hong**†, Jae Kyoung Kim[*]"
   year: "2022"
   venue: "Science Advances"
   url_journal: "https://www.science.org/doi/10.1126/sciadv.abl4598"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Personalized sleep-wake patterns aligned with circadian rhythm relieve daytime\
     \ sleepiness"
   authors: "Jaehyoung Hong†, Su Jung Choi†, Se Ho Park, **Hyukpyo Hong**, Victoria\
@@ -106,7 +121,8 @@ published:
   venue: "iScience"
   url_journal: "https://doi.org/10.1016/j.isci.2021.103129"
   url_biorxiv: "https://doi.org/10.1101/2021.03.15.435366"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Universally valid reduction of multiscale stochastic biochemical systems\
     \ with simple non-elementary propensities"
   authors: "Yun Min Song†, **Hyukpyo Hong**†, Jae Kyoung Kim[*]"
@@ -114,7 +130,8 @@ published:
   venue: "PLoS Computational Biology"
   url_journal: "https://doi.org/10.1371/journal.pcbi.1008952"
   url_biorxiv: "https://doi.org/10.1101/2021.04.08.438974"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Hierarchical Bayesian models for inference in biochemical reactions with\
     \ delays"
   authors: "Mark Jayson Cortez†, **Hyukpyo Hong**, Boseung Choi[*], Jae Kyoung Kim[*],\
@@ -123,7 +140,8 @@ published:
   venue: "Bioinformatics"
   url_journal: "https://doi.org/10.1093/bioinformatics/btab618"
   url_biorxiv: "https://doi.org/10.1101/2021.08.16.456485"
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Derivation of stationary distributions of biochemical reaction networks\
     \ via structure transformation"
   authors: "**Hyukpyo Hong**†, Jinsu Kim†, M. Ali Al-Radhawi, Eduardo D. Sontag, Jae\
@@ -133,7 +151,8 @@ published:
   url_journal: "https://www.nature.com/articles/s42003-021-02117-x"
   url_biorxiv: "https://doi.org/10.1101/2021.03.23.436681"
 book_chapters:
-- cv: "True"
+- cv: "TRUE"
+  web: "TRUE"
   title: "Beyond the Michaelis-Menten: Bayesian inference for enzyme kinetic analysis"
   authors: "**Hyukpyo Hong**, Boseung Choi, Jae Kyoung Kim[*]"
   venue: "Computational Methods for Estimating the Kinetics Parameters of Biological\

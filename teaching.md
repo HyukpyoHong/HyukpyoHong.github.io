@@ -15,8 +15,8 @@ title: Teaching
   <div class="award-badge">{{ site.data.teaching.award }}</div>
   {% endif %}
 
-  {% assign uw = site.data.teaching.courses | where: "institution", "UW–Madison" %}
-  {% assign kaist = site.data.teaching.courses | where: "institution", "KAIST" %}
+  {% assign uw = site.data.teaching.courses | where_exp: "entry", "entry.web != 'FALSE'" | where: "institution", "UW–Madison" %}
+  {% assign kaist = site.data.teaching.courses | where_exp: "entry", "entry.web != 'FALSE'" | where: "institution", "KAIST" %}
 
   <div class="teaching-block">
     <h3>UW–Madison</h3>
@@ -47,8 +47,8 @@ title: Teaching
 <div class="section">
   <div class="section-title">Mentoring</div>
 
-  {% assign uw_mentoring = site.data.teaching.mentoring | where: "institution", "UW–Madison" %}
-  {% assign kaist_mentoring = site.data.teaching.mentoring | where: "institution", "KAIST" %}
+  {% assign uw_mentoring = site.data.teaching.mentoring | where_exp: "entry", "entry.web != 'FALSE'" | where: "institution", "UW–Madison" %}
+  {% assign kaist_mentoring = site.data.teaching.mentoring | where_exp: "entry", "entry.web != 'FALSE'" | where: "institution", "KAIST" %}
 
   <div class="teaching-block">
     <h3>UW–Madison</h3>
