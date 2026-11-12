@@ -3,7 +3,7 @@ preprints:
   web: "TRUE"
   title: "Connections between structural sensitivity analysis and metabolic control\
     \ analysis"
-  authors: "Ella Buelling†, Wolfram Liebermeister[*], **Hyukpyo Hong**[*]"
+  authors: "Ella Buelling†, Wolfram Liebermeister, **Hyukpyo Hong**[*]"
   type: "prep"
 - cv: "TRUE"
   web: "TRUE"
@@ -34,7 +34,7 @@ published:
 - cv: "TRUE"
   web: "TRUE"
   title: "Finding Koopman Invariant Subspaces via Personalized PageRank"
-  authors: "**Hyukpyo Hong**†, Qin Li, Matthew Colbrook, Hanbaek Lyu[*]"
+  authors: "**Hyukpyo Hong**†, Matthew Colbrook, Qin Li[*], Hanbaek Lyu[*]"
   year: "2026"
   venue: "Accepted to NeurIPS 2026"
   url_arxiv: "https://doi.org/10.48550/arXiv.2605.24666"
